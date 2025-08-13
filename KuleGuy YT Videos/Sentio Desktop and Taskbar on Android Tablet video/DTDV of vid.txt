@@ -1,0 +1,32 @@
+/ 4 Jul 2025
+
+* Using my Android Tablet as a computer via Sentio Desktop & Taskbar!
+
+# HAPPY 4TH OF JULY 🦅🦅🦅🇺🇸🇺🇸🇺🇸. Sorry of this video's pace is a bit fast, I was rushing this out for the 4th of July holiday. Also sorry if my webcam isn't synced with my microphone audio, I have no idea what happened, maybe it's due to my OBS version but idk, I used Linux to record. I tried super hard to correct the issue, hopefully it's worth it.
+
+I used to use my Android tablet a lot when I was in middle school, but now I don't due to me having a cellphone and my laptop. Recently, I've been thinking on how to give it a second life as I don't want to throw my gadget away in a landfill. Since I use my laptop for schoolwork a lot, I often thought of how I could use my Android tablet as a computer as well, kinda like a Microsoft Surface or a Google Chromebook, or a Samsung Tab S8 running Samsung Dex.
+
+In this video, I have two free applications that allow you to multitask on your Android tablet and I recommend you check them out. The links are in order in occurence to the video.
+
+0:00 - Intro
+1:03 - Sentio Desktop
+6:15 - Taskbar by Braden Farmer
+11:43 - Outro
+
+Eevnos's Sentio video: https://youtu.be/fYw6CMQkX44?si=Dr7MOB1qhYjtnZQQ
+Superbook kickstarter: https://www.kickstarter.com/projects/andromium/the-superbook-turn-your-smartphone-into-a-laptop-f
+Sentio Superbook showcase: https://www.youtube.com/watch?v=KFVRw0xWVAo
+Sentio Desktop Download: https://apkpure.com/sentio-desktop/com.sentio.desktop
+Sentio Blog post: https://medium.com/sentio-superbook
+
+Thommo's Tech Taskbar video: https://youtu.be/V1tEUUPu35c?si=IFV1ft8uI2OqYJb3
+Taskbar Download: https://play.google.com/store/apps/details?id=com.farmerbb.taskbar&hl=en-US&pli=1
+Taskbar's Github: https://github.com/farmerbb/Taskbar
+ 
+Music in the background:
+Milk by starRo - https://www.youtube.com/watch?v=mWL9_WIbykw
+Warm by Joey Pecoraro - https://www.youtube.com/watch?v=A32Bx0dntWM
+Delusional (Instrumental) by Spring Gang - https://www.youtube.com/watch?v=pbRNOEwOO1E
+Spaceship by LuKremBo - https://www.youtube.com/watch?v=7AiYmoj1eL4
+
+@ https://www.youtube.com/watch?v=Kd0aVLHwCKE

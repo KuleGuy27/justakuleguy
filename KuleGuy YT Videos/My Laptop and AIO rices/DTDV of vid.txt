@@ -1,0 +1,89 @@
+/ 14 Mar 2024
+
+* My New Linux Desktop Rice! (for now I guess...)
+
+# Happy PI Day! I made a post on the orange app and I promised to make a video about it. Here is the post: https://www.reddit.com/r/unixporn/comments/1b6v873/kde_and_cinnamon_my_super_cool_new_desktop_themes/
+
+0:15 - HP Laptop
+https://github.com/smurphos/cinnamox_themes
+https://wallpapercave.com/w/wp6342757
+https://pixelgalleries.blogspot.com/2012/09/amazing-linux-mint-wallpapers-hq.html
+
+Go to web browser and search: "cinnamox themes github"
+Open zip -- themes master -- extract the themes to the .themes folder in home directory (ctrl+H)
+Themes -- Advanced settings
+Applications -- Cinnamox-rhino // Icons -- Numix-circle // Desktop -- Cinnamox-rhino
+Right click panel -- panel settings -- panel height 44 // Right zone -- 28
+Right click panel -- applet settings -- configure grouped window list -- panel -- button label -- application name
+Right click Mint menu -- configure -- text -- "Menu"
+Right click calendar (time in the bottom right corner) -- configure -- change date format (%d.%b.%Y %H:%M:%S)
+Change wallpaper
+Right click desktop -- desktop settings -- uncheck mounted drives and check trash
+Go to web browser and search: "Linux Mint blue wallpaper"
+New window -- /usr/share/backgrounds, right click and open as root
+Drag image to /usr/share/backgrounds
+Login window -- select the image
+Uncheck, "draw user backgrounds"
+
+///////
+
+2:37 - DELL AIO
+https://github.com/Luwx/Lightly
+https://launchpad.net/~mozillateam/+archive/ubuntu/ppa
+https://www.cufonfonts.com/font/segoe-ui-4
+https://github.com/bmFtZQ/edge-frfox
+https://wallpaperaccess.com/chill-anime-girl
+
+System settings -- Appearance
+Global theme -- Layan
+Application style -- Lightly (manual install)
+Lightly -- edit transparency to opaque
+Window Decorations -- Lavanda sea dark
+Titlebar buttons -- Keep above others
+Change Firefox to flatpak version
+Download Segoe Ui Fonts
+Change Firefox to Edge Frfox theme
+Extract fonts
+Font Management -- Install fonts systemwide
+Close window
+Fonts -- Adjust all fonts
+Icons -- Papirus dark
+Cursors -- Breeze light
+Login screen -- Layan
+Screen locking -- configure appearance -- uncheck media controls -- add anime wallpaper
+Dolphin File Manager -- Configure toolbars and add: refresh, copy, and paste (add separator after paste)
+Details view mode and zoom size 22 pixels
+Set anime wallpaper
+Trash can widget to desktop
+Unpin settings and pin terminal from taskbar
+Right click taskbar and configure icons only task manager
+Uncheck 'mark apps that play audio' and check 'from current screen' (in behavior)
+Right click and configure digital clock
+Show seconds, time display 24H, date format custom (dd.MMM.yyyy)
+Calendar -- Check: 'astronomical events' and 'holidays'
+Holidays -- United States (or your country)
+Right click taskbar and add 2 spacers, delete the margins separator and pager
+Right click taskbar -- add widgets -- get new -- download new
+Search up 'ditto menu' and 'win7 show desktop'
+Right click menu -- Show alternative -- Ditto Menu
+Configure ditto menu -- change icon -- show favorites first -- menu position center bottom
+Edit mode, remove peek at desktop and add 'weather', 'win7', and 'search' widget
+Configure weather widget:
+Update every 60 minutes -- your location
+Appearance -- show temp beside icon -- check: wind, pressure, and humidity
+Units -- temp: *C, pressure: mbar, wind speed: knots
+Right click taskbar -- Floating panel
+
+///////
+
+11:24 - Outro
+
+///////
+
+Music in the background:
+Bathtub by Ballpoint - https://www.youtube.com/watch?v=7epmRz2neDU
+Sans by Toby Fox - https://www.youtube.com/watch?v=Zzo6L3wsf8c
+Better Days by Lakey Inspired - https://www.youtube.com/watch?v=RXLzvo6kvVQ
+Translucent City Lights by ArthurItis - https://www.youtube.com/watch?v=SSuxlI9KFHU
+
+@ https://www.youtube.com/watch?v=AA9U8EZz81k

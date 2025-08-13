@@ -1,0 +1,584 @@
+1
+00:00:00,208 --> 00:00:02,610
+Wassup nerds, it's me, Luke Smith.
+
+2
+00:00:03,116 --> 00:00:05,471
+So there are 2 types of computer users out there,
+
+3
+00:00:05,828 --> 00:00:09,196
+people who use MacOS and people who use Windows OS.
+
+4
+00:00:09,508 --> 00:00:12,415
+Now currently, I use neither, because I am using Linux.
+
+5
+00:00:13,248 --> 00:00:15,673
+"Oh my gosh, the sun here is so bright, I can't see anything."
+
+6
+00:00:16,060 --> 00:00:19,101
+Now you might be wondering, what's Linux, I've never heard of it?
+
+7
+00:00:19,250 --> 00:00:25,355
+Well that's because Linux has less than 4% marketshare while Windows and MacOS takes the leaderboard.
+
+8
+00:00:25,504 --> 00:00:31,490
+Now the reason why people use MacOS and Windows is because it's sold with the computer and it's easy to use.
+
+9
+00:00:31,817 --> 00:00:36,093
+When you go to Walmart, or Costco, or Best Buy and you buy a prebuilt laptop,
+
+10
+00:00:36,271 --> 00:00:40,472
+it most likely has Windows or MacOS pre-installed on it,
+
+11
+00:00:40,591 --> 00:00:43,721
+so these 2 OSes are people defaults.
+
+12
+00:00:44,658 --> 00:00:46,212
+Also, ease of use.
+
+13
+00:00:46,420 --> 00:00:48,867
+Most people in the world aren't tech savvy, 
+
+14
+00:00:49,194 --> 00:00:54,421
+they just want to browse the web, send emails, print documents, and etc…
+
+15
+00:00:54,808 --> 00:01:01,867
+Windows and MacOS do a very good job at hiding the systems guts and presenting everything by a gui,
+
+16
+00:01:02,163 --> 00:01:08,595
+because of that, people who've been through lobatamies can use the 2 OSes because the ux is just so straightforward.
+
+17
+00:01:08,952 --> 00:01:11,248
+Now to answer the question, why do I use Linux?
+
+18
+00:01:11,560 --> 00:01:13,560
+Most people use Windows and MacOS,
+
+19
+00:01:13,827 --> 00:01:17,181
+why do I use an os that not that many people pay attention to?
+
+20
+00:01:17,642 --> 00:01:19,449
+Well, it's because I want to,
+
+21
+00:01:19,642 --> 00:01:21,642
+it seems like a very fun hobby,
+
+22
+00:01:21,642 --> 00:01:25,000
+and it's also because I don't like the 2 other OSes.
+
+23
+00:01:25,402 --> 00:01:30,496
+Despite being called “Windows”, you can't even look inside the source code, it's proprietary. 
+
+24
+00:01:30,764 --> 00:01:33,240
+The OS is slow because of bloat, 
+
+25
+00:01:33,240 --> 00:01:35,746
+a Microsoft Account is required to install it,
+
+26
+00:01:36,162 --> 00:01:37,314
+telemetry,
+
+27
+00:01:37,314 --> 00:01:38,943
+ads in the start menu,
+
+28
+00:01:38,943 --> 00:01:41,389
+removed features, and etc…
+
+29
+00:01:41,939 --> 00:01:43,106
+On MacOS,
+
+30
+00:01:43,106 --> 00:01:46,831
+and I've only used this at school because I don't have a MacBook.
+
+31
+00:01:47,218 --> 00:01:49,296
+It's easy to use and simplistic,
+
+32
+00:01:49,296 --> 00:01:53,007
+but because they focus so much on simplicity,
+
+33
+00:01:53,007 --> 00:01:56,420
+there are basic features like Window snapping not present,
+
+34
+00:01:56,985 --> 00:02:00,249
+and you need to find a 3rd party alternative to get things going.
+
+35
+00:02:00,695 --> 00:02:04,926
+Both of them are paid, close source, and have little to no customization.
+
+36
+00:02:05,119 --> 00:02:07,494
+Those are my reasons on why I’m on Linux.
+
+37
+00:02:08,163 --> 00:02:12,826
+I often hear that people who use Windows or MacOS say that Linux is HARD,
+
+38
+00:02:13,123 --> 00:02:17,443
+and that is true at times because some things don’t work out of the box,
+
+39
+00:02:17,443 --> 00:02:21,035
+but it’s also because your brain doesn’t work out of the box.
+
+40
+00:02:21,184 --> 00:02:23,288
+A lack of understanding pretty much.
+
+41
+00:02:23,823 --> 00:02:27,444
+From my understanding, Linux is a kernel, aka, the systems guts.
+
+42
+00:02:27,608 --> 00:02:30,612
+It was made in 1991 by Linus Torvalds
+
+43
+00:02:31,058 --> 00:02:36,226
+and it was closed source at first but then open source and because of that,
+
+44
+00:02:36,226 --> 00:02:39,341
+there are Linux Distros aka Distrobutions,
+
+45
+00:02:39,341 --> 00:02:42,738
+pretty much operating systems based on the Linux kernel.
+
+46
+00:02:42,827 --> 00:02:44,301
+There are distrobutions like:
+
+47
+00:02:44,301 --> 00:02:52,340
+Ubuntu, Linux Mint, Pop_OS, Zorin OS, Fedora, Manjaro, and many more,
+
+48
+00:02:52,563 --> 00:02:56,547
+like 600 Linux distros,
+
+49
+00:02:56,800 --> 00:02:59,692
+because Linux is free as in price and in freedom,
+
+50
+00:03:00,000 --> 00:03:02,863
+because you can mess around with the source code.
+
+51
+00:03:02,952 --> 00:03:05,800
+So I don’t use an operating system called “Linux”
+
+52
+00:03:05,800 --> 00:03:08,886
+like what you call MacOS and WindowsOS.
+
+53
+00:03:09,109 --> 00:03:14,783
+I use a distro of it, but people say Linux because it’s the foundation.
+
+54
+00:03:15,140 --> 00:03:17,705
+So there are 600 distros out there,
+
+55
+00:03:17,705 --> 00:03:18,545
+nice,
+
+56
+00:03:18,545 --> 00:03:19,905
+that’s a lot of options,
+
+57
+00:03:19,905 --> 00:03:21,652
+but what distro do I use?
+
+58
+00:03:22,039 --> 00:03:25,065
+On my All-in-one desktop, I use Kubuntu
+
+59
+00:03:25,065 --> 00:03:28,285
+and on my laptop, I use Linux Mint.
+
+60
+00:03:28,835 --> 00:03:31,625
+These are distrobutions based off of Ubuntu
+
+61
+00:03:31,625 --> 00:03:36,077
+and because of that, these are the easy to use Linux Distros that I use.
+
+62
+00:03:36,821 --> 00:03:41,721
+My experience on Linux so far is easy because I use Kubuntu and Mint.
+
+63
+00:03:41,914 --> 00:03:44,316
+Linux distros come in all shapes and sizes,
+
+64
+00:03:44,613 --> 00:03:46,613
+some are easy, some are hard.
+
+65
+00:03:47,193 --> 00:03:51,065
+The hard Linux distros are Arch and Gentoo,
+
+66
+00:03:51,362 --> 00:03:56,619
+these are DIY distros where you build or compile your own distro.
+
+67
+00:03:56,976 --> 00:04:00,969
+These are popular distros because people just wanna flex,
+
+68
+00:04:01,207 --> 00:04:02,629
+but not everyone uses them.
+
+69
+00:04:02,778 --> 00:04:05,492
+To me, when you’re saying “Linux is difficult”,
+
+70
+00:04:06,206 --> 00:04:08,741
+I think you’re comparing a Arch to Windows or something.
+
+71
+00:04:09,217 --> 00:04:11,217
+So what are the upsides to using Linux?
+
+72
+00:04:11,559 --> 00:04:14,056
+There are 3 things that come to my mind.
+
+73
+00:04:14,487 --> 00:04:18,331
+Security, Lightweightness, and Customization.
+
+74
+00:04:18,733 --> 00:04:22,557
+There are times when I have gotten a virus on my Windows laptop,
+
+75
+00:04:22,646 --> 00:04:26,133
+and since I use Windows, they track my user activity.
+
+76
+00:04:26,549 --> 00:04:30,512
+From what I read, Macs don't track you and have less viruses,
+
+77
+00:04:30,631 --> 00:04:33,657
+but I'm not gonna spend 2 grand on a laptop am I?
+
+78
+00:04:34,029 --> 00:04:38,602
+Windows has more viruses because it's popular and the source code is hidden,
+
+79
+00:04:39,123 --> 00:04:41,677
+therefore it's slower to fix problems.
+
+80
+00:04:41,796 --> 00:04:44,272
+On Linux, it's not that popular,
+
+81
+00:04:44,272 --> 00:04:46,659
+but since the source code is open,
+
+82
+00:04:46,823 --> 00:04:54,014
+you can look for bugs and issues and fix them yourself instead of waiting for Windows to fix stuff for you…
+
+83
+00:04:54,460 --> 00:05:00,372
+So for Windows users who worry about privacy, switching to Linux might just be a no-brainer.
+
+84
+00:05:01,160 --> 00:05:02,724
+"Oh my gosh, there's a shadow here"
+
+85
+00:05:04,553 --> 00:05:09,205
+The 2nd reason is that Linux is more lightweight than Windows and MacOS.
+
+86
+00:05:09,428 --> 00:05:11,532
+If you're running low spec hardware,
+
+87
+00:05:11,755 --> 00:05:16,566
+Linux can breathe new life into your computer because of low spec requirements.
+
+88
+00:05:17,087 --> 00:05:22,880
+Windows eats up a lot of ram and you can't even install MacOS on any laptop.
+
+89
+00:05:25,513 --> 00:05:28,127
+For something that's free and open source,
+
+90
+00:05:28,410 --> 00:05:32,062
+it's pretty awesome to see the affects it can do on your computer.
+
+91
+00:05:32,359 --> 00:05:36,278
+Goes to show how bloated proprietary software can be.
+
+92
+00:05:36,918 --> 00:05:38,918
+The third reason is customization.
+
+93
+00:05:38,918 --> 00:05:41,990
+On Macs, you can't customize or install themes,
+
+94
+00:05:42,332 --> 00:05:45,968
+it's locked down and I guess it's so that you don't break anything.
+
+95
+00:05:46,087 --> 00:05:49,263
+Windows is much more customizable than MacOS,
+
+96
+00:05:49,263 --> 00:05:50,891
+but on Windows 11, 
+
+97
+00:05:50,891 --> 00:05:53,724
+you can't even move your taskbar to the left or right,
+
+98
+00:05:54,096 --> 00:05:54,922
+what the heck?
+
+99
+00:05:55,294 --> 00:05:56,697
+Ok, Editors note here,
+
+100
+00:05:56,697 --> 00:05:58,846
+I forgot to say something about Linux.
+
+101
+00:05:58,846 --> 00:06:01,947
+So I am using the KDE Plasma Desktop Environment,
+
+102
+00:06:01,947 --> 00:06:04,894
+which is a style of how your desktop looks.
+
+103
+00:06:05,266 --> 00:06:05,950
+In my settings,
+
+104
+00:06:05,950 --> 00:06:07,653
+I can easily change the:
+
+105
+00:06:07,653 --> 00:06:10,307
+I can easily change the: colors,
+
+106
+00:06:10,307 --> 00:06:12,054
+I can easily change the: colors, window decorations,
+
+107
+00:06:12,054 --> 00:06:14,054
+I can easily change the: colors, window decorations, icons,
+
+108
+00:06:15,527 --> 00:06:16,638
+it’s so easy.
+
+109
+00:06:16,742 --> 00:06:19,560
+And look, I can move my taskbar around!
+
+110
+00:06:20,438 --> 00:06:23,033
+So the downsides to Linux, what are they?
+
+111
+00:06:23,197 --> 00:06:26,432
+To me, it's compatiblility and ease of use.
+
+112
+00:06:26,685 --> 00:06:28,451
+Some people have this thinking that, 
+
+113
+00:06:28,451 --> 00:06:32,637
+“anything can work on any computer, it doesn't matter the operating system”.
+
+114
+00:06:33,113 --> 00:06:36,422
+But the truth is, computers are not the same.
+
+115
+00:06:37,121 --> 00:06:40,000
+Programs that work on Mac will work on Mac, 
+
+116
+00:06:40,000 --> 00:06:43,957
+and programs that work on Windows will work on Windows.
+
+117
+00:06:44,760 --> 00:06:46,894
+Because Windows and Mac are so popular,
+
+118
+00:06:47,266 --> 00:06:51,735
+developers develop the programs and apps on those platforms
+
+119
+00:06:51,735 --> 00:06:57,126
+and Linux gets left out because the Linux userbase is so small,
+
+120
+00:06:57,379 --> 00:06:58,620
+there's no incentive. 
+
+121
+00:06:58,947 --> 00:07:02,420
+On Windows, that's where all the games are being developed, 
+
+122
+00:07:02,866 --> 00:07:04,688
+all the graphics drivers work. 
+
+123
+00:07:05,164 --> 00:07:06,252
+No joke, 
+
+124
+00:07:06,252 --> 00:07:09,279
+when I installed DaVinci Resolve on Fedora,
+
+125
+00:07:09,279 --> 00:07:13,064
+I had to use the terminal to install dependencies to get it working.
+
+126
+00:07:13,213 --> 00:07:16,001
+But on Windows, it just works right out of the box.
+
+127
+00:07:16,447 --> 00:07:17,480
+Why?!
+
+128
+00:07:17,658 --> 00:07:21,076
+Which gets me into my 2nd downside, ease of use.
+
+129
+00:07:21,612 --> 00:07:25,932
+Sometimes when something goes wrong, you have to open up a terminal to fix things.
+
+130
+00:07:26,274 --> 00:07:28,809
+For advanced users, this isn't an issue, 
+
+131
+00:07:29,151 --> 00:07:32,162
+but for the average Joe out there, this can be daunting.
+
+132
+00:07:38,394 --> 00:07:39,844
+Personally for me though,
+
+133
+00:07:40,000 --> 00:07:45,570
+I can deal with this because it is convenient to type in a command than to open up settings,
+
+134
+00:07:45,763 --> 00:07:47,983
+but it does stress me out a lot at times.
+
+135
+00:07:48,429 --> 00:07:50,133
+But yeah, I am a Linux boi.
+
+136
+00:07:50,133 --> 00:07:53,129
+I have switched back to Windows for some days,
+
+137
+00:07:53,426 --> 00:07:58,995
+but then I switched BACK to Linux because I got familiar with Kubuntu and Mint,
+
+138
+00:07:59,263 --> 00:08:02,289
+I kinda forgot how to use Windows tbh.
+
+139
+00:08:02,289 --> 00:08:06,074
+My biggest challenges are playing video games as some games are not supported, 
+
+140
+00:08:06,282 --> 00:08:08,624
+especially multi-player titles,
+
+141
+00:08:08,817 --> 00:08:12,989
+and softwares I might need like DaVinci Resolve that I have issues with.
+
+142
+00:08:13,227 --> 00:08:15,807
+That’s why I’m using Kdenlive to edit this video.
+
+143
+00:08:15,807 --> 00:08:17,272
+But even with downsides,
+
+144
+00:08:17,272 --> 00:08:20,745
+Linux has improved a lot since the Vista days
+
+145
+00:08:20,745 --> 00:08:23,593
+and I hope for more work to be done on it
+
+146
+00:08:23,905 --> 00:08:29,356
+so that people can consider it as a viable alternative to Mac or Windows…
+
