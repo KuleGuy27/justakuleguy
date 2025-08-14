@@ -9,6 +9,6 @@ Everytime a new YT vod is made:
 
 - in the HTMl videos itself; edit the site title from the folder, h1 (vid title), h3 date, video source, h3 description, link url with "a href" if possible
 - add downloadable links to donwload the .srt subtitles + add a mirror link
-- link to YouTube
+- link to mirrors (YouTube and Internet Archive)
 
 
