@@ -5,16 +5,44 @@
         <title>justakuleguy</title>      
     </head>
     <style>
+    body {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .dark-mode {
+      background-color: #a6a6a6;
+      color: #ffffff;
+    }
     </style>
     <body>
         <h1 style="font-size: 70px; text-align: center; background-color: aqua;">Just A KuleGuy</h1>
         <img src="2025-08-02-201336 (cropped).jpg" width="40%" style="float: left; margin-right: 15px;">
         <div float="right">
         <h3>Hello! My name is Luke! I love technology, computers, gaming, somewhat traveling, and I want to use this website as an opportunity to document my life's work and experiences. I have a basic knowledge of HTML and I'm just sticking to what I know best. For now, this site is simple and basic, but I am considering using AI and LLMs to assist with my code because AI is better than me. Anyways, I hope you enjoy my website!</h3>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <a href="Blogs/justakuleguy_blogs.html"><h3>Blogs</h3></a>
         <a href="KuleGuy YT Videos/justakuleguy_ytvids.html"><h3>YouTube Videos Archive</h3></a>
         <a href="KuleGuy YT VODS/justakuleguy_ytvods.html"><h3>YouTube VODs Archive</h3></a>
         <a href="website info.html"><h3>Website Info</h3></a>
         </div>
+
+    <script>
+    // Check if dark mode is saved in localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+
+    function toggleDarkMode() {
+      const isDarkMode = document.body.classList.toggle("dark-mode");
+
+      // Save the user's preference in localStorage
+      if (isDarkMode) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    }
+    </script>    
     </body>
 </html>

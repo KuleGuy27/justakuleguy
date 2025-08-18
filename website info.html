@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KuleGuy - Website Info</title>
     <style>
+    body {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .dark-mode {
+      background-color: #a6a6a6;
+      color: #ffffff;
+    }
     </style>
 </head>
 <body>
     <h1>Website Info</h1>
     <a href="index.html"><button>Back to home</button></a>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <h2>Just wanted to make this page here because I love metadata and I wanted to share you guys info about this site.</h2>
     <p>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
     <h3><u>Source Code:</u> This website is hosted on Github and you can find the repository here: <a href="https://github.com/KuleGuy27/justakuleguy" target="_blank">https://github.com/KuleGuy27/justakuleguy</a></h3>
@@ -17,5 +27,23 @@
     <h3>You can also download the <u>YouTube VODS</u> here: <a href="https://archive.org/download/kuleguy-yt-vods-archive_202508" target="_blank">https://archive.org/download/kuleguy-yt-vods-archive_202508</a></h3>
     <h3></h3>
     <h3>This website was created on the 12th of August 2025.</h3>
+
+    <script>
+    // Check if dark mode is saved in localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+
+    function toggleDarkMode() {
+      const isDarkMode = document.body.classList.toggle("dark-mode");
+
+      // Save the user's preference in localStorage
+      if (isDarkMode) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    }
+    </script>
 </body>
 </html>

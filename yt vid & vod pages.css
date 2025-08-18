@@ -1,5 +1,11 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-mode {
+    background-color: #a6a6a6;
+    color: #ffffff;
 }
 
 #date {
