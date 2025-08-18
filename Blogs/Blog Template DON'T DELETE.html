@@ -3,20 +3,33 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <link rel="stylesheet" href="../justakuleguy_ytvids.css">
+        <link rel="stylesheet" href="../blogs pages.css">
     </head>
     <body>
-        <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
-        <h1></h1>
-        <h3></h3>
-        <iframe src="https://short.icu/" width="60%" height="640px" frameborder="0" scrolling="0" allowfullscreen></iframe>
-        <h3 id="desc">
+        <a href="../justakuleguy_blogs.html"><button>Back to blog list</button></a>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <h1>Welcome to my blog!</h1>
+        <h3 id="date">Posted on: </h3>
+        <h3>
         
         </h3>
-        <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-        <h2>Video Mirrors:</h2>
-        <h3 id="mirror">YouTube: <a href="" target="_blank"></a></h3>
-        <h3 id="mirror">Odysee: <a href="" target="_blank"></a></h3>
-        <h3 id="mirror">Rumble: <a href="" target="_blank"></a></h3>
+    
+    <script>
+    // Check if dark mode is saved in localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+
+    function toggleDarkMode() {
+      const isDarkMode = document.body.classList.toggle("dark-mode");
+
+      // Save the user's preference in localStorage
+      if (isDarkMode) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    }
+    </script>
     </body>
 </html>

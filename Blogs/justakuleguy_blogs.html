@@ -6,7 +6,12 @@
     <title>My Blog</title>
     <style>
         body {
-            font-family: sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .dark-mode {
+            background-color: #a6a6a6;
+            color: #ffffff;
         }
         main {
             margin: 1rem;
@@ -19,27 +24,55 @@
             border-radius: 0px;
             box-shadow: 0 2px 10px rgb(0, 0, 0);
             width: 60%;
+            overflow: hidden;
         }
+        img {
+            width: 20%; 
+            float: left; 
+            margin-right: 20px;
+        }
+        h3 {color: black}
+        p {color: black}
     </style>
 </head>
 <body>
     <h1>My Blogs</h1>
     <a href="../index.html"><button>Back to home</button></a>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
     <main>
         <article>
+            <img src=""> 
             <a href="">
             <h2>I went to Vietnam to visit family and also went to an Internet Cafe! (example)</h2></a>
             <h3>Tags: Travel, Family, Gaming</h3>
             <p>Posted on: 12 August 2025</p>
         </article>
-
         <article>
+            <img src="">
             <a href="">
             <h2>I went to CES 2025! The future is amazing! (example)</h2></a>
             <h3>Tag: Technology, Travel</h3>
             <p>Posted on: 12 August 2025</p>
         </article>
     </main>
+
+<script>
+    // Check if dark mode is saved in localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+
+    function toggleDarkMode() {
+      const isDarkMode = document.body.classList.toggle("dark-mode");
+
+      // Save the user's preference in localStorage
+      if (isDarkMode) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    }
+    </script>
 </body>
 </html>

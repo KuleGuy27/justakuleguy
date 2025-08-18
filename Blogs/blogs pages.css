@@ -1,0 +1,21 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-mode {
+    background-color: #a6a6a6;
+    color: #ffffff;
+}
+
+#date {
+    color: blue
+}
+
+#desc {
+    color:green
+}
+
+#mirror {
+    color: black
+}
