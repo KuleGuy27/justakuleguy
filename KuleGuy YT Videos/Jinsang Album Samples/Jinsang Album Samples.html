@@ -7,6 +7,7 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <h1>Samples to Jinsang's Songs (9 Albums) [Lofi Hip-Hop]</h1>
         <h3 id="date">28 Nov 2024</h3>
         <iframe src="https://short.icu/q6_ea2Wmo" width="60%" height="640px" frameborder="0" scrolling="0" allowfullscreen></iframe>
@@ -321,5 +322,23 @@
         <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/jinsang_album_samples_full-rendered:7" target="_blank">https://odysee.com/@KuleGuy:8/jinsang_album_samples_full-rendered:7</a></h3>
         <h3 id="mirror">Rumble: <a href="https://rumble.com/v64ky11-samples-to-jinsangs-songs-9-albums-lofi-hip-hop.html" target="_blank">https://rumble.com/v64ky11-samples-to-jinsangs-songs-9-albums-lofi-hip-hop.html</a></h3>
         <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/jinsang_album_samples_full-rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/jinsang_album_samples_full-rendered.mp4</a></h3>
+    
+    <script>
+    // Check if dark mode is saved in localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+
+    function toggleDarkMode() {
+      const isDarkMode = document.body.classList.toggle("dark-mode");
+
+      // Save the user's preference in localStorage
+      if (isDarkMode) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    }
+    </script>
     </body>
 </html>

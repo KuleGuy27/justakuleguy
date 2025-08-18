@@ -7,6 +7,7 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <h1>ROBLOX - The Backrooms with guns, but it's the April Fools update</h1>
         <h3 id="date">9 Apr 2025</h3>
         <iframe src="https://short.icu/WMhCp1a7h" width="60%" height="640px" frameborder="0" scrolling="0" allowfullscreen></iframe>
@@ -49,5 +50,23 @@
         <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/rbx-tbwg-april-fools_rendered:9" target="_blank">https://odysee.com/@KuleGuy:8/rbx-tbwg-april-fools_rendered:9</a></h3>
         <h3 id="mirror">Rumble: <a href="https://rumble.com/v6rw3rl-roblox-the-backrooms-with-guns-but-its-the-april-fools-update.html" target="_blank">https://rumble.com/v6rw3rl-roblox-the-backrooms-with-guns-but-its-the-april-fools-update.html</a></h3>
         <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/rbx-tbwg-april-fools_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/rbx-tbwg-april-fools_rendered.mp4</a></h3>
+    
+    <script>
+    // Check if dark mode is saved in localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+
+    function toggleDarkMode() {
+      const isDarkMode = document.body.classList.toggle("dark-mode");
+
+      // Save the user's preference in localStorage
+      if (isDarkMode) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    }
+    </script>
     </body>
 </html>
