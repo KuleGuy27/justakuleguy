@@ -4,12 +4,25 @@
         <meta charset="utf-8">
         <title>YTVIDS - KuleGuy</title>
     <style>
-        img {width: 12%; float: left; margin-right: 20px;}
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .dark-mode {
+            background-color: #a6a6a6;
+            color: #ffffff;
+        }
+        img {
+            width: 12%; 
+            float: left; 
+            margin-right: 20px;
+        }
     </style>    
     </head>
     <body>
         <h1>YouTube Videos Archive</h1>
         <a href="../index.html"><button>Back to home</button></a>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <br></br>
         <a href="Cuphead All Bosses Including DLC A+ Ranks (Regular Mode) video/Cuphead DLC all bosses A+ rank regular mode.html"><img src="Cuphead All Bosses Including DLC A+ Ranks (Regular Mode) video/cuphead dlc - regular mode_thumbnail.jpg"><h3>Cuphead + DLC; Regular Mode - All Bosses A+ Ranked! [Contract List Order]</br><br>15 August 2025</h3></a>
         <br></br>
@@ -110,5 +123,23 @@
         <a href="MP3 to iPod/MP3 to iPod.html"><img src="MP3 to iPod/[007465].png"><h3>How to put an MP3 File into your iPod, using Windows and iTunes.</br><br>2 January 2024</h3></a>
         <br></br>
         <a href="iPhone 4 Por Favor/iphone 4 por favor.html"><img src="iPhone 4 Por Favor/35ht77v7Lbk-HD.jpg"><h3>iPhone 4 Por Favor</br><br>1 January 2024</h3></a>
+    
+    <script>
+    // Check if dark mode is saved in localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+
+    function toggleDarkMode() {
+      const isDarkMode = document.body.classList.toggle("dark-mode");
+
+      // Save the user's preference in localStorage
+      if (isDarkMode) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    }
+    </script>
     </body>
 </html>
