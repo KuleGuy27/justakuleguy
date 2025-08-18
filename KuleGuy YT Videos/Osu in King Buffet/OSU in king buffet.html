@@ -7,6 +7,7 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <h1>Osu Android - Hidamari No Uta by Hatsune Miku (DJ'TEKINA//SOMETHING remix)</h1>
         <h3 id="date">11 May 2024</h3>
         <iframe src="https://short.icu/g7dSZoAFQ" width="60%" height="640px" frameborder="0" scrolling="0" allowfullscreen></iframe>
@@ -23,5 +24,23 @@
         <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/osu-android-hidamari-no-uta-by-hatsune:7" target="_blank">https://odysee.com/@KuleGuy:8/osu-android-hidamari-no-uta-by-hatsune:7</a></h3>
         <h3 id="mirror">Rumble: <a href="https://rumble.com/v64kmig-osu-android-hidamari-no-uta-by-hatsune-miku-djtekinasomething-remix.html" target="_blank">https://rumble.com/v64kmig-osu-android-hidamari-no-uta-by-hatsune-miku-djtekinasomething-remix.html</a></h3>
         <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/hidamari_no_uta-king%20buffet_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/hidamari_no_uta-king%20buffet_rendered.mp4</a></h3>
+    
+    <script>
+    // Check if dark mode is saved in localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+
+    function toggleDarkMode() {
+      const isDarkMode = document.body.classList.toggle("dark-mode");
+
+      // Save the user's preference in localStorage
+      if (isDarkMode) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    }
+    </script>
     </body>
 </html>

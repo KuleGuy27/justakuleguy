@@ -7,6 +7,7 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <h1>ROBLOX Apparently Doesn't Work on Linux Anymore...</h1>
         <h3 id="date">29 Feb 2024</h3>
         <iframe src="https://short.icu/p4--9b0EM" width="60%" height="640px" frameborder="0" scrolling="0" allowfullscreen></iframe>
@@ -39,5 +40,23 @@
         <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/roblox-apparently-doesn't-work-on-linux:5" target="_blank">https://odysee.com/@KuleGuy:8/roblox-apparently-doesn't-work-on-linux:5</a></h3>
         <h3 id="mirror">Rumble: <a href="https://rumble.com/v64ghc1-roblox-apparently-doesnt-work-on-linux-anymore....html" target="_blank">https://rumble.com/v64ghc1-roblox-apparently-doesnt-work-on-linux-anymore....html</a></h3>
         <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/ROBLOX%20Apparently%20Doesn%27t%20Work%20on%20Linux%20Anymore....mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/ROBLOX%20Apparently%20Doesn%27t%20Work%20on%20Linux%20Anymore....mp4</a></h3>
+    
+    <script>
+    // Check if dark mode is saved in localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+
+    function toggleDarkMode() {
+      const isDarkMode = document.body.classList.toggle("dark-mode");
+
+      // Save the user's preference in localStorage
+      if (isDarkMode) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    }
+    </script>
     </body>
 </html>
