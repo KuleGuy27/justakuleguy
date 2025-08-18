@@ -1,0 +1,400 @@
+1
+00:00:00,125 --> 00:00:03,642
+As someone who's been making YouTube videos and filming things for fun,
+
+2
+00:00:03,767 --> 00:00:06,330
+I've been thinking of a storage solution.
+
+3
+00:00:06,424 --> 00:00:08,174
+When I was first making YouTube videos,
+
+4
+00:00:08,174 --> 00:00:13,042
+I would upload my videos, and then delete the original video files to save hard drive space.
+
+5
+00:00:13,120 --> 00:00:16,684
+So my videos are saved on the internet unless I delete them.
+
+6
+00:00:16,684 --> 00:00:21,271
+It's kinda like cloud storage but for free an anybody can view them.
+
+7
+00:00:21,459 --> 00:00:22,990
+Speaking of cloud storage,
+
+8
+00:00:22,990 --> 00:00:25,146
+why didn’t I just use Google Drive,
+
+9
+00:00:25,146 --> 00:00:25,943
+why didn’t I just use Google Drive, Dropbox,
+
+10
+00:00:25,943 --> 00:00:26,830
+why didn’t I just use Google Drive, Dropbox, Mega, 
+
+11
+00:00:26,830 --> 00:00:28,442
+why didn’t I just use Google Drive, Dropbox, Mega, Mediafire and etc?
+
+12
+00:00:28,630 --> 00:00:35,698
+I could've used these but they are paid services and the free amount of storage isn't enough for what I'm doing. 
+
+13
+00:00:35,834 --> 00:00:42,041
+In November 2022, my aunt gave me her 1TB external hard drive, and that was a game changer.
+
+14
+00:00:42,291 --> 00:00:47,779
+I used it to store old family photos, some music, and my YouTube videos that I keep on making.
+
+15
+00:00:48,092 --> 00:00:53,584
+An external hard drive is an internal hard drive just with a case around it
+
+16
+00:00:53,584 --> 00:00:56,334
+and it comes with this usb connector,
+
+17
+00:00:56,334 --> 00:01:02,603
+that way I can carry this with me anywhere I want and I can access the data on it using the usb connector
+
+18
+00:01:02,603 --> 00:01:05,541
+but that’s not ideal and it’s usually a hassle.
+
+19
+00:01:05,631 --> 00:01:06,896
+So what can I do now?
+
+20
+00:01:06,896 --> 00:01:09,897
+Thanks to the internet, I learned about something called a NAS 
+
+21
+00:01:09,897 --> 00:01:12,882
+which stands for “Network Attached Storage.”
+
+22
+00:01:12,882 --> 00:01:21,640
+A NAS is a metal box, basically a computer, which has stuff like cpu, ram, and hard drives bays all in one box.
+
+23
+00:01:21,781 --> 00:01:29,084
+You can connect it to your router via ethernet and send your data to a network which you can access wherever you want.
+
+24
+00:01:29,272 --> 00:01:31,397
+It’s what people call a “personal cloud” because:
+
+25
+00:01:31,397 --> 00:01:37,776
+you can scale or it replace a drive if it dies and YOU have control over your data,
+
+26
+00:01:37,776 --> 00:01:41,074
+so no company to spy on your important files.
+
+27
+00:01:41,199 --> 00:01:46,000
+Just like computers, there are tons of prebuilt NAS boxes floating on Amazon,
+
+28
+00:01:46,000 --> 00:01:48,845
+but because I don't have the money and because I want to,
+
+29
+00:01:48,845 --> 00:01:54,125
+I'm building my own NAS using what I already have, a laptop and some hard drives.
+
+30
+00:01:54,453 --> 00:02:02,250
+For this video, I am using my 2009 Toshiba Satellite L455-S5980 Laptop,
+
+31
+00:02:02,250 --> 00:02:03,140
+what a mouthful.
+
+32
+00:02:03,234 --> 00:02:08,456
+It has an Intel Celeron T300 1.8ghz processor,
+
+33
+00:02:08,456 --> 00:02:10,519
+4gb of ram (upgraded),
+
+34
+00:02:10,519 --> 00:02:14,834
+and a 512gb 2.5inch SSD (upgraded).
+
+35
+00:02:14,928 --> 00:02:17,663
+Which is quite slow, but it’s all I have.
+
+36
+00:02:17,804 --> 00:02:23,166
+So I have the laptop as a NAS, now is a good time to discuss what hard drives I am using.
+
+37
+00:02:23,557 --> 00:02:26,355
+I am using 3 Seagate hard drives.
+
+38
+00:02:26,433 --> 00:02:30,560
+I have a 2TB external drive that costs $60,
+
+39
+00:02:30,560 --> 00:02:34,718
+a 4TB external drive that costs $89
+
+40
+00:02:34,718 --> 00:02:39,596
+and a 6TB Expansion drive that costs $120.
+
+41
+00:02:39,750 --> 00:02:44,504
+In total, it costs $269 USD for the hard drives.
+
+42
+00:02:44,584 --> 00:02:48,680
+This is not really a budget build, but it’s whatever, it’s what I have already.
+
+43
+00:02:48,789 --> 00:02:51,084
+That’s cool, but where am I gonna put my NAS at?
+
+44
+00:02:51,162 --> 00:02:52,959
+My room of course.
+
+45
+00:02:53,500 --> 00:03:00,802
+This area used to have a lot of Legos on it, but I had to clean it up to be able to put the NAS here which took quite a while.
+
+46
+00:03:00,875 --> 00:03:05,455
+So I have the computer, the hard drives, and the ethernet cable all connected.
+
+47
+00:03:05,564 --> 00:03:07,042
+Speaking of the ethernet cable,
+
+48
+00:03:07,042 --> 00:03:12,042
+many moons ago, my dad bought a long 75ft cat8 ethernet cable
+
+49
+00:03:12,042 --> 00:03:14,933
+which connects to an ethernet switch in my parents room,
+
+50
+00:03:14,933 --> 00:03:18,669
+then it goes into a hole in the wall and up into the attic.
+
+51
+00:03:18,810 --> 00:03:27,042
+The cable comes down from this hole that was used for a TV cable in my closet, to under my desk and then to the computer here.
+
+52
+00:03:27,042 --> 00:03:29,808
+So I have the stuff setup, now it’s time to make it work.
+
+53
+00:03:29,902 --> 00:03:35,202
+The operating system I’m gonna be using for this video is Ubuntu Server and CasaOS.
+
+54
+00:03:35,265 --> 00:03:38,523
+The reason why is because I’m following a Tech Hut video.
+
+55
+00:03:39,250 --> 00:03:39,889
+Yeah...
+
+56
+00:03:40,108 --> 00:03:46,127
+I have tried TrueNAS and OMV before, but I’m trying this out because it seems easier.
+
+57
+00:03:46,127 --> 00:03:53,102
+First things first, I went to the Ubuntu server website and downloaded the iso image just like any other operating system.
+
+58
+00:03:53,102 --> 00:03:56,777
+After it’s done downloading, I burn it to a USB stick.
+
+59
+00:03:56,777 --> 00:04:00,669
+And after that, I put it in to the computer and I install the OS.
+
+60
+00:04:00,747 --> 00:04:05,687
+The process was really simple and I didn’t really have to follow a tutorial for this one.
+
+61
+00:04:05,687 --> 00:04:12,738
+Also, make sure to uncheck the LVM group because it splits your drive into multiple partitions.
+
+62
+00:04:16,851 --> 00:04:22,140
+After it’s done installing on the old laptop, I went to my main computer to ssh into it.
+
+63
+00:04:22,140 --> 00:04:29,375
+You can do that by typing: ssh, space, your username, the @ symbol, and the ip address of your server.
+
+64
+00:04:29,375 --> 00:04:37,928
+Once that’s done, do a simple sudo apt update, and then install Casa OS by copying and pasting in the curl command.
+
+65
+00:04:38,019 --> 00:04:41,536
+Now just sit and relax, it’s doing all the work for you.
+
+66
+00:04:42,615 --> 00:04:50,079
+After CasaOS is done installing, copy the link that it gave you, aka your ip address, and paste it in to your web browser.
+
+67
+00:04:50,079 --> 00:04:51,766
+You can just type it in if you want.
+
+68
+00:04:51,834 --> 00:04:56,211
+The CasaOS login screen should pop-up, type in your credentials and viola!
+
+69
+00:04:56,320 --> 00:04:57,601
+This is CasaOS.
+
+70
+00:04:57,679 --> 00:05:02,334
+The first thing I did was to format all the drives just it case and after it’s done,
+
+71
+00:05:02,334 --> 00:05:05,929
+I had to refresh the page because it didn’t show for some reason.
+
+72
+00:05:06,084 --> 00:05:15,334
+Anyways, I went to the default files app, pressed on one of my drives, then went back to the devmon folder, and then right click → share my drives.
+
+73
+00:05:15,334 --> 00:05:18,750
+I couldn’t figure out how to rename the drives in CasaOS
+
+74
+00:05:18,859 --> 00:05:23,084
+but at least I can just mount and rename it in my file manager,
+
+75
+00:05:23,350 --> 00:05:27,461
+and there also is a way to merge all your hard drives in one piece,
+
+76
+00:05:27,649 --> 00:05:31,213
+but I had some issues with that in the past, so I didn’t bother.
+
+77
+00:05:31,417 --> 00:05:36,858
+When I typed the ip address into my file manager, Dolphin, the shared drives appeared.
+
+78
+00:05:37,093 --> 00:05:40,469
+And for the moment you’ve all been waiting for, speed.
+
+79
+00:05:40,766 --> 00:05:47,567
+When copying files from my backup hard drive to the NAS, the speed is pretty slow at around 10mb/s.
+
+80
+00:05:47,739 --> 00:05:55,651
+This is not really surprising as I am using low end hardware, so of course, it took many hours for me to copy everything into the NAS.
+
+81
+00:05:55,760 --> 00:05:59,042
+Anyways, since it’s a NAS and it’s in my local network,
+
+82
+00:05:59,042 --> 00:06:07,829
+I could connect it to my main desktop as I’ve already shown you, my HP laptop that I use mainly for school, and my Android phone,
+
+83
+00:06:07,917 --> 00:06:11,888
+although I had to use another app for this because the default one sucks.
+
+84
+00:06:11,966 --> 00:06:18,079
+Cool, but there’s one more thing that I need to do, and that is to access it from anywhere in the world.
+
+85
+00:06:18,345 --> 00:06:21,019
+Well, I don’t travel much, so from my school.
+
+86
+00:06:21,113 --> 00:06:29,072
+This was the most complicated step because I didn’t really know what to do, so I followed a YouTube tutorial by BigBearTechWorld.
+
+87
+00:06:29,244 --> 00:06:35,467
+It was pretty complicated at first, I lost a couple of braincells, but after doing it, I understand it now.
+
+88
+00:06:35,576 --> 00:06:41,329
+So basically what I did was I installed Tailscale on the NAS using the curl command,
+
+89
+00:06:41,329 --> 00:06:47,552
+the Tailscale connects to my Google account as well and it gave me an entirely different ip address.
+
+90
+00:06:47,552 --> 00:06:51,851
+I used the curl command to install Tailscale on my HP laptop
+
+91
+00:06:51,851 --> 00:06:55,446
+and I used the Android app to connect it on my phone as well.
+
+92
+00:06:55,446 --> 00:07:02,795
+Since the devices are in one place, I can use the different ip address for the NAS and I can connect it anywhere I go.
+
+93
+00:07:03,000 --> 00:07:04,281
+But yeah, I’m done!
+
+94
+00:07:04,422 --> 00:07:11,129
+I can store footage onto it until it runs out or one drive dies and I can also access it from anywhere in the world.
+
+95
+00:07:11,473 --> 00:07:18,915
+It’s amazing to see how a laptop that could’ve been thrown away can be used for a NAS, essentially putting it to some use.
+
+96
+00:07:19,042 --> 00:07:20,886
+For now though, this is gonna be temporary.
+
+97
+00:07:21,011 --> 00:07:27,187
+I don’t really like the speeds of it, and also the hard drives are all gonna die in the future anyways.
+
+98
+00:07:27,328 --> 00:07:29,516
+Some things just don’t last forever.
+
+99
+00:07:29,751 --> 00:07:31,110
+But yeah, this is my server.
+
+100
+00:07:31,110 --> 00:07:33,709
+My name is Luke, and I am out.
+
