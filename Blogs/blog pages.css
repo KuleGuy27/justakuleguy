@@ -35,3 +35,36 @@ img {
 #mirror {
     color: black
 }
+
+/* Tablet query */
+@media (max-width: 810px) {
+article {
+    width: 80%;
+}
+
+img {
+    width: 100%;
+    float: none;
+    margin: 0 0 1rem 0;
+}
+}
+
+/* Phone query */
+@media (max-width: 768px) {
+article {
+    background: rgb(255, 255, 255);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    font-size: 1.1rem;
+}
+
+
+img {
+    width: 100%;
+    float: none;
+    margin: 0 0 1rem 0;
+}
+}
