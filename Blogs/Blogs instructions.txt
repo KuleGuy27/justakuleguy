@@ -4,9 +4,9 @@ Everytime a new YT video is made:
 - copy, create, or download any images and videos you see fit
 - make a blog.html file
 
- - in the blog list (index), copy and paste the article tag and edit the: image, link, h2, h3, and p.
+ - in the blog list (index), copy and paste the article tag and edit the: image, link, h2 (make title), h3 (edit tags), and p (edit post date).
 
-- in the blog posts itself; edit the site title from the folder, h1 (vid title), h3 date, video source, h3 description, link url with "a href" if possible
+- in the blog posts itself; edit the site title from the folder, h1 (make title), h3 date, video source, h3 description, link url with "a href" if possible
 - add downloadable links to donwload the .srt subtitles + add a mirror link
 - link to mirrors (YouTube, Odysee, Rumble, Internet Archive)
 
