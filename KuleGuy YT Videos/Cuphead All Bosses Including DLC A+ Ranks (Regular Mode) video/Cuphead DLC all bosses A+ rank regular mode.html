@@ -59,22 +59,6 @@
         <h3 id="mirror">Rumble: <a href="https://rumble.com/v6xmtvc-cuphead-dlc-regular-mode-all-bosses-a-ranked-contract-list-order.html" target="_blank">https://rumble.com/v6xmtvc-cuphead-dlc-regular-mode-all-bosses-a-ranked-contract-list-order.html</a></h3>
         <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/cuphead%20all%20bosses%20regular%20mode_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/cuphead%20all%20bosses%20regular%20mode_rendered.mp4</a></h3>
     
-    <script>
-    // Check if dark mode is saved in localStorage
-    if (localStorage.getItem('darkMode') === 'enabled') {
-      document.body.classList.add('dark-mode');
-    }
-
-    function toggleDarkMode() {
-      const isDarkMode = document.body.classList.toggle("dark-mode");
-
-      // Save the user's preference in localStorage
-      if (isDarkMode) {
-        localStorage.setItem('darkMode', 'enabled');
-      } else {
-        localStorage.setItem('darkMode', 'disabled');
-      }
-    }
-    </script>
+    <script src="../../darkmode.js"></script>
     </body>
 </html>
