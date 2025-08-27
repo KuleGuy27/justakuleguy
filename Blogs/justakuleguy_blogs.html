@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
     <style>
+        /* PC query */
         body {
             background-color: #ffffff;
             color: #000000;
@@ -33,6 +34,32 @@
         }
         h3 {color: black}
         p {color: black}
+
+        /* Tablet query */
+        @media (max-width: 810px) {
+        article {
+            width: 80%;
+        }
+
+        img {
+            width: 100%;
+            float: none;
+            margin: 0 0 1rem 0;
+        }
+        }
+
+        /* Phone query */
+        @media (max-width: 768px) {
+        article {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            float: none;
+            margin: 0 0 1rem 0;
+        }
+        }
     </style>
 </head>
 <body>
@@ -49,9 +76,9 @@
             <p>Posted on: 12 August 2025</p>
         </article>
         <article>
-            <img src="">
+            <img src="QALC - Linux terminal math calculator/qalc linux - asmd main pc.png">
             <a href="QALC - Linux terminal math calculator/qalc linux terminal calculator.html">
-            <h2>I went to CES 2025! The future is amazing! (example)</h2></a>
+            <h2>Using QALC as my terminal calculator for Linux!</h2></a>
             <h3>Tag: Technology, Linux</h3>
             <p>Posted on: 25 August 2025</p>
         </article>
