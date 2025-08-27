@@ -16,6 +16,28 @@ body {
     color:green
 }
 
+#horizontal-line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    }
+
 #mirror {
     color: black
+}
+
+/* Tablet query */
+@media (max-width: 1024px) {
+iframe {
+    width: 85%;
+    height: 500px;
+}
+}
+
+/* Phone query */
+@media (max-width: 768px) {
+iframe {
+    width: 100%;
+    height: 300px;
+}
 }
