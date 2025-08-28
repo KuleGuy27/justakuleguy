@@ -36,28 +36,24 @@
         p {color: black}
 
         /* Tablet query */
-        @media (max-width: 810px) {
+        @media (max-width: 1024px) {
         article {
             width: 80%;
         }
 
         img {
-            width: 100%;
-            float: none;
-            margin: 0 0 1rem 0;
+            width: 50%;
         }
         }
 
         /* Phone query */
         @media (max-width: 768px) {
         article {
-            width: 100%;
+            width: 90%;
         }
 
         img {
             width: 100%;
-            float: none;
-            margin: 0 0 1rem 0;
         }
         }
     </style>
@@ -69,37 +65,21 @@
     <!--Tags: Technology, Linux, Windows, Travel, Family, Gaming-->
     <main>
         <article>
-            <img src=""> 
             <a href="">
+            <img src="">
             <h2>I went to Vietnam to visit family and also went to an Internet Cafe! (example)</h2></a>
             <h3>Tags: Travel, Family, Gaming</h3>
             <p>Posted on: 12 August 2025</p>
         </article>
         <article>
-            <img src="QALC - Linux terminal math calculator/qalc linux - asmd main pc.png">
             <a href="QALC - Linux terminal math calculator/qalc linux terminal calculator.html">
+            <img src="QALC - Linux terminal math calculator/qalc linux - asmd main pc.png">
             <h2>Using QALC as my terminal calculator for Linux!</h2></a>
             <h3>Tag: Technology, Linux</h3>
             <p>Posted on: 25 August 2025</p>
         </article>
     </main>
 
-<script>
-    // Check if dark mode is saved in localStorage
-    if (localStorage.getItem('darkMode') === 'enabled') {
-      document.body.classList.add('dark-mode');
-    }
-
-    function toggleDarkMode() {
-      const isDarkMode = document.body.classList.toggle("dark-mode");
-
-      // Save the user's preference in localStorage
-      if (isDarkMode) {
-        localStorage.setItem('darkMode', 'enabled');
-      } else {
-        localStorage.setItem('darkMode', 'disabled');
-      }
-    }
-    </script>
+<script src="../darkmode.js"></script>
 </body>
 </html>

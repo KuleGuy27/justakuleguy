@@ -58,13 +58,13 @@ img {
 /* Phone query */
 @media (max-width: 768px) {
 article {
-    background: rgb(255, 255, 255);
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    width: 80%;
-    font-size: 1.1rem;
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.700);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: black;
 }
 
 
