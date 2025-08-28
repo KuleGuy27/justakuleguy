@@ -57,7 +57,9 @@ img {
 /* Tablet query */
 @media (max-width: 1024px) {
 article {
-    width: 80%;
+    width: 85%;
+    max-width: 85%;
+    margin: 20px auto;
 }
 
 img {
