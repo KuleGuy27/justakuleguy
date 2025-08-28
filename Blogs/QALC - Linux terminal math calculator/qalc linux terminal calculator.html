@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>QALC - Linux terminal math calculator</title>
         <link rel="stylesheet" href="../blog pages.css">   
+        <link rel="stylesheet" href="../image slideshow.css">
     </head>
     <body>
         <a href="../justakuleguy_blogs.html"><button>Back to blog list</button></a>
@@ -12,18 +13,85 @@
         <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <article>
         <h1>Using QALC as my terminal calculator for Linux!</h1>
-        <h3 id="date" style="display: flex; gap: 100px;">
+        <h3 id="date" style="display: flex; gap: 120px;">
         <span>Posted on: 25 August 2025</span>
-        <span>Updated on: 26 August 2025</span></h3>
+        <span>Updated on: 27 August 2025</span></h3>
         <div id="horizontal-line"></div>
         <br>
         <img src="qalc linux - asmd main pc.png">
         <h2>My first blog! Hello!</h2>
         <h3>Anyways, a lot of times on my computer, whether it's on Windows or Linux, I would use a calculator.</h3>
         <h3>On Windows I would use the built-in calculator app because it's what I'm used to, but on Linux I would use the terminal.</h3>
-        <h3>Now yes, there is a built-in calculator app for </h3>
+        <h3>Now yes, there are built-in calculator apps for most Linux distros. See below.</h3>
+
+         <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="qalc linux - GNOME Ubuntu builtin calculator.png" style="width:100%">
+            <div class="text">GNOME - Ubuntu</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="qalc linux - KDE Kubuntu builtin calculator.png" style="width:100%">
+            <div class="text">KDE - Kubuntu</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="qalc linux - Cinnamon Linux Mint builtin calculator.png" style="width:100%">
+            <div class="text">Cinnamon - Linux Mint</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="qalc linux - MATE Ubuntu Mate builtin calculator.png" style="width:100%">
+            <div class="text">MATE - Ubuntu Mate</div>
+        </div>        
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="qalc linux - LXQT Lubuntu builtin calculator.png" style="width:100%">
+            <div class="text">LXQT - Lubuntu</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="qalc linux - Budgie Ubuntu Budgie builtin calculator.png" style="width:100%">
+            <div class="text">Budgie - Ubuntu Budgie</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+        <h3>But for me, I use the terminal because it's what I'm used to, it's fast, simple, and cool to have!</h3>
+        <h3>So what do I use? I use a program called <u>qalc</u>, you can install it by using this command:</h3>
+        <p style="background-color: black; color: white; width: 18%;">$ sudo apt install qalc</p>
+        <h3>When I type "qalc" into the terminal, it gives me the > greater than arrow and when I enter in arithmetic operations like 2+2 and it gives me 4; or 100 / 5 and it gives me 20.</h3>
+        <img src="qalc linux - basic addition and division 420.png">
+        <h3>This is pretty basic and it's what I do everytime, but another command that I found is:</h3>
+        <p style="background-color: black; color: white; width: 12%;">$ qalc --help</p>
+        <img src="qalc linux - qalc help command.png">
+
         </article>
-    
-      <script src="../../darkmode.js"></script>
+      
+    <script src="../image slideshow.js"></script>
+    <script src="../../darkmode.js"></script>
     </body>
 </html>

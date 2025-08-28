@@ -19,7 +19,6 @@ article {
     margin: 40px auto;
     padding: 30px;
     background: rgba(255, 255, 255, 0.700);
-    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     color: black;
 }
@@ -43,7 +42,7 @@ img {
 }
 
 /* Tablet query */
-@media (max-width: 810px) {
+@media (max-width: 1024px) {
 article {
     width: 80%;
 }
@@ -60,9 +59,8 @@ img {
 article {
     max-width: 100%;
     margin: 40px auto;
-    padding: 30px;
+    padding: 10px;
     background: rgba(255, 255, 255, 0.700);
-    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     color: black;
 }
