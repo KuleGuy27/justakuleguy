@@ -13,9 +13,9 @@
         <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <article>
         <h1>Update! Using my HP-310 AIO computer as an easy home NAS! [Subject to change]</h1>
-        <h3 id="date" style="display: flex; gap: 120px;">
-        <span>Posted on: 29 August 2025</span>
-        <span>Updated on: 29 August 2025</span></h3>
+        <h3 id="date" style="align-items: center;">
+            Posted on: 29 August 2025<br>
+            Updated on: 30 August 2025</h3>
         <div id="horizontal-line"></div>
         <br>
         <img src="hp310 nas - main image cover.jpg" width="60%">
@@ -37,7 +37,7 @@
         </h3>
         <br>
         <h1>What did I change this time?</h1>
-        <h3>To be honest, not much really. I just changed the computer from my Toshiba Satellite L455-S5980 to my HP-310 Touchsmart AIO PC and moved the hard drives around for a backup. The NAS is now 6TB instead of 12TB. I use the 2.5 external 2TB and a 4TB drives for the NAS and I use the 6TB Expansion drive as the backup.</h3>
+        <h3>To be honest, not much really. I just changed the computer from my Toshiba Satellite L455-S5980 to my HP Touchsmart 310-1155f AIO PC and moved the hard drives around for a backup. The NAS is now 6TB instead of 12TB. I use the 2.5 external 2TB and a 4TB drives for the NAS and I use the 6TB Expansion drive as the backup.</h3>
         
         <!-- Slideshow container -->
         <div class="slideshow-container">
@@ -46,7 +46,7 @@
         <div class="mySlides">
             <div class="numbertext">1 / 5</div>
             <img src="hp310 nas - server image 2.jpg" style="width:100%">
-            <div class="text">HP310 Touchsmart AIO PC as NAS</div>
+            <div class="text">HP Touchsmart 310-1155f AIO PC as NAS</div>
         </div>
 
         <div class="mySlides">
@@ -88,11 +88,41 @@
         <span class="dot" onclick="currentSlide(5)"></span>
         </div>
 
-        <h3>As for the computer, I chose it because it has a better cpu and it has more ram. Although, the compromise is that it's bigger than my Toshiba laptop.<br>
-        Anyways, here are the specs:
-
+        <h3>As for the computer, I chose it because it has a better cpu and it has more ram. Although, the compromise is that it's bigger than my Toshiba laptop and that it takes up more space on my desk.</h3>
+        <h3>
+        As for the specs of the computer, it has a:<br>
+        - AMD Athlon II X4 610e (4) @2.4 GHz CPU<br>
+        - AMD ATI Mobility Radeon HD 4225/4250 GPU<br>
+        - 8GB DDR3 RAM
         </h3>
-
+        <img src="hp310 nas - computer specs.JPG" width="49.9%">
+        <img src="hp310 nas - hostname ctl command.JPG" width="49.9%" style="float: right;">
+        <h3>But yeah, I just changed my computer and that's about it.</h3>
+        <br>
+        <h1>What OS do I use for the NAS?</h1>
+        <h3>Same as the one in the video, I will be using <u>Ubuntu Server</u> and <u>CasaOS</u>.</h3>
+        <h3>
+            Ubuntu Server - <a href="https://ubuntu.com/download/server" target="_blank">https://ubuntu.com/download/server</a>
+            <br>
+            CasaOS - <a href="https://casaos.zimaspace.com/" target="_blank">https://casaos.zimaspace.com/</a>
+        </h3>
+        <h3>There are tons of NAS OSes out there, like: TrueNAS Core/Scale, OpenMediaVault, Proxmox, Unraid, and etc... Those are really good operating systems and I have dabbled with them in the past, but I will using Ubuntu Server and CasaOS because of familiarity and ease of use. I have been on these 2 OSes for more than 1 year and I'm pretty familiar with it. CasaOS makes it easy to use by having a GUI interface and so far, I love it!</h3>
+        <br>
+        <h1>How do you install Ubuntu Server and CasaOS?</h1>
+        <h3>For Ubuntu Server, you first go to the website and download the .ISO file.</h3>
+        <img src="hp310 nas - Get Ubuntu Server download page.png" width="60%">
+        <img src="hp310 nas - downloading Ubuntu server.png" width="60%">
+        <h3>After that, you burn it to a USB using: Rufus, Balena Etcher, Linux USB Image Writer, and etc...</h3>
+        <img src="hp310 nas - ubuntu server burn to rufus.png" width="50%">
+        <img src="hp310 nas - ubuntu server burn to image writer.png" width="50%">
+        <h3>The installation of Ubuntu Server is super easy, you press the enter key on your keyboard a lot. You can skip Ubuntu Pro, I don't really have a reason why you need it. Here is the full installation of Ubuntu Server using Virtualbox:</h3>
+        <iframe width="60%" height="360px" src="https://short.icu/6Ns0Afsbv" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <a href="https://archive.org/download/kuleguy-website-blog-videos/vokoscreenNG-2025-08-30_22-01-55_25fps.mp4" target="_blank"><h3>^ Download this video! ^</h3></a>
+        <h3>Oh by the way, make sure to uncheck the <u>LVM group</u> because it splits your drive into multiple parts!</h3>
+        <img src="hp310 nas - uncheck lvm group.png" width="60%">
+        <h3>Once the installation is finished, you will find this screen and when you restart, it will give you your ip addresses.</h3>
+        <img src="hp310 nas - ubuntu server finish screen.png" width="60%">
+        <img src="hp310 nas - ubuntu server finish screen2.jpg" width="60%">
         </article>
     
     <script src="../image slideshow.js"></script>
