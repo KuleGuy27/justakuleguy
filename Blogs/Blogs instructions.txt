@@ -1,6 +1,7 @@
 Everytime a new YT video is made:
 - Make a folder with the topic of your blog
 - make a folder in Abyss.to and upload your videos there (if necessary)
+- upload to internet archive too
 - copy, create, or download any images and videos you see fit
 - make a blog.html file
 
