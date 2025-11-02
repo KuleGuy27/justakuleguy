@@ -1,0 +1,31 @@
+/ 31 Aug 2025
+
+* Cuphead - All Run & Gun Bosses P Ranked! [Contract List Order]
+
+#
+P Rank Requirements:
+- Play a Run & Gun Level
+- Don't shoot any enemies (be a pacifist)
+- Parrying an enemy does not count as a kill :)
+
+0:00 - Forest Follies
+1:12 - Treetop Trouble
+2:35 - Funfair Fever
+3:59 - Funhouse Frazzle
+5:15 - Perilous Piers
+7:12 - Rugged Ridge
+---------------------------------------------------------------
+Game Name: Cuphead
+Game Release Date: 29 September 2017
+Game Link: https://store.steampowered.com/app/268910/Cuphead/
+Game Website: https://cupheadgame.com/
+---------------------------------------------------------------
+PC SPECS:
+Operating System: Linux Mint 22 and Windows 10 Iot Enterprise LTSC
+Computer Name: Inspiron 7700 AIO
+GPU 1: NVIDIA GeForce MX330 
+GPU 2: Intel TigerLake-LP GT2
+CPU: 11th Gen Intel i7-1165G7
+Ram: 32GB
+
+@ https://www.youtube.com/watch?v=3pABpyqpAZY
