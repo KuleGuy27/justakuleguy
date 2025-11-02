@@ -1,0 +1,9 @@
+/ 23 Feb 2024
+
+* How I do math on Linux
+
+# sudo apt install qalc
+
+Almost everyday in my math class, I bring out my laptop to login to a math website. Since I use Linux, this is how I calculate. :)
+
+@ https://www.youtube.com/watch?v=K8S7xDyjnDA

@@ -1,0 +1,20 @@
+/ 29 Feb 2024
+
+* ROBLOX Apparently Doesn't Work on Linux Anymore...
+
+# Hello guys, Happy Leap Day, the rarest day on Earth.
+
+I play ROBLOX on Linux with Grapejuice, Vinegar, or Corky, and it's almost always working. But today, the ROBLOX developers who make ROBLOX work on Linux cut of the support because of some bad actors. It doesn't make sense(cents) to me at the moment, and I hope ROBLOX on Linux will be added back.
+
+Sorry for the camera and mic quality, you don't need a powerful streaming/gaming setup to be successful, I'm just working with the gear I have atm.
+
+Links to the sites/sources I visited:
+1) https://www.youtube.com/watch?v=7MeU73Tt_GM
+2) https://www.youtube.com/watch?v=E6X3y5ymyyg
+3) https://www.youtube.com/watch?v=aCNEPQPhPrY
+4) https://www.reddit.com/r/grapejuiceroblox/comments/1ax62mq/grapejuice_and_vinegar_are_both_dead/
+5) https://www.reddit.com/r/linux_gaming/search/?q=roblox&type=link
+6) https://devforum.roblox.com/t/exploit-prevention-update/2663101/1401
+7) https://www.gamingonlinux.com/2024/02/we-can-probably-say-a-final-goodbye-to-roblox-on-linux-with-wine-soon/
+
+@ https://www.youtube.com/watch?v=W1oEqJZUntc

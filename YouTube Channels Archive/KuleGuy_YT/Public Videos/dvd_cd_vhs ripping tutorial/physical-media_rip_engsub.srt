@@ -1,0 +1,1306 @@
+1
+00:00:00,000 --> 00:00:04,208
+I have a drawer with a lot of DVDs, CDs, and VHS tapes in my room.
+
+2
+00:00:04,350 --> 00:00:07,200
+These are physical media that my dad bought years ago
+
+3
+00:00:07,200 --> 00:00:09,580
+just tucked away that we almost never use,
+
+4
+00:00:09,580 --> 00:00:15,317
+mostly because you can find reuploads online and that things can be watched via streaming nowadays.
+
+5
+00:00:15,317 --> 00:00:20,750
+Over this summer, I decided that I was gonna archive the ENTIRE collection and put it in my NAS,
+
+6
+00:00:20,750 --> 00:00:25,317
+partly because I was bored and also because physical media can rot and die away.
+
+7
+00:00:25,374 --> 00:00:30,465
+If you ever so slightly touch or scratch a DVD, or a VHS videotape,
+
+8
+00:00:30,465 --> 00:00:31,767
+it can ruin the media,
+
+9
+00:00:31,767 --> 00:00:34,807
+so it’s best to archive it in a digital format to preserve it.
+
+10
+00:00:34,907 --> 00:00:40,000
+This will take forever since I have hundreds of media, but it’s a sacrifice I’m willing to make.
+
+11
+00:00:40,150 --> 00:00:46,366
+To get started, the first thing I do is to scan or photocopy whatever I can get using my parent's printer.
+
+12
+00:00:46,434 --> 00:00:48,750
+I connect the printer to my laptop
+
+13
+00:00:48,750 --> 00:00:51,377
+and I use the ‘Document Scanner’ app on Linux
+
+14
+00:00:51,377 --> 00:00:54,018
+or the ‘Windows Scan’ app on Windows.
+
+15
+00:00:54,117 --> 00:00:59,685
+If it has a cover like this, I scan each side individually and then put it together using GIMP.
+
+16
+00:00:59,800 --> 00:01:03,367
+If it has paper, I lay it down on the machine and I scan it.
+
+17
+00:01:03,634 --> 00:01:08,340
+If it’s a disc or tape, I just put it face down on the scanner and scan it.
+
+18
+00:01:08,468 --> 00:01:12,080
+On Linux, I use the built in crop tool in ‘Document Scanner’
+
+19
+00:01:12,080 --> 00:01:15,462
+while in Windows, I use the default photo app to crop stuff.
+
+20
+00:01:15,704 --> 00:01:20,809
+You don’t have to do this if you don’t want to, I just personally do it for archiving purposes. [Also, it takes a long time]
+
+21
+00:01:20,880 --> 00:01:25,458
+So onto the actual thing, ripping DVDs to a video file format.
+
+22
+00:01:25,550 --> 00:01:29,316
+This is already pretty easy since DVDs are digital, it’s in the name.
+
+23
+00:01:29,467 --> 00:01:37,592
+What you need is a computer, a DVD drive, and a free and open source software called Handbrake (supported on all platforms).
+
+24
+00:01:37,667 --> 00:01:43,150
+The reason why I’m using Handbrake and not MakeMKV is because I personally find it a lot easier
+
+25
+00:01:43,150 --> 00:01:46,267
+and that Handbrake compresses the file while ripping it,
+
+26
+00:01:46,284 --> 00:01:51,123
+which is pretty handy since DVDs have a file size of around 5 GBs.
+
+27
+00:01:51,337 --> 00:01:55,901
+I haven’t tested this for Blu-ray discs because my laptop doesn’t support it
+
+28
+00:01:56,086 --> 00:01:59,468
+so I just used the Samsung blu-ray player in my living room
+
+29
+00:01:59,610 --> 00:02:05,117
+and a HDMI capture card to record it into OBS and I save it that way, anyway.
+
+30
+00:02:05,184 --> 00:02:08,945
+So once you installed Handbrake, put the DVD into your computer.
+
+31
+00:02:10,498 --> 00:02:11,513
+Ok so...
+
+32
+00:02:11,641 --> 00:02:13,356
+Ok it recognized it right here.
+
+33
+00:02:13,484 --> 00:02:14,459
+Let's cancel.
+
+34
+00:02:14,807 --> 00:02:18,611
+So on Handbrake, uh, click on open source, and then your DVD.
+
+35
+00:02:19,152 --> 00:02:21,366
+VIDEO_TS, then open it.
+
+36
+00:02:22,506 --> 00:02:24,246
+Now you have to wait for it to scan.
+
+37
+00:02:24,631 --> 00:02:26,546
+Ok so cool, so here's the preview.
+
+38
+00:02:26,817 --> 00:02:29,857
+You can change the preview by clicking on this, and then you can...
+
+39
+00:02:30,626 --> 00:02:31,812
+Change it...
+
+40
+00:02:32,467 --> 00:02:34,054
+Uh you can also change the title.
+
+41
+00:02:34,054 --> 00:02:37,521
+So if you don't have the right title, you can change it here.
+
+42
+00:02:37,635 --> 00:02:41,877
+Ok anyways, the first thing I'm gonna do is I'm gonna click on, uh, the presets here.
+
+43
+00:02:42,091 --> 00:02:43,413
+Then general, and then...
+
+44
+00:02:43,550 --> 00:02:45,550
+Fast 480p30
+
+45
+00:02:45,920 --> 00:02:49,772
+We don't have to change dimensions or filters, but we do have to change video.
+
+46
+00:02:49,929 --> 00:02:53,537
+So in video, um, change the framerate to same as source.
+
+47
+00:02:53,537 --> 00:02:55,467
+And then to constant framerate.
+
+48
+00:02:55,834 --> 00:02:56,973
+Then to audio.
+
+49
+00:02:56,973 --> 00:02:59,799
+Uh click on add all to add all the audios.
+
+50
+00:02:59,799 --> 00:03:01,599
+Uh you can add them all individually.
+
+51
+00:03:01,984 --> 00:03:05,000
+Then subtitles, um, add all if you want.
+
+52
+00:03:05,000 --> 00:03:07,129
+Uh you can press reload to, uh, reset it.
+
+53
+00:03:07,286 --> 00:03:10,857
+Anyways, I'm gonna save the new preset that I just made, so...
+
+54
+00:03:10,999 --> 00:03:15,204
+I'm gonna name this preset '_tutorial'.
+
+55
+00:03:15,531 --> 00:03:16,192
+Ok
+
+56
+00:03:16,306 --> 00:03:17,330
+Oh (chuckle)
+
+57
+00:03:17,487 --> 00:03:19,188
+Wait let's add them again.
+
+58
+00:03:19,857 --> 00:03:20,721
+Ok ok
+
+59
+00:03:20,992 --> 00:03:23,448
+So audio and subtitles, alright cool cool cool.
+
+60
+00:03:23,590 --> 00:03:24,664
+Chapters...
+
+61
+00:03:25,106 --> 00:03:25,917
+Tags...
+
+62
+00:03:25,917 --> 00:03:26,514
+Alright.
+
+63
+00:03:26,717 --> 00:03:28,767
+Now all we have to do is to export it so
+
+64
+00:03:28,767 --> 00:03:33,388
+So, it's gonna export to uh, videos, the default folder.
+
+65
+00:03:33,750 --> 00:03:34,354
+Right here.
+
+66
+00:03:34,624 --> 00:03:36,439
+But anyways, let's change it to um...
+
+67
+00:03:36,724 --> 00:03:41,402
+Big Hero 6 tutorial rip.
+
+68
+00:03:41,972 --> 00:03:43,374
+Ok now let's start.
+
+69
+00:03:43,744 --> 00:03:46,578
+And it should be ripping or encoding.
+
+70
+00:03:46,763 --> 00:03:50,316
+So it's gonna take like, ok like, 34 minutes I guess.
+
+71
+00:03:50,501 --> 00:03:52,685
+I'll catch you up when it's back.
+
+72
+00:03:53,981 --> 00:03:57,983
+Alright so when it's done, it should say "encode done" right here at the bottom.
+
+73
+00:03:57,983 --> 00:03:58,750
+So...
+
+74
+00:03:58,835 --> 00:04:01,576
+It saves to your video folder right here.
+
+75
+00:04:01,667 --> 00:04:02,684
+Alright here it is right here.
+
+76
+00:04:02,684 --> 00:04:04,834
+It's 1.2GB so...
+
+77
+00:04:04,834 --> 00:04:06,663
+That's way less, anyways let's open it.
+
+78
+00:04:08,301 --> 00:04:09,226
+And...
+
+79
+00:04:09,440 --> 00:04:10,528
+As you can see.
+
+80
+00:04:12,579 --> 00:04:13,734
+Yeah it works right there.
+
+81
+00:04:13,876 --> 00:04:16,903
+So at the top here let's tinker with the menu, so chapter.
+
+82
+00:04:17,031 --> 00:04:18,689
+So let's go to chapter 4.
+
+83
+00:04:19,301 --> 00:04:22,163
+There we go, let's go to chapter 7 right here.
+
+84
+00:04:22,163 --> 00:04:23,095
+There we go nice
+
+85
+00:04:23,252 --> 00:04:24,077
+On 1
+
+86
+00:04:25,160 --> 00:04:26,085
+All the way to beginning.
+
+87
+00:04:26,455 --> 00:04:27,997
+So now the audio track.
+
+88
+00:04:27,997 --> 00:04:29,470
+Um, let's do uh...
+
+89
+00:04:30,000 --> 00:04:31,447
+French, let's see.
+
+90
+00:04:31,561 --> 00:04:37,717
+[Speaking French]
+
+91
+00:04:38,130 --> 00:04:39,210
+Then Spanish.
+
+92
+00:04:39,709 --> 00:04:47,550
+[Speaking Spanish]
+
+93
+00:04:47,635 --> 00:04:48,739
+Uh, subtitles.
+
+94
+00:04:48,867 --> 00:04:55,184
+[Speaking English]
+
+95
+00:04:55,191 --> 00:04:56,747
+Ok there- it was delayed.
+
+96
+00:04:56,747 --> 00:05:06,581
+[Speaking English]
+
+97
+00:05:06,709 --> 00:05:08,835
+So nice, everything works, um...
+
+98
+00:05:09,020 --> 00:05:10,513
+Let's go to codec, so...
+
+99
+00:05:10,812 --> 00:05:13,039
+Oh so it's 360p alright (x2).
+
+100
+00:05:13,167 --> 00:05:13,985
+Close enough
+
+101
+00:05:14,070 --> 00:05:15,742
+ 24fps alright
+
+102
+00:05:16,027 --> 00:05:17,317
+Ok so cool, we have everything.
+
+103
+00:05:17,317 --> 00:05:18,562
+We have the chapters.
+
+104
+00:05:18,562 --> 00:05:20,904
+We have audio, the audio tracks.
+
+105
+00:05:21,061 --> 00:05:22,267
+The subtitles.
+
+106
+00:05:22,666 --> 00:05:24,296
+Yeah we pretty much have everything.
+
+107
+00:05:24,717 --> 00:05:28,108
+But yeah, that's how you rip your DVDs to your computer.
+
+108
+00:05:29,550 --> 00:05:32,812
+Next is ripping CDs to an audio file format.
+
+109
+00:05:33,054 --> 00:05:35,439
+Saying that makes me sound like a nerd bruh.
+
+110
+00:05:35,600 --> 00:05:42,956
+Again, you need a computer, a CD drive, Asunder CD Ripper for Linux and Windows Media Player for Windows.
+
+111
+00:05:42,956 --> 00:05:44,034
+Let’s get into it.
+
+112
+00:05:44,176 --> 00:05:48,473
+So once that we have Asunder CD Ripper installed on your computer.
+
+113
+00:05:48,601 --> 00:05:50,473
+Insert the CD into your computer.
+
+114
+00:05:51,271 --> 00:05:53,005
+So it detected it, that's pretty nice.
+
+115
+00:05:53,005 --> 00:05:53,595
+And...
+
+116
+00:05:53,595 --> 00:05:55,695
+Make sure it's all the correct metadata, so nice...
+
+117
+00:05:55,695 --> 00:05:56,975
+This is Mozart, and then...
+
+118
+00:05:57,431 --> 00:05:57,945
+Bach.
+
+119
+00:05:58,429 --> 00:05:59,346
+Beethoven.
+
+120
+00:05:59,631 --> 00:06:00,175
+Chopin.
+
+121
+00:06:00,175 --> 00:06:01,149
+Yeah ok, this is.
+
+122
+00:06:01,234 --> 00:06:02,394
+This is correct, ok.
+
+123
+00:06:02,479 --> 00:06:05,291
+So I don't really have to do anything here, it's already pretty good, but um...
+
+124
+00:06:05,291 --> 00:06:07,476
+I'm gonna go to uh, preferences here.
+
+125
+00:06:07,647 --> 00:06:08,800
+In general, uh...
+
+126
+00:06:08,800 --> 00:06:11,569
+Uncheck 'create M3U playlist'.
+
+127
+00:06:11,569 --> 00:06:16,062
+So uncheck it because it makes an extra file that you don't really need.
+
+128
+00:06:16,062 --> 00:06:17,167
+It's just a playlist.
+
+129
+00:06:17,238 --> 00:06:17,928
+Um...
+
+130
+00:06:18,070 --> 00:06:19,845
+Filenames, you don't really need anything.
+
+131
+00:06:20,215 --> 00:06:21,498
+Encode, now...
+
+132
+00:06:21,667 --> 00:06:23,325
+On default, it's OGG.
+
+133
+00:06:23,350 --> 00:06:25,937
+But, I'm just gonna click on MP3.
+
+134
+00:06:26,117 --> 00:06:29,395
+If there's an error on MP3, just um, go into your terminal.
+
+135
+00:06:29,495 --> 00:06:33,626
+'Sudo apt install lame', with an L.
+
+136
+00:06:34,110 --> 00:06:35,127
+So install that.
+
+137
+00:06:39,543 --> 00:06:40,945
+There we go, it should work.
+
+138
+00:06:41,999 --> 00:06:43,217
+Now change it to.
+
+139
+00:06:43,758 --> 00:06:46,330
+190, like, kbps (kilobits per second).
+
+140
+00:06:46,444 --> 00:06:47,436
+So yeah there we go.
+
+141
+00:06:47,692 --> 00:06:49,777
+Um yeah, that's it, just...
+
+142
+00:06:50,000 --> 00:06:52,513
+Uncheck this, and then check this.
+
+143
+00:06:52,769 --> 00:06:56,791
+Oh yeah, you can also change the destination folder, but I'm just gonna leave it on music.
+
+144
+00:06:56,791 --> 00:06:57,438
+But yeah...
+
+145
+00:06:57,680 --> 00:06:58,612
+Now rip it.
+
+146
+00:07:01,973 --> 00:07:06,165
+Okay so once it's done, it should say all files are created successfully.
+
+147
+00:07:06,322 --> 00:07:07,110
+Now close that.
+
+148
+00:07:07,267 --> 00:07:09,184
+So it should appear in your music folder.
+
+149
+00:07:09,383 --> 00:07:11,639
+So Various - 21 Greatest Classics.
+
+150
+00:07:11,639 --> 00:07:12,893
+Let's click on it, so...
+
+151
+00:07:12,979 --> 00:07:14,750
+Here is all the 21 songs.
+
+152
+00:07:14,850 --> 00:07:16,975
+Let's click on Chopin I guess.
+
+153
+00:07:17,445 --> 00:07:24,799
+[Beautiful Chopin music]
+
+154
+00:07:25,298 --> 00:07:26,389
+Ok so nice.
+
+155
+00:07:26,389 --> 00:07:28,047
+So it has the meta data, it's...
+
+156
+00:07:28,204 --> 00:07:30,076
+Ok so there's the title, there's the artist
+
+157
+00:07:30,076 --> 00:07:31,630
+I don't know what's 'Various', but...
+
+158
+00:07:31,730 --> 00:07:34,397
+it has the album, the year, the track.
+
+159
+00:07:34,687 --> 00:07:35,187
+Yeah.
+
+160
+00:07:35,785 --> 00:07:41,098
+[Music to my ears 🎵]
+
+161
+00:07:41,169 --> 00:07:41,965
+Yeah nice.
+
+162
+00:07:42,150 --> 00:07:47,353
+[Music]
+
+163
+00:07:47,353 --> 00:07:48,522
+Yeah (x3) nice.
+
+164
+00:07:48,721 --> 00:07:53,802
+So that's how you rip, um, your CDs files onto your computer, your Linux machine.
+
+165
+00:07:54,201 --> 00:07:55,984
+And yeah there you go, it's pretty easy.
+
+166
+00:07:55,984 --> 00:07:57,925
+But let's check on Windows.
+
+167
+00:07:58,238 --> 00:08:02,299
+Ok so now that I have my Windows Media Player on and my, uh, CD inserted.
+
+168
+00:08:02,384 --> 00:08:03,436
+It has all the correct-  (metadata here, so...)
+The video file was corrupted :(
+It works in the video editor but not in the video player or render, sorry.
+
+169
+00:08:03,436 --> 00:08:04,439
+Mozart.
+
+170
+00:08:04,539 --> 00:08:05,186
+Bach.
+
+171
+00:08:05,186 --> 00:08:06,645
+Bee- Beethoven.
+
+172
+00:08:06,760 --> 00:08:07,863
+Uh I can't pronounce it.
+
+173
+00:08:07,867 --> 00:08:08,667
+Chopin.
+
+174
+00:08:08,771 --> 00:08:09,503
+Alright nice.
+
+175
+00:08:09,631 --> 00:08:11,531
+So now it's time to rip it so anyways.
+
+176
+00:08:11,616 --> 00:08:16,070
+So rip settings, to change stuff to make your life easier while ripping it, so um...
+
+177
+00:08:16,070 --> 00:08:18,269
+Format... I'll format it to MP3
+
+178
+00:08:18,326 --> 00:08:22,107
+Then the audio quality to, uh, 192 kbps (kilobits per second).
+
+179
+00:08:22,178 --> 00:08:24,178
+Now you can go to more options.
+
+180
+00:08:24,306 --> 00:08:26,527
+So here, you can change the location of it.
+
+181
+00:08:26,598 --> 00:08:27,315
+Uh...
+
+182
+00:08:27,387 --> 00:08:29,357
+Oh this is the same settings, alright.
+
+183
+00:08:29,485 --> 00:08:31,318
+So you don't really need to change anything here.
+
+184
+00:08:31,375 --> 00:08:32,122
+It's all good.
+
+185
+00:08:32,222 --> 00:08:33,268
+So uh yeah.
+
+186
+00:08:33,381 --> 00:08:36,591
+Now time to rip it, so let's press on 'Rip CD'.
+
+187
+00:08:37,517 --> 00:08:39,183
+And yeah there you go, it's ripping.
+
+188
+00:08:40,000 --> 00:08:41,078
+Ok so, it's all done.
+
+189
+00:08:41,078 --> 00:08:43,890
+It should be saying 'Ripped to library'.
+
+190
+00:08:43,890 --> 00:08:45,401
+So if I go open my music folder.
+
+191
+00:08:45,401 --> 00:08:47,786
+I can see it has, again, the folder.
+
+192
+00:08:48,683 --> 00:08:50,993
+And then, ugh, the folder inside it
+
+193
+00:08:51,592 --> 00:08:52,509
+Okay there we go.
+
+194
+00:08:52,808 --> 00:08:57,727
+Okay so I closed the media player, let's click on like, open with VLC I guess, Mozart.
+
+195
+00:09:03,481 --> 00:09:04,983
+Ok so yeah, that's pretty nice.
+
+196
+00:09:05,112 --> 00:09:05,937
+Chopin.
+
+197
+00:09:09,426 --> 00:09:11,781
+Ok nice, just how, uh, I remember it.
+
+198
+00:09:11,917 --> 00:09:12,853
+Mozart again.
+
+199
+00:09:18,117 --> 00:09:18,792
+Ok.
+
+200
+00:09:19,246 --> 00:09:24,337
+So yeah, that's how you rip, uh, your CD files to your computer using Windows Media Player on Windows.
+
+201
+00:09:24,693 --> 00:09:28,317
+Finally, converting VHS tapes to a digital format.
+
+202
+00:09:28,400 --> 00:09:33,235
+Thanks to ‘The Oldskool PC’ on YouTube, I learned that you need a capture card to do this.
+
+203
+00:09:33,350 --> 00:09:37,145
+I got mine for 40 bucks on Amazon which is quite expensive,
+
+204
+00:09:37,145 --> 00:09:41,994
+but I got this one because I wanted to capture the VHS to 60FPS video.
+
+205
+00:09:42,150 --> 00:09:43,181
+So you pretty much need
+
+206
+00:09:43,181 --> 00:09:47,118
+a computer, a VHS capture card, a VCR player,
+
+207
+00:09:47,118 --> 00:09:51,239
+and OBS studio running on Windows because it didn’t work for me on Linux,
+
+208
+00:09:51,239 --> 00:09:52,115
+I wish it did.
+
+209
+00:09:52,234 --> 00:09:56,417
+You know how a VCR player connects to a TV via a RCA connector,
+
+210
+00:09:56,417 --> 00:10:00,370
+and when you put in your VHS tape, it plays the tape onto your TV?
+
+211
+00:10:00,541 --> 00:10:04,092
+Well, what if you can connect the VCR player to your computer!
+
+212
+00:10:04,400 --> 00:10:06,258
+Using the adapter I just talked about,
+
+213
+00:10:06,258 --> 00:10:08,927
+connect the RCA cable to the capture card,
+
+214
+00:10:08,927 --> 00:10:12,151
+and plug in the USB side to your Windows machine.
+
+215
+00:10:12,267 --> 00:10:15,550
+Now go to the link or website I put in the description
+
+216
+00:10:15,550 --> 00:10:18,514
+and download the driver for the capture card from there.
+
+217
+00:10:18,600 --> 00:10:19,888
+Now that we have things set up,
+
+218
+00:10:19,888 --> 00:10:24,550
+we can use OBS Studio to record the VHS tape onto the computer.
+
+219
+00:10:24,550 --> 00:10:28,315
+This will take a long time since we’re not ripping but recording,
+
+220
+00:10:28,315 --> 00:10:32,792
+and it will take longer if your VHS tape is like 6 hours or something.
+
+221
+00:10:33,021 --> 00:10:36,379
+Ok so I'm on my Windows 10 main computer right here.
+
+222
+00:10:36,507 --> 00:10:38,450
+So I'm assuming you guys have everything set up .
+
+223
+00:10:38,550 --> 00:10:41,515
+You guys have your capture card connected to your computer.
+
+224
+00:10:41,657 --> 00:10:43,145
+And you have the driver downloaded.
+
+225
+00:10:43,273 --> 00:10:46,255
+Um you can use any capture card that you guys, uh, want.
+
+226
+00:10:46,350 --> 00:10:51,400
+I'm not sure if this would apply to everybody because not everybody has 40$ to spend, but anyways.
+
+227
+00:10:51,656 --> 00:10:56,033
+So we have the hardware, so now let's open up the OBS Studio software.
+
+228
+00:10:57,926 --> 00:11:03,271
+OBS studio is like the default industry standard application for recording and streaming stuff.
+
+229
+00:11:03,328 --> 00:11:05,897
+So I'm pretty sure you guys have heard of this software before.
+
+230
+00:11:05,968 --> 00:11:07,541
+You guys already know how it works.
+
+231
+00:11:07,541 --> 00:11:09,000
+Anyways, enough yapping.
+
+232
+00:11:09,117 --> 00:11:11,800
+Following 'The Oldskool PC's tutorial.
+
+233
+00:11:11,871 --> 00:11:13,917
+What he did was he added a new profile.
+
+234
+00:11:13,917 --> 00:11:15,556
+So, profile -> new.
+
+235
+00:11:16,453 --> 00:11:18,510
+VHS Capture
+
+236
+00:11:20,574 --> 00:11:23,750
+Uh, optimize for recording, next (x2), apply,
+
+237
+00:11:23,992 --> 00:11:25,465
+Then he added a new scene.
+
+238
+00:11:25,465 --> 00:11:26,924
+So, scene collection -> new.
+
+239
+00:11:27,280 --> 00:11:29,280
+VHS Capture
+
+240
+00:11:29,650 --> 00:11:30,370
+Ok
+
+241
+00:11:30,712 --> 00:11:33,550
+This makes it so that you can switch between your, uh, stuff.
+
+242
+00:11:33,707 --> 00:11:35,075
+Yeah it's pretty handy, wait.
+
+243
+00:11:35,929 --> 00:11:37,046
+Yeah there we go.
+
+244
+00:11:37,431 --> 00:11:38,776
+So now let's add a new dock.
+
+245
+00:11:38,776 --> 00:11:41,160
+So, docks -> stats.
+
+246
+00:11:41,886 --> 00:11:43,886
+I already set it up right here, but yeah.
+
+247
+00:11:44,341 --> 00:11:47,332
+So this is that you can view your stats, I guess yeah.
+
+248
+00:11:47,474 --> 00:11:49,631
+Anyways let's go down here to the settings.
+
+249
+00:11:50,656 --> 00:11:52,442
+This is the real kicker here, um...
+
+250
+00:11:52,570 --> 00:11:53,730
+So go to output.
+
+251
+00:11:53,830 --> 00:11:56,471
+Now change this output mode to advanced.
+
+252
+00:11:56,670 --> 00:11:57,873
+And then recording.
+
+253
+00:11:58,044 --> 00:12:02,136
+Now we're going to change the recording format to .mp4.
+
+254
+00:12:02,250 --> 00:12:05,963
+And then the video encoder to x264.
+
+255
+00:12:06,162 --> 00:12:08,603
+The reason why is so that I can go here to the bottom.
+
+256
+00:12:08,845 --> 00:12:11,742
+Change the rate control to CRF.
+
+257
+00:12:11,842 --> 00:12:14,070
+Then change it to, um, 18.
+
+258
+00:12:14,155 --> 00:12:17,920
+ This is so that the file size doesn't become big I guess.
+
+259
+00:12:18,034 --> 00:12:19,507
+Now go over here to audio.
+
+260
+00:12:19,507 --> 00:12:23,401
+And then set the default audio to the capture card device.
+
+261
+00:12:23,629 --> 00:12:25,000
+Now go to a video.
+
+262
+00:12:25,071 --> 00:12:27,071
+Then change the resolution, so...
+
+263
+00:12:27,256 --> 00:12:33,561
+VHS tapes or video are typically in the 4:3 aspect ratio, so let's change it, so...
+
+264
+00:12:33,632 --> 00:12:37,411
+1440 by 1080 if you want 1080P.
+
+265
+00:12:37,539 --> 00:12:39,055
+Then add if for both fields.
+
+266
+00:12:39,112 --> 00:12:43,261
+Or 960 by 720 for 720P.
+
+267
+00:12:43,446 --> 00:12:45,000
+Add if for both fields there we go.
+
+268
+00:12:45,000 --> 00:12:48,822
+Now change the FPS to 59.94.
+
+269
+00:12:48,936 --> 00:12:50,722
+And we should be all good to go.
+
+270
+00:12:50,950 --> 00:12:51,550
+Ok
+
+271
+00:12:51,650 --> 00:12:53,550
+So now let's add in our video, so...
+
+272
+00:12:53,621 --> 00:12:54,938
+At the sources right here,
+
+273
+00:12:54,938 --> 00:12:58,774
+let's click the plus sign, then add our video capture device.
+
+274
+00:12:59,130 --> 00:12:59,635
+Ok
+
+275
+00:13:00,071 --> 00:13:01,672
+Now add in our device.
+
+276
+00:13:01,857 --> 00:13:02,774
+And yeah, there we go.
+
+277
+00:13:03,130 --> 00:13:07,135
+To make the size larger, you can press Ctrl+F for fullscreen.
+
+278
+00:13:07,206 --> 00:13:09,140
+So yeah, there we go, it's fullscreened.
+
+279
+00:13:09,396 --> 00:13:11,752
+Ok so I rewinded the tape, but it doesn't really matter.
+
+280
+00:13:12,037 --> 00:13:14,037
+Um the video looks a bit bright.
+
+281
+00:13:14,037 --> 00:13:15,476
+I'm (x2) not sure why.
+
+282
+00:13:15,604 --> 00:13:18,599
+I think it's just something with the capture card I have, but anyways.
+
+283
+00:13:18,599 --> 00:13:21,549
+If (x2) it's so bright, you can just change it in the settings, so...
+
+284
+00:13:21,834 --> 00:13:25,835
+Click your capture card and go to the properties, then you can configure the video.
+
+285
+00:13:26,589 --> 00:13:27,317
+Uh...
+
+286
+00:13:27,317 --> 00:13:29,317
+Yeah ok, I can change the brightness here.
+
+287
+00:13:29,588 --> 00:13:30,507
+Yeah, woah.
+
+288
+00:13:31,518 --> 00:13:32,790
+Woah, alright (x2).
+
+289
+00:13:33,687 --> 00:13:37,407
+I'm not sure which capture card you guys have, but you can configure it if necessary.
+
+290
+00:13:37,621 --> 00:13:40,139
+Ok anyways it looks about right, so...
+
+291
+00:13:40,723 --> 00:13:44,000
+Anyways, now that you have configured your video you can start recording, but...
+
+292
+00:13:44,057 --> 00:13:45,488
+If your capture card supports it,
+
+293
+00:13:45,484 --> 00:13:48,925
+you can turn this video from 30 fps to 60 FPS,
+
+294
+00:13:48,925 --> 00:13:51,864
+by right clicking on the video capture device.
+
+295
+00:13:51,964 --> 00:13:55,757
+Deinterlacing, and then Yadif 2x, this is like, the best option.
+
+296
+00:13:58,234 --> 00:14:00,234
+Oh yeah, there we go, 60 FPS.
+
+297
+00:14:00,750 --> 00:14:05,511
+Then right click again, scale filtering and then Lanczos, I guess.
+
+298
+00:14:05,653 --> 00:14:06,671
+Better quality.
+
+299
+00:14:07,753 --> 00:14:10,983
+So now that I have everything set up, I can start recording it, so...
+
+300
+00:14:11,125 --> 00:14:12,726
+Let's start yeah, there we go...
+
+301
+00:14:14,761 --> 00:14:16,238
+Ok so, let's stop now.
+
+302
+00:14:16,580 --> 00:14:19,750
+OBS saves your videos to the video, uh, folder, so...
+
+303
+00:14:19,864 --> 00:14:22,273
+Here's my video, let's check to see if it works.
+
+304
+00:14:23,042 --> 00:14:27,285
+...cười, cho kiếp người tình thương đắm đuối 🎵.
+...smile, give a lifetime of passionate love 🎵. (google translate)
+
+305
+00:14:27,285 --> 00:14:31,135
+Ánh xuân đem vui với đời. 🎵 
+Spring light brings joy to life.  🎵 (google translate)
+
+306
+00:14:31,192 --> 00:14:33,600
+The sound works, so yeah, it's a success!
+
+307
+00:14:33,685 --> 00:14:35,657
+Now sometimes you can see that it drops frames.
+
+308
+00:14:35,714 --> 00:14:37,073
+Like, some parts.
+
+309
+00:14:37,073 --> 00:14:40,254
+But when going back to recording it's pretty smooth, I don't know why.
+
+310
+00:14:40,254 --> 00:14:42,624
+Lo- ư ư look, it dropped frames, for some reason.
+
+311
+00:14:43,065 --> 00:14:45,000
+Or sometimes if the video doesn't look good,
+
+312
+00:14:45,000 --> 00:14:46,850
+you can just, um, change the cha-.
+
+313
+00:14:46,850 --> 00:14:48,245
+I just change the channel.
+
+314
+00:14:48,772 --> 00:14:50,819
+Press the button on my VCR player
+
+315
+00:14:51,516 --> 00:14:53,957
+I'm not sure which VCR player you guys have, but yeah...
+
+316
+00:14:54,384 --> 00:14:59,484
+...đã đến rồi, gieo rắc ngàn hồn hoa xuống đời. 🎵
+...has arrived, spreading thousands of flower souls into the world.  🎵 (gg translate)
+
+317
+00:14:59,484 --> 00:15:04,857
+Vui trong bình minh, muôn loài chim hót vang mọi nơi. 🎵
+Happy in the dawn, all kinds of birds sing everywhere.  🎵 (gg translate)
+
+318
+00:15:04,928 --> 00:15:09,376
+But yeah, that’s how I archive/preserve/rip my physical media.
+
+319
+00:15:09,447 --> 00:15:12,153
+This is gonna take me quite a while to archive everything
+
+320
+00:15:12,153 --> 00:15:14,153
+since I have hundreds of the stuff,
+
+321
+00:15:14,224 --> 00:15:15,749
+but it’s worth it to be honest.
+
+322
+00:15:15,877 --> 00:15:16,980
+But with that being said,
+
+323
+00:15:16,980 --> 00:15:18,234
+my name is Luke,
+
+324
+00:15:18,234 --> 00:15:19,892
+save your physical media,
+
+325
+00:15:19,892 --> 00:15:22,149
+and I’ll see you guys next time, bye.
+

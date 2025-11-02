@@ -1,0 +1,31 @@
+/ 27 May 2024
+
+* Turning my 2009 Laptop into an easy home NAS! (Ubuntu Server + CasaOS)
+
+# I've been thinking of storage ever since I got a notification on an iPhone 4 saying I need to buy more storage on iCloud. Thanks to the internet, I learned something called a NAS (Network Attached Storage), it's like Google Drive or some other cloud service but YOU get control of your data and not some company. In this video, I made my own NAS instead of buying a prebuilt one on Amazon because of money. Here's my journey to my first home nas and obviously, I'm not an expert, so leave your comments down below if I mess up something.
+
+Tech Hut NAS Tutorial - https://www.youtube.com/watch?v=_qNWpdFqLIU
+BigBearTechWorld Tailscale Tutorial - https://www.youtube.com/watch?v=BvVkM-EkmXM
+Ubuntu Server -  https://ubuntu.com/download/server
+CasaOS - https://casaos.io/
+Tailscale - https://tailscale.com/
+
+0:00 - Intro
+1:06 - What is a NAS?
+1:41 - What I will be using
+2:48 - Where I put my NAS
+3:05 - Ethernet cable story
+3:29 - What OS I will be using
+3:46 - Ubuntu Server + Casa OS Installation
+4:57 - Casa OS Configuration
+5:36 - Speed of the NAS
+5:55 - Connecting my NAS to my devices
+6:11 - Using Tailscale for remote access
+7:02 - Outro
+
+Music in the background:
+Hardware Haven Theme Music - https://www.youtube.com/watch?v=FwD2mOYDPNA
+Aesthetic by Tollan Kim - https://www.youtube.com/watch?v=qELmC7r0RKg
+Imagine by LuKremBo - https://www.youtube.com/watch?v=O7yALYb04Ts
+
+@ https://www.youtube.com/watch?v=rAc3kWZ_td0

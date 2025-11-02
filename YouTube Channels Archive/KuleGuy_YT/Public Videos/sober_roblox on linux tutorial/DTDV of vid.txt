@@ -1,0 +1,14 @@
+/ 10 Aug 2024
+
+* Playing ROBLOX on Linux (Mint) with Sober!
+
+# I can't believe it, you can play ROBLOX on Linux again, albiet, this is experimental software. Ever since ROBLOX was blocked on Linux using Wine, the devs at Vinegarhq made an app that uses the roblox APK file and play it that way, basically Waydroid lol.
+
+The Reddit post I found - https://www.reddit.com/r/linuxmint/comments/1ejcgd6/sober_a_new_method_of_playing_roblox_on_mint/
+Flatpak setup - https://flatpak.org/setup/
+Sober - https://sober.vinegarhq.org/
+The APK files - https://drive.google.com/drive/folders/1-AfefJ4bsDnDymzRHYWA56RofWIQwGMc
+
+Life is ROBLOX -DJ Khalid
+
+@ https://www.youtube.com/watch?v=MPqS7yJ7TLE
