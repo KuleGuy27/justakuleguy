@@ -1,0 +1,9 @@
+/ 7 Feb 2024
+
+* How I theme KDE to look like Windows 11
+
+# KDE Plasma is the best desktop enviroment for customization imo.
+
+This is my first rice I made on r/unixporn, you can check it out here: https://www.reddit.com/r/unixporn/comments/1ajzq5p/windows_xp_and_11_look_alike_on_linux_mint_and/?utm_source=share&utm_medium=web2x&context=3
+
+@ https://www.youtube.com/watch?v=D9GngswfavE
