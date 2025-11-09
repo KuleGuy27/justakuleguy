@@ -1,6 +1,6 @@
 Everytime I make a new post on YouTube:
 - download the image(s) and put it in the folder
-- copy and past the previous post
+- copy and paste the previous post
 - get the date and time (1 January 2025) and add it in the html
 - get the link of the post and link it on the date
 - text of the post and links (a href if possible) and add in the html
