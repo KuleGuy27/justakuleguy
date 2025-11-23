@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YT Shorts - KuleGuy</title>
+        <link rel="stylesheet" href="../../../universal darkmode.css">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        img {
+            width: 12%; 
+            float: left; 
+            margin-right: 20px;
+        }
+        /* Horizontal scrolling row */
+        .shorts-row {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px 0;
+            white-space: nowrap; /* Prevent wrapping */
+        }
+        /* Each short (image + text) */
+        .short {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            text-align: center;
+        }
+        .short img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .short h3 {
+            margin-top: 10px;
+            font-size: 16px;
+            white-space: normal; /* Allow text to wrap */
+        }
+
+        /* Tablet query */
+        @media (max-width: 1024px) {
+        img {
+            width: 23%;
+        }
+        }
+        /* Phone query */
+        @media (max-width: 768px) {
+        img {
+            width: 100%;
+        }
+        }        
+    </style>    
+    </head>
+    <body>
+    <h1>KuleGuy YT Shorts Archive</h1>
+    <a href="../kuleguy yt channel.html"><button>Back to channel</button></a>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button onclick="toggleOrder()">Toggle Newest/Oldest</button>
+
+    <!-- Short container -->
+    <div id="shorts-container" class="shorts-row">
+
+        <!-- Short #3 -->
+        <div class="short">
+            <a href="Shock my dog paw like button/shock my dog like button animation.html">
+                <img src="Shock my dog paw like button/rzzRNa_ckI4-HD.jpg">
+                <h3>Like button turns into a paw animation lol<br>18 November 2025</h3>
+            </a>
+        </div>
+
+        <!-- Short #2 -->
+        <div class="short">
+            <a href="I made a website!/I made a website!!!!.html">
+                <img src="I made a website!/Ff4amEfrq28-HD.jpg">
+                <h3>I made a website! (A few months ago in August)<br>17 November 2025</h3>
+            </a>
+        </div>
+
+        <!-- Short #1 -->
+        <div class="short">
+            <a href="CNET article typo lol/cnet article typo lol.html">
+                <img src="CNET article typo lol/RhiR_vt900w-HD.jpg">
+                <h3>CNET needs to fix this lol.<br>17 November 2025</h3>
+            </a>
+        </div>
+
+    </div>
+
+    <script src="../../../universal darkmode.js"></script>
+    <script>
+    // ---- Toggle ordering ---- //
+    let newestFirst = true;
+
+    function toggleOrder() {
+        const container = document.getElementById("shorts-container");
+        const items = Array.from(container.children);
+
+        // Reverse ordering
+        items.reverse().forEach(item => container.appendChild(item));
+
+        newestFirst = !newestFirst;
+    }
+    </script>
+    </body>
+</html>
