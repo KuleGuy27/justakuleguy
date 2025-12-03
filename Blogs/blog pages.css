@@ -3,11 +3,6 @@ body {
     color: #000000;
 }
 
-.dark-mode {
-    background-color: #a6a6a6;
-    color: #ffffff;
-}
-
 button {
     display: block;
     margin-left: auto; 
