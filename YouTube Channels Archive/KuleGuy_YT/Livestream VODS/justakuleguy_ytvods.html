@@ -16,56 +16,157 @@
             margin-right: 20px;
         }
 
+        #pfp {
+        width: 150px;
+        float: left;
+        margin-right: 20px;
+        }
+
+        /* --- Full-Width Stretch Tabs With Separators --- */
+        .tab-bar {
+            display: flex;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .tab-bar a {
+            flex: 1;
+            text-align: center;
+            padding: 14px 0;
+            text-decoration: none;
+            background: #d40000;   /* Red background */
+            color: white;          /* White text */
+            font-size: 1rem;
+            font-weight: 600;
+            transition: 0.2s;
+            border-right: 2px solid #ffffff55; /* Light separator */
+        }
+
+        /* Remove the last separator */
+        .tab-bar a:last-child {
+            border-right: none;
+        }
+
+        .tab-bar a:hover {
+            background: #b30000;
+        }
+
         /* Tablet query */
         @media (max-width: 1024px) {
-        img {
-            width: 23%;
+        img {width: 23%;}
+        .tab-bar a {
+            font-size: 0.9rem;
+            padding: 12px 0;
         }
         }
 
         /* Phone query */
         @media (max-width: 768px) {
-        img {
-            width: 100%;
+        img {width: 100%;}
+        .tab-bar a {
+            font-size: 0.8rem;
+            padding: 10px 0;
         }
-        }
+        }        
     </style>    
     </head>
     <body>
-        <h1>KuleGuy Livestream VODs Archive</h1>
-        <a href="../kuleguy yt channel.html"><button>Back to channel</button></a>
+        <img id="pfp" src="../[007698] 1x1.png">
+        <h1>KuleGuy</h1>
+        <h3>Created: 1 January 2024<br>Hey, I'm Luke! I post whatever I want and find interesting. I don't have an upload schedule. Live Laugh Luke.</h3>
+        <a href="../../youtube channels archive.html"><button>Back to channels</button></a>
         <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-                <br></br>
+
+        <div class="tab-bar">
+        <a href="../Public Videos/justakuleguy_ytvids.html">Public Videos</a>
+        <a href="../Unlisted Videos/justakuleguy_unlistedvids.html">Unlisted Videos</a>
+        <a href="">Livestream VODs</a>
+        <a href="../Shorts/justakuleguy_shorts.html">Shorts</a>
+        <a href="../Posts/justakuleguy_posts.html">Posts</a>
+        </div>
+        
+        <button id="sortToggle" style="margin: 10px 0; padding: 5px; font-weight: 600;">Sort: Oldest → Newest</button>
+
+        <!-- Video container -->
+        <div id="videos-container" class="videos-row">
+
+        <!-- Video #15 -->
+        <div class="video">
         <a href="Little Nightmares 3 Stream_2/little nightmares 3 stream part2.html"><img src="Little Nightmares 3 Stream_2/little nightmares 3 playthough stream_thumbnail.jpg"><h3>Finishing Little Nightmares #3!!!</br><br>19 November 2025</h3></a>
-        <br></br>
+        <br></div>
+        
+        <!-- Video #14 -->
+        <div class="video">
         <a href="Little Nightmares 3 Stream_1/little nightmares 3 stream part1.html"><img src="Little Nightmares 3 Stream_1/little nightmares 3 playthough stream_thumbnail.jpg"><h3>First time playing Little Nightmares #3!!!</br><br>18 November 2025</h3></a>
-        <br></br>
+        <br></div>
+
+        <!-- Video #13 -->
+        <div class="video">
         <a href="ROBLOX War of the Worlds Overhaul Update_Stream 2!!!/roblox war of the worlds overhaul update stream 2.html"><img src="ROBLOX War of the Worlds Overhaul Update_Stream 2!!!/FYJh17efboA-HD.jpg"><h3>ROBLOX War of the Worlds Overhaul Update // Stream #2!!!</br><br>26 August 2025</h3></a>
-        <br></br>
+        <br></div>
+
+        <!-- Video #12 -->
+        <div class="video">
         <a href="ROBLOX War of the Worlds Overhaul Update!!!/roblox war of the worlds overhaul update stream.html"><img src="ROBLOX War of the Worlds Overhaul Update!!!/cuo47Cy4lZ8-HD.jpg"><h3>ROBLOX War of the Worlds Overhaul Update!!!</br><br>22 August 2025</h3></a>
-        <br></br>
+        <br></div>
+
+        <!-- Video #11 -->
+        <div class="video">
         <a href="LEAGUE OF LEGENDS STREAM_2/lol game stream 2.html"><img src="LEAGUE OF LEGENDS STREAM_2/rONUtQYw8xA-HD.jpg"><h3>LEAGUE OF LEGENDS STREAM_2</br><br>9 July 2025</h3></a>
-        <br></br>
+        <br></div>
+
+        <!-- Video #10 -->
+        <div class="video">
         <a href="LEAGUE OF LEGENDS STREAM_1/lol game stream 1.html"><img src="LEAGUE OF LEGENDS STREAM_1/RlPOl_0X7zc-HD.jpg"><h3>LEAGUE OF LEGENDS STREAM_1</br><br>9 July 2025</h3></a>
-        <br></br>
+        <br></div>
+
+        <!-- Video #9 -->
+        <div class="video">
         <a href="FIRST TIME PLAYING GENSHIN IMPACT/1st time playing GENSHIN impact.html"><img src="FIRST TIME PLAYING GENSHIN IMPACT/5lhKBvWqRAI-HD.jpg"><h3>FIRST TIME PLAYING GENSHIN IMPACT</br><br>8 July 2025</h3></a>
-        <br></br>
+        <br></div>
+
+        <!-- Video #8 -->
+        <div class="video">
         <a href="ROBLOX war of the worlds stream but the quality is a bit better/ROBLOX war of the worlds better quality stream.html"><img src="ROBLOX war of the worlds stream but the quality is a bit better/cqKz_QlYmUA-HD.jpg"><h3>ROBLOX war of the worlds stream but the quality is a bit better</br><br>1 July 2025</h3></a>
-        <br></br>
+        <br></div>
+
+        <!-- Video #7 -->
+        <div class="video">
         <a href="trying to become a tripod in ROBLOX War of the Worlds/trying to become a tripod in ROBLOX War of the Worlds.html"><img src="trying to become a tripod in ROBLOX War of the Worlds/gszCyEl7a4Y-HD.jpg"><h3>trying to become a tripod in ROBLOX War of the Worlds</br><br>30 June 2025</h3></a>
-        <br></br>
+        <br></div>
+
+        <!-- Video #6 -->
+        <div class="video">
         <a href="cool pixelated bird hiking game (independence day stream)/cool pixelated bird hiking game.html"><img src="cool pixelated bird hiking game (independence day stream)/yDyl-cTpsF4-HD.jpg"><h3>cool pixelated bird hiking game (independence day stream)</br><br>4 July 2024</h3></a>
-        <br></br>
+        <br></div>
+
+        <!-- Video #5 -->
+        <div class="video">
         <a href="Osu stream becuz yes_5/Osu stream becuz yes_5.html"><img src="Osu stream becuz yes_5/mzRW7mmHce8-HD.jpg"><h3>Osu stream becuz yes_5</br><br>9 June 2024</h3></a>
-        <br></br>
+        <br></div>
+
+        <!-- Video #4 -->
+        <div class="video">
         <a href="Osu stream becuz yes_4/Osu stream becuz yes_4.html"><img src="Osu stream becuz yes_4/HTrlP5OluIY-HD.jpg"><h3>Osu stream becuz yes_4</br><br>5 June 2024</h3></a>
-        <br></br>
+        <br></div>
+
+        <!-- Video #3 -->
+        <div class="video">
         <a href="short lil osu stream 3/short lil osu stream 3.html"><img src="short lil osu stream 3/Ljn2DInpaX4-HD.jpg"><h3>short lil osu stream 3</br><br>4 June 2024</h3></a>
-        <br></br>
+        <br></div>
+        
+        <!-- Video #2 -->
+        <div class="video">
         <a href="short lil osu stream 2/short lil osu stream 2.html"><img src="short lil osu stream 2/EBokspVlKSo-HD.jpg"><h3>short lil osu stream 2</br><br>4 June 2024</h3></a>
-        <br></br>
+        <br></div>
+        
+        <!-- Video #1 -->
+        <div class="video">
         <a href="short lil osu stream/short lil osu stream.html"><img src="short lil osu stream/E-8go870kiA-HD.jpg"><h3>short lil osu stream</br><br>4 June 2024</h3></a>
-    
+        <br></div>
+        </div>    
+
+    <script src="../../newest-oldest-video-toggle.js"></script>
     <script src="../../../universal darkmode.js"></script>
     </body>
 </html>
