@@ -15,53 +15,111 @@
             float: left; 
             margin-right: 20px;
         }
-        /* Horizontal scrolling row */
-        .shorts-row {
-            display: flex;
-            gap: 20px;
-            overflow-x: auto;
-            padding: 20px 0;
-            white-space: nowrap; /* Prevent wrapping */
+
+        #pfp {
+        width: 150px;
+        float: left;
+        margin-right: 20px;
         }
-        /* Each short (image + text) */
-        .short {
+
+        /* --- Full-Width Stretch Tabs With Separators --- */
+        .tab-bar {
             display: flex;
-            flex-direction: column;
-            width: 200px;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .tab-bar a {
+            flex: 1;
+            text-align: center;
+            padding: 14px 0;
+            text-decoration: none;
+            background: #d40000;   /* Red background */
+            color: white;          /* White text */
+            font-size: 1rem;
+            font-weight: 600;
+            transition: 0.2s;
+            border-right: 2px solid #ffffff55; /* Light separator */
+        }
+
+        /* Remove the last separator */
+        .tab-bar a:last-child {
+            border-right: none;
+        }
+
+        .tab-bar a:hover {
+            background: #b30000;
+        }
+
+        /* Shorts grid */
+        .shorts-row {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            justify-content: center;
+            justify-items: center;
+            padding: 10px 0;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Each short */
+        .short {
+            width: 180px; /* Similar to YouTube Shorts card width */
             text-align: center;
         }
+
         .short img {
             width: 100%;
+            border-radius: 10px;
         }
+
         .short h3 {
             margin-top: 10px;
-            font-size: 16px;
-            white-space: normal; /* Allow text to wrap */
+            font-size: 15px;
         }
 
         /* Tablet query */
         @media (max-width: 1024px) {
-        img {
-            width: 23%;
+        img {width: 23%;}
+        .tab-bar a {
+            font-size: 0.9rem;
+            padding: 12px 0;
         }
+        .shorts-row {grid-template-columns: repeat(3, 1fr);}
         }
+
         /* Phone query */
         @media (max-width: 768px) {
-        img {
-            width: 100%;
+        img {width: 100%;}
+        .tab-bar a {
+            font-size: 0.8rem;
+            padding: 10px 0;
         }
+        .shorts-row {grid-template-columns: repeat(2, 1fr);}
+        .short {width: 160px;}
         }        
     </style>    
     </head>
     <body>
-    <h1>KuleGuy YT Shorts Archive</h1>
-    <a href="../kuleguy yt channel.html"><button>Back to channel</button></a>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    <button onclick="toggleOrder()">Toggle Newest/Oldest</button>
+        <img id="pfp" src="../[007698] 1x1.png">
+        <h1>KuleGuy</h1>
+        <h3>Created: 1 January 2024<br>Hey, I'm Luke! I post whatever I want and find interesting. I don't have an upload schedule. Live Laugh Luke.</h3>
+        <a href="../../youtube channels archive.html"><button>Back to channels</button></a>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+        <div class="tab-bar">
+        <a href="../Public Videos/justakuleguy_ytvids.html">Public Videos</a>
+        <a href="../Unlisted Videos/justakuleguy_unlistedvids.html">Unlisted Videos</a>
+        <a href="../Livestream VODS/justakuleguy_ytvods.html">Livestream VODs</a>
+        <a href="">Shorts</a>
+        <a href="../Posts/justakuleguy_posts.html">Posts</a>
+        </div>
+
+    <button onclick="toggleOrder()" style="margin: 10px 0; padding: 5px; font-weight: 600;">Toggle Newest/Oldest</button>
 
     <!-- Short container -->
     <div id="shorts-container" class="shorts-row">
-        
+
         <!-- Short #5 -->
         <div class="short">
             <a href="Walmart 4K Monster HDMI capture card/walmart 4k monster hdmi cc.html">
@@ -106,18 +164,32 @@
 
     <script src="../../../universal darkmode.js"></script>
     <script>
-    // ---- Toggle ordering ---- //
-    let newestFirst = true;
+        // ---- Toggle ordering ---- //
+        let newestFirst = true;
 
-    function toggleOrder() {
-        const container = document.getElementById("shorts-container");
-        const items = Array.from(container.children);
+        function toggleOrder() {
+            const container = document.getElementById("shorts-container");
+            const items = Array.from(container.children);
 
-        // Reverse ordering
-        items.reverse().forEach(item => container.appendChild(item));
+            // Reverse ordering
+            items.reverse().forEach(item => container.appendChild(item));
 
-        newestFirst = !newestFirst;
-    }
+            newestFirst = !newestFirst;
+
+            // Update button text
+            const button = document.querySelector('button[onclick="toggleOrder()"]');
+            if (newestFirst) {
+                button.textContent = "Sort: Newest → Oldest";
+            } else {
+                button.textContent = "Sort: Oldest → Newest";
+            }
+        }
+
+        // Initialize button text on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const button = document.querySelector('button[onclick="toggleOrder()"]');
+            button.textContent = "Sort: Newest → Oldest";
+        });
     </script>
     </body>
 </html>
