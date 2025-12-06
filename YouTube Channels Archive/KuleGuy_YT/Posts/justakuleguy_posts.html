@@ -11,7 +11,7 @@
             background-color: #ffffff;
             color: #000000;
         }
-
+        
         .button-container {
             text-align: center;
         }
@@ -34,43 +34,84 @@
         height: 3px;
         background-color: black;}
 
-        h1 {
-            text-align: center;
+        img {width: 50%;}
+
+        #pfp {
+        width: 150px;
+        float: left;
+        margin-right: 20px;
         }
 
-        img {width: 50%;}
+        /* --- Full-Width Stretch Tabs With Separators --- */
+        .tab-bar {
+            display: flex;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .tab-bar a {
+            flex: 1;
+            text-align: center;
+            padding: 14px 0;
+            text-decoration: none;
+            background: #d40000;   /* Red background */
+            color: white;          /* White text */
+            font-size: 1rem;
+            font-weight: 600;
+            transition: 0.2s;
+            border-right: 2px solid #ffffff55; /* Light separator */
+        }
+
+        /* Remove the last separator */
+        .tab-bar a:last-child {
+            border-right: none;
+        }
+
+        .tab-bar a:hover {
+            background: #b30000;
+        }
 
         /* Tablet query */
         @media (max-width: 1024px) {
-        img {
-            width: 23%;
-        }
-        article {
-            max-width: 80%;
+        img {width: 23%;}
+        article {max-width: 80%;}
+        .tab-bar a {
+            font-size: 0.9rem;
+            padding: 12px 0;
         }
         }
 
         /* Phone query */
         @media (max-width: 768px) {
-        img {
-            width: 100%;
+        img {width: 100%;}
+        article {max-width: 99%;}
+        .tab-bar a {
+            font-size: 0.8rem;
+            padding: 10px 0;
         }
-        article {
-            max-width: 100%;
-        }  
-        }
+        }        
     </style>    
     </head>
     <body>
-        <h1>KuleGuy YT Posts Archive</h1>
-        <div class="button-container">
-            <a href="../kuleguy yt channel.html"><button>Back to channel</button></a>
-            <button onclick="toggleDarkMode()">Toggle Dark Mode</button></div>
+        <img id="pfp" src="../[007698] 1x1.png">
+        <h1>KuleGuy</h1>
+        <h3>Created: 1 January 2024<br>Hey, I'm Luke! I post whatever I want and find interesting. I don't have an upload schedule. Live Laugh Luke.</h3>
+        <a href="../../youtube channels archive.html"><button>Back to channels</button></a>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+        <div class="tab-bar">
+        <a href="../Public Videos/justakuleguy_ytvids.html">Public Videos</a>
+        <a href="../Unlisted Videos/justakuleguy_unlistedvids.html">Unlisted Videos</a>
+        <a href="../Livestream VODS/justakuleguy_ytvods.html">Livestream VODs</a>
+        <a href="../Shorts/justakuleguy_shorts.html">Shorts</a>
+        <a href="">Posts</a>
+        </div>
+
         <article>
             <!-- --><h3>A post with a red background means it has been <b style="color: red">deleted</b></h3>
             
             <a href="https://www.youtube.com/post/UgkxM2exFkSp_t-35WnaiF_-udtKYj4-KCoc"><h2>2 December 2025</h2></a>
-            <h3> Adblock is not piracy and @LinusTechTips is retarded </h3>
+            <h3>Adblock is not piracy and @LinusTechTips is retarded</h3>
             
             <!-- --><div id="horizontal-line"></div>
 
