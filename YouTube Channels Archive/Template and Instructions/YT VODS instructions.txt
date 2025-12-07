@@ -1,0 +1,12 @@
+Everytime a new YT vod is made:
+- Make a folder with the same name as the video project files
+- copy the DTDV (Date, title, description, video) of vod.txt
+- copy the thumbnail.jpg (or png)
+- make a video.html file
+
+ - in the youtube vods list (index), add the a 'a href' link, add the thumbnail source, change the title and date
+
+- in the HTMl videos itself; edit the site title from the folder, h1 (vid title), h3 (date), video source, h3 description, link url with "a href" if possible
+- link to mirrors (YouTube and Internet Archive)
+
+
