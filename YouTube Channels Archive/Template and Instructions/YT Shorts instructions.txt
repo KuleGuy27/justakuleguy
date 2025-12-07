@@ -5,9 +5,9 @@ Everytime a new YT short is made:
 - copy the .srt subtitle files (if have)
 - make a video.html file
 
- - in the youtube shorts list (index), add the a 'a href' link, add the thumbnail source, change the title and date
+ - in the youtube shorts list (index), copy the previous block and change the shorts #, add the a 'a href' link, add the thumbnail source, change the title and date
 
-- in the HTMl unlisted videos itself; edit the site title from the folder, h1 (vid title), h3 date, video source, h3 description, link url with "a href" if possible
+- in the HTMl unlisted videos itself; edit the site title from the folder, video source, h1 (vid title), h3 date, h3 description, link url with "a href" if possible
 - add downloadable links to donwload the .srt subtitles + add a mirror link (if have)
 - link to mirrors (YouTube, Odysee, Rumble, Internet Archive)
 

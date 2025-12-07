@@ -4,9 +4,9 @@ Everytime a new YT vod is made:
 - copy the thumbnail.jpg (or png)
 - make a video.html file
 
- - in the youtube vods list (index), add the a 'a href' link, add the thumbnail source, change the title and date
+ - in the youtube vods list (index), copy the previous block and change the vod #, add the a 'a href' link, add the thumbnail source, change the title and date
 
-- in the HTMl videos itself; edit the site title from the folder, h1 (vid title), h3 (date), video source, h3 description, link url with "a href" if possible
+- in the HTMl videos itself; edit the site title from the folder, video source, h1 (vid title), h3 (date), h3 description, link url with "a href" if possible
 - link to mirrors (YouTube and Internet Archive)
 
 
