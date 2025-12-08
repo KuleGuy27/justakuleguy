@@ -3,17 +3,12 @@ body {
     color: #000000;
 }
 
-.dark-mode {
-    background-color: #a6a6a6;
-    color: #ffffff;
-}
-
 #date {
-    color: blue
+    color: rgb(0, 182, 227)
 }
 
 #desc {
-    color:green
+    color:rgb(0, 200, 0)
 }
 
 h4 {color: orange}
