@@ -10,25 +10,58 @@
             background-color: #ffffff;
             color: #000000;
         }
-        img {
-            width: 12%; 
-            float: left; 
+        
+        img {margin-right: 10px;}
+        .deleted-video {background-color: rgba(255, 0, 0, 0.4);}
+
+        .video a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .thumb {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .thumb img {display: block;}
+        
+        .duration {
+            position: absolute;
+            bottom: 5px;
+            right: 14px;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            line-height: 1;
+            pointer-events: none;
+        }
+        
+        .video img {
+            width: 230px;
+            height: auto;
+            flex-shrink: 0;
+        }
+        
+        .video h3 {margin: 0;}
+        
+        #pfp {
+            width: 150px;
+            float: left;
             margin-right: 20px;
         }
-
-        #pfp {
-        width: 150px;
-        float: left;
-        margin-right: 20px;
-        }
-
+        
         /* --- Full-Width Stretch Tabs With Separators --- */
         .tab-bar {
             display: flex;
             width: 100%;
             margin: 20px 0;
         }
-
         .tab-bar a {
             flex: 1;
             text-align: center;
@@ -41,16 +74,11 @@
             transition: 0.2s;
             border-right: 2px solid #ffffff55; /* Light separator */
         }
-
+        
         /* Remove the last separator */
-        .tab-bar a:last-child {
-            border-right: none;
-        }
-
-        .tab-bar a:hover {
-            background: #b30000;
-        }
-
+        .tab-bar a:last-child {border-right: none;}
+        .tab-bar a:hover {background: #b30000;}
+        
         /* Tablet query */
         @media (max-width: 1024px) {
         img {width: 23%;}
@@ -62,7 +90,21 @@
 
         /* Phone query */
         @media (max-width: 768px) {
-        img {width: 100%;}
+        .duration {
+            position: absolute;
+            bottom: 9px;
+            right: 8px;
+        }
+        .video a {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .video img {
+            width: 100%;
+            height: auto;
+            margin-right: 0;
+        }
+        .thumb {width: 100%;}
         .tab-bar a {
             font-size: 0.8rem;
             padding: 10px 0;
@@ -92,22 +134,34 @@
         
         <!-- Video #4 -->
         <div class="video">
-        <a href="Sponsorblock video result/sponsorblock video finished result.html"><img src="Sponsorblock video result/hWepTwOONuk-HD.jpg"><h3>Sponsorblock video fillers auto-skipped</br><br>1 November 2025</h3></a>
+        <a href="Sponsorblock video result/sponsorblock video finished result.html">
+        <div class="thumb"><img src="Sponsorblock video result/hWepTwOONuk-HD.jpg">
+        <span class="duration">6:22</span></div> 
+        <h3>Sponsorblock video fillers auto-skipped</br><br>1 November 2025</h3></a>
         <br></div>
         
         <!-- Video #3 -->
         <div class="video">
-        <a href="Sponsorblock video editing bts/sponsorblock video editing bts.html"><img src="Sponsorblock video editing bts/IMG_20251031_173633.jpg"><h3>How I edited my Sponsorblock video</br><br>31 October 2025</h3></a>
+        <a href="Sponsorblock video editing bts/sponsorblock video editing bts.html">
+        <div class="thumb"><img src="Sponsorblock video editing bts/IMG_20251031_173633.jpg">
+        <span class="duration">4:45</span></div>
+        <h3>How I edited my Sponsorblock video</br><br>31 October 2025</h3></a>
         <br></div>
         
         <!-- Video #2 -->
         <div class="video">
-        <a href="Raspberry Pi Speech 2/raspberry pi speech 2.html"><img src="Raspberry Pi Speech 2/kKaaIb7VuEE-HD.jpg"><h3>raspberry pi speech_2</br><br>22 October 2025 ‌</h3></a>
+        <a href="Raspberry Pi Speech 2/raspberry pi speech 2.html">
+        <div class="thumb"><img src="Raspberry Pi Speech 2/kKaaIb7VuEE-HD.jpg">
+        <span class="duration">4:02</span></div>
+        <h3>raspberry pi speech_2</br><br>22 October 2025 ‌</h3></a>
         <br></div>
         
         <!-- Video #1 -->
         <div class="video">
-        <a href="Raspberry Pi Speech 1/raspberry pi speech 1.html"><img src="Raspberry Pi Speech 1/Q3xMzX558B0-HD.jpg"><h3>raspberry pi speech_1</br><br>22 October 2025</h3></a>
+        <a href="Raspberry Pi Speech 1/raspberry pi speech 1.html">
+        <div class="thumb"><img src="Raspberry Pi Speech 1/Q3xMzX558B0-HD.jpg">
+        <span class="duration">4:14</span></div>
+        <h3>raspberry pi speech_1</br><br>22 October 2025</h3></a>
         <br></div>
         </div>
     
