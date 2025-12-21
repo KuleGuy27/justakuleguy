@@ -5,7 +5,7 @@ Everytime a new YT video is made:
 - copy the .srt subtitle files (if have)
 - make a video.html file
 
- - in the youtube videos list (index), copy the previous block and change the video #, add the a 'a href' link, add the thumbnail source, change the title and date
+ - in the youtube videos list (index), copy the previous block and change the video #, add the a 'a href' link, add the thumbnail source, duration time, change the title and date
 
 - in the HTMl videos itself; edit the site title from the folder, video source, h1 (vid title), h3 date, h3 description, link url with "a href" if possible
 - add downloadable links to donwload the .srt subtitles + add a mirror link (if have)
