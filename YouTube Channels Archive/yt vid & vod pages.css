@@ -41,6 +41,7 @@ h4 {color: orange}
 
 /* Tablet query */
 @media (max-width: 1024px) {
+body {max-width: 85%;}
 iframe {
     width: 85%;
     height: 500px;
@@ -50,9 +51,12 @@ iframe {
 /* Phone query */
 @media (max-width: 768px) {
 body {max-width: 100%;}
-#desc {width: 100%;}
 iframe {
     width: 100%;
     height: 300px;
+}
+body {
+    border-left: 0px;
+    border-right: 0px;
 }
 }
