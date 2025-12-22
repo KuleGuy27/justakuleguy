@@ -6,11 +6,11 @@
         <title>HP-310 touchsmart PC 6TB home-made NAS</title>
         <link rel="stylesheet" href="../blog pages.css">
         <link rel="stylesheet" href="../../universal darkmode.css">
-        <link rel="stylesheet" href="../image slideshow.css">       
+        <link rel="stylesheet" href="../image slideshow.css">
+        <link rel="stylesheet" href="../dropdown menu.css">       
     </head>
     <body>
         <a href="../justakuleguy_blogs.html"><button>Back to blog list</button></a>
-        <p></p>
         <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <article>
         <h1>Update! Using my HP-310 AIO computer as an easy home NAS! [Subject to change]</h1>
@@ -18,7 +18,18 @@
             Posted on: 29 August 2025<br>
             Updated on: 3 September 2025</h3>
         <div id="horizontal-line"></div>
-        <br>
+        
+        <div id="jump-menu-container">
+        <select id="jumpMenu" onchange="jumpToSection(this.value)">
+            <option value="#header1">What is a NAS?</option>
+            <option value="#header2">What did I change this time?</option>
+            <option value="#header3">What OS do I use for the NAS?</option>
+            <option value="#header4">How do you install Ubuntu Server and CasaOS?</option>
+            <option value="#header5">What is the speed of the NAS?</option>
+            <option value="#header6">Using Tailscale for remote access.</option>
+        </select>
+        </div>
+
         <img src="hp310 nas - main image cover.jpg" width="60%">
         <h3>In May 2024, I made a YouTube video about me using my old Toshiba Satellite laptop as a home-made NAS and some things has changed since. So in this blog, I decided to make an update.</h3>
         <iframe width="60%" height="390px" src="https://www.youtube.com/embed/rAc3kWZ_td0" title="Turning my 2009 Laptop into an easy home NAS! (Ubuntu Server + CasaOS)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -111,7 +122,7 @@
         <h3>But yeah, I just changed my computer and that's about it. However, the computer uses a 256GB HARD DRIVE, which is slower and dies sooner. In the future, I hope to get myself a 128GB SSD for the speed and lifespan. 128GB SSDs are pretty cheap, costing about $20 on Amazon, hence why I decided to add "subject to change" in the title of this blog.</h3>
         <br>
         
-        <h1>What OS do I use for the NAS?</h1>
+        <h1 id="header3">What OS do I use for the NAS?</h1>
         <h3>Same as the one in the video, I will be using <u>Ubuntu Server</u> and <u>CasaOS</u>.</h3>
         <h3>
             Ubuntu Server - <a href="https://ubuntu.com/download/server" target="_blank">https://ubuntu.com/download/server</a>
@@ -121,7 +132,7 @@
         <h3>There are tons of NAS OSes out there, like: TrueNAS Core/Scale, OpenMediaVault, Proxmox, Unraid, and etc... Those are really good operating systems and I have dabbled with them in the past, but I will using Ubuntu Server and CasaOS because of familiarity and ease of use. I have been on these 2 OSes for more than 1 year and I'm pretty familiar with it. CasaOS makes it easy to use by having a GUI interface and so far, I love it!</h3>
         <br>
         
-        <h1>How do you install Ubuntu Server and CasaOS?</h1>
+        <h1 id="header4">How do you install Ubuntu Server and CasaOS?</h1>
         <h3>For Ubuntu Server, you first go to the website and download the .ISO file.</h3>
         <img src="hp310 nas - Get Ubuntu Server download page.png" width="60%">
         <img src="hp310 nas - downloading Ubuntu server.png" width="60%">
@@ -168,14 +179,14 @@
         <img src="hp310 nas - show nas photo on android.png" width="27%">
         <br></br>
         
-        <h1>What is the speed of the NAS?</h1>
+        <h1 id="header5">What is the speed of the NAS?</h1>
         <h3>The speed of a NAS depends on the network but also <a href="https://www.backblaze.com/blog/nas-performance-guide-how-to-optimize-your-nas/" target="_blank">the hardware as well</a>. Since I have a computer with a better CPU and RAM, the performance is definitely better than the laptop with speeds at around 40mb/s, although it does fluctuately and results could vary in the future.</h3>
         <h4 style="color: red;">↓ Speed of the NAS when copying an 8GB video file from my destop to a folder on the NAS on Windows and Linux. ↓</h4>
         <img src="hp310 nas - speed of file on windows.png" width="50%">
         <img src="hp310 nas - speed of file on linux.png" width="50%">
         <br></br>
 
-        <h1>Using Tailscale for remote access.</h1>
+        <h1 id="header6">Using Tailscale for remote access.</h1>
         <h3>I can access my NAS from all my devices on my local network which is great! But there are times when I want to access some files on my NAS from school, anywhere in my city or maybe anywhere the world. But have no fear, Tailscale is here and it can help me with what I need!</h3>
         <h3>But first, what is Tailscale?<br>
             <a href="https://tailscale.com/kb/1151/what-is-tailscale" target="_blank">As the company calls it</a>, Tailscale is a mesh VPN that enables encrypted point-to-point connections using the open source WireGuard protocol. The connection is streamlined and it's very easy to setup, hence why I am using it for my NAS.
@@ -214,6 +225,7 @@
         This blog is stored on my NAS and I thank you for reading it!</h3>
         </article>
     
+    <script src="../dropdown menu.js"></script>
     <script src="../image slideshow.js"></script>
     <script src="../../universal darkmode.js"></script>
     </body>
