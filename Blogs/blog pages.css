@@ -9,6 +9,11 @@ button {
     margin-right: auto;
 }
 
+/* Offset anchor scroll for sticky jump menu */
+h1, h2 {
+    scroll-margin-top: 60px; /* adjust if needed */
+}
+
 article {
     max-width: 60%;
     margin: 40px auto;

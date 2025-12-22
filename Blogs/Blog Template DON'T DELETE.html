@@ -6,6 +6,8 @@
         <title></title>
         <link rel="stylesheet" href="../blog pages.css">   
         <link rel="stylesheet" href="../../universal darkmode.css">
+        <link rel="stylesheet" href="../image slideshow.css">
+        <link rel="stylesheet" href="../dropdown menu.css">
     </head>
     <body>
         <a href="../justakuleguy_blogs.html"><button>Back to blog list</button></a>
@@ -17,7 +19,16 @@
             Posted on: 1 January 2024<br>
             Updated on: 1 January 2024</h3>
         <div id="horizontal-line"></div>
-        <br>
+        
+        <div id="jump-menu-container">
+        <select id="jumpMenu" onchange="jumpToSection(this.value)">
+            <option value="#header1">Placeholder</option>
+            <option value="#header2">Placeholder</option>
+            <option value="#header3">Placeholder</option>
+            <option value="#header4">Placeholder</option>
+        </select>
+        </div>
+
         <img src="">
         <h2>Placeholder text</h2>
         <h3>Placeholder text</h3>
@@ -26,6 +37,8 @@
         <h6>Placeholder text</h6>
         </article>
     
-    <script src="../../darkmode.js"></script>
+    <script src="../dropdown menu.js"></script>
+    <script src="../image slideshow.js"></script>
+    <script src="../../universal darkmode.js"></script>
     </body>
 </html>
