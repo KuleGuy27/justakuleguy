@@ -45,7 +45,6 @@ article {
   border-radius: 4px;
   font-family: monospace;
   overflow-x: auto;   /* allows horizontal scroll if too long */
-  width: ;        /* let it size naturally */
   max-width: 100%;    /* prevent overflow */
   white-space: nowrap; /* keeps commands on one line */
 }
