@@ -16,7 +16,7 @@ h1, h2 {
 
 article {
     max-width: 60%;
-    margin: 40px auto;
+    margin: 0px auto;
     padding: 30px;
     background: rgba(255, 255, 255, 0.700);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
