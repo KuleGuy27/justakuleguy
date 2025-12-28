@@ -11,7 +11,7 @@ button {
 
 /* Offset anchor scroll for sticky jump menu */
 h1, h2 { scroll-margin-top: 60px;} /* adjust if needed */
-h1, h2, h3 {
+h1, h3 {
     font-family: "Roboto"; 
     font-size: 23px;
 }
