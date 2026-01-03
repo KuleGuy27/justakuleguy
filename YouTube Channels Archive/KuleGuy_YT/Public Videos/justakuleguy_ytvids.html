@@ -25,7 +25,10 @@
             display: inline-block;
         }
         
-        .thumb img {display: block;}
+        .thumb img {
+            display: block;
+            border: 1px solid #000000;
+        }
         
         .duration {
             position: absolute;
@@ -53,6 +56,31 @@
         width: 150px;
         float: left;
         margin-right: 20px;
+        }
+
+        /* ===== ICON (GRID) VIEW ===== */
+        .videos-row.icon-view {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+            max-width: 1450px;
+            margin: auto;
+        }
+
+        .videos-row.icon-view .video a {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .videos-row.icon-view .video img {
+            width: 100%;
+            max-width: 240px;
+        }
+
+        .videos-row.icon-view .video h3 {
+            font-size: 0.95rem;
+            text-align: center;
+            margin-top: 6px;
         }
 
         /* --- Full-Width Stretch Tabs With Separators --- */
@@ -85,6 +113,9 @@
         /* Tablet query */
         @media (max-width: 1024px) {
         img {width: 23%;}
+        .videos-row.icon-view {
+        grid-template-columns: repeat(3, 1fr);
+        }
         .tab-bar a {
             font-size: 0.9rem;
             padding: 12px 0;
@@ -93,26 +124,62 @@
 
         /* Phone query */
         @media (max-width: 768px) {
+        /* Duration badge tweak */
         .duration {
-            position: absolute;
             bottom: 9px;
-            right: 8px;
+            right: 7px;
         }
-        .video a {
-            flex-direction: column;
-            align-items: flex-start;
+        /* LIST VIEW duration positioning */
+        .videos-row:not(.icon-view) .duration {
+            bottom: 4px;
+            right: 12px;
         }
-        .video img {
-            width: 100%;
-            height: auto;
-            margin-right: 0;
-        }
-        .thumb {width: 100%;}
+        .thumb {width: auto;}
         .tab-bar a {
             font-size: 0.8rem;
             padding: 10px 0;
         }
-        }        
+
+        /* ===== ICON VIEW (phone) ===== */
+        .videos-row.icon-view {
+            display: grid;
+            grid-template-columns: 1fr; /* single-column grid */
+            gap: 14px;
+        }
+
+        .videos-row.icon-view .video a {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .videos-row.icon-view .video img {
+            width: 100%;
+            max-width: 100%;
+            margin-right: 0;
+        }
+
+        .videos-row.icon-view .video h3 {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 6px;
+        }
+
+        /* ===== LIST VIEW (phone) ===== */
+        .videos-row:not(.icon-view) .video a {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .videos-row:not(.icon-view) .video img {
+            width: 120px;
+            margin-right: 10px;
+        }
+
+        .videos-row:not(.icon-view) .video h3 {
+            font-size: 0.85rem;
+            text-align: left;
+        }
+        }
     </style>    
     </head>
     <body>
@@ -131,9 +198,10 @@
         </div>
 
         <button id="sortToggle" style="margin: 10px 0; padding: 5px; font-weight: 600;">Sort: Oldest → Newest</button>
+        <button id="viewToggle" style="margin: 10px 5px; padding: 5px; font-weight: 600;">List View</button>
 
         <!-- Video container -->
-        <div id="videos-container" class="videos-row">
+        <div id="videos-container" class="videos-row icon-view">
 
         <!-- Video #64 -->
         <div class="video">
@@ -648,6 +716,7 @@
         <br></div>
     </div>
 
+    <script src="../../iconview-listview-toggle.js"></script>
     <script src="../../newest-oldest-video-toggle.js"></script>
     <script src="../../../universal darkmode.js"></script>
     </body>
