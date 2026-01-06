@@ -3,31 +3,28 @@ const videosContainer = document.getElementById('videos-container');
 const sortToggleBtn = document.getElementById('sortToggle');
 
 // Track sort state: true = oldest → newest, false = newest → oldest
-let oldestFirst = true;
+let oldestFirst = false;
 
 // Set initial button text to indicate first action
-sortToggleBtn.textContent = 'Sort: Newest → Oldest';
+sortToggleBtn.textContent = 'Sort: Oldest → Newest';
 
 // Function to toggle video order
 function toggleVideoOrder() {
-    // Get all video elements as an array
     const videos = Array.from(videosContainer.getElementsByClassName('video'));
-
-    // Reverse the array
     videos.reverse();
 
-    // Remove current videos from container
     while (videosContainer.firstChild) {
         videosContainer.removeChild(videosContainer.firstChild);
     }
 
-    // Re-append videos in new order
     videos.forEach(video => videosContainer.appendChild(video));
 
-    // Update the sort state and button text
+    // Flip current state
     oldestFirst = !oldestFirst;
-    sortToggleBtn.textContent = oldestFirst 
-        ? 'Sort: Newest → Oldest' 
+
+    // Button shows the NEXT sort direction
+    sortToggleBtn.textContent = oldestFirst
+        ? 'Sort: Newest → Oldest'
         : 'Sort: Oldest → Newest';
 }
 
