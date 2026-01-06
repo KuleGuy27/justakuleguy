@@ -217,16 +217,16 @@
             // Update button text
             const button = document.querySelector('button[onclick="toggleOrder()"]');
             if (newestFirst) {
-                button.textContent = "Sort: Newest → Oldest";
-            } else {
                 button.textContent = "Sort: Oldest → Newest";
+            } else {
+                button.textContent = "Sort: Newest → Oldest";
             }
         }
 
         // Initialize button text on page load
         window.addEventListener('DOMContentLoaded', () => {
             const button = document.querySelector('button[onclick="toggleOrder()"]');
-            button.textContent = "Sort: Newest → Oldest";
+            button.textContent = "Sort: Oldest → Newest";
         });
     </script>
     </body>
