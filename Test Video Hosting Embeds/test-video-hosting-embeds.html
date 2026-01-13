@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuleGuy - Test Video Hosting Embeds</title>
+    <link rel="stylesheet" href="../universal darkmode.css">
+<style>
+    body {
+        padding: 20px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    h1 {margin-bottom: 15px;}
+    img {width: 200px;}
+    
+    button {
+        margin: 5px;
+        padding: 8px 15px;
+        cursor: pointer;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
+    th, td {
+        border: 2px solid #333;
+        padding: 12px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    thead th {
+        background-color: #4a4a4a;
+        color: white;
+        font-weight: bold;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    tbody th {
+        background-color: #666;
+        color: white;
+        font-weight: bold;
+        text-align: left;
+        min-width: 120px;
+    }
+    
+    tbody td {
+        min-width: 200px;
+        height: 220px;
+    }
+
+    .table-wrapper {
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Services background colors*/
+    #abyss {background: #2b2b2b;}
+    #streamtape {background: #625df7;}
+    #doodstream {background: #ff9432;}
+    #mixdrop {background: #0092ec;}
+    #vidoza {background: #27a052;}
+    #lulustream {background: #24b7c8;}
+
+    /* Tablet */
+    @media (max-width: 1024px) {
+    table {font-size: 13px;}
+    th, td {padding: 8px;}
+    tbody td {height: 150px;}
+    img {width: 100px;}
+    }
+
+    /* Phone */
+    @media (max-width: 768px) {
+    .table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    table {
+        font-size: 12px;
+        min-width: 800px;
+    }
+    tbody td {height: 110px;}
+    img {width: 80px;}
+    }
+
+    
+    
+</style>    
+</head>
+<body>
+    <h1>Test Video Hosting/Streaming Embeds</h1>
+    <a href="../index.html"><button>Back to home</button></a>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <div class="table-wrapper">
+    <table>
+        <thead>
+            <tr style="font-size: larger;">
+                <th>Service</th>
+                <th>Video #1<br>(Test Video)</th>
+                <th>Video #2<br>(Walmart 4K)</th>
+                <th>Video #3<br>(ROBLOX Fruitiger Aero Obby; 60FPS)</th>
+                <th>Video #4<br>(Little Nightmares Stream; 60FPS)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="abyss">
+                <th><img src="abyss-favicon2x.png"><br>Abyss.to</th>
+                <td><iframe src="https://short.icu/HmkYv5uP2" frameborder="0" scrolling="0" allowfullscreen></iframe></td>
+                <td><iframe src="https://short.icu/0KJuCYptw" frameborder="0" scrolling="0" allowfullscreen></iframe></td>
+                <td><iframe src="https://short.icu/_UkkOlLZC" frameborder="0" scrolling="0" allowfullscreen></iframe></td>
+                <td><iframe src="https://short.icu/FNjE0Cn_e" frameborder="0" scrolling="0" allowfullscreen></iframe></td>
+            </tr>
+            <tr id="streamtape">
+                <th><img src="Streamtape-Logo@2xDark.png"><br>Streamtape</th>
+                <td><iframe src="https://streamtape.com/e/LdLwBPXBKoHWGw/" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe></td>
+                <td><iframe src="https://streamtape.com/e/bQJ7wbV6ZasPzwe/" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe></td>
+                <td><iframe src="https://streamtape.com/e/JD8DJ4O1mOhjdmv/" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe></td>
+                <td><iframe src="https://streamtape.com/e/zwJe3Wr0Q9hY1R6/" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe></td>
+            </tr>
+            <tr id="doodstream">
+                <th><img src="doodstream-logo-s.png"><br>Doodstream</th>
+                <td><iframe src="https://myvidplay.com/e/v60fg2irlr6z" scrolling="no" frameborder="0" allowfullscreen="true"></iframe></td>
+                <td><iframe src="https://myvidplay.com/e/t0q9t53l8tny" scrolling="no" frameborder="0" allowfullscreen="true"></iframe></td>
+                <td><iframe src="https://myvidplay.com/e/xqke8jz8vl0h" scrolling="no" frameborder="0" allowfullscreen="true"></iframe></td>
+                <td><iframe src="https://myvidplay.com/e/tu5p32svudxc" scrolling="no" frameborder="0" allowfullscreen="true"></iframe></td>
+            </tr>
+            <tr id="mixdrop">
+                <th><img src="mixdrop-logo-white4x.png"><br>MixDrop</th>
+                <td><iframe src="https://mxdrop.to/e/dkdxk17qi7qpk6" scrolling="no" frameborder="0" allowfullscreen="true"></iframe></td>
+                <td><iframe src="https://mxdrop.to/e/679m6zqkb3j7jg" scrolling="no" frameborder="0" allowfullscreen="true"></iframe></td>
+                <td><iframe src="https://mxdrop.to/e/ow9qeompilln7pj" scrolling="no" frameborder="0" allowfullscreen="true"></iframe></td>
+                <td><iframe src="https://mxdrop.to/e/dkdx09pwa3jkl0" scrolling="no" frameborder="0" allowfullscreen="true"></iframe></td>
+            </tr>
+            <tr id="vidoza">
+                <th><img src="vidoza-logo-1993728519.png"><br>Vidoza</th>
+                <td><IFRAME SRC="https://vidoza.net/embed-a6buxxn4o0vv.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO allowfullscreen></IFRAME></td>
+                <td><IFRAME SRC="https://vidoza.net/embed-ewnfsk9307s8.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO allowfullscreen></IFRAME></td>
+                <td><IFRAME SRC="https://vidoza.net/embed-sap6mu5hq06x.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO allowfullscreen></IFRAME></td>
+                <td><IFRAME SRC="https://vidoza.net/embed-ug6s5h55ebdy.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO allowfullscreen></IFRAME></td>
+            </tr>
+            <tr id="lulustream">
+                <th><img src="delulustream-logo.png"><br>Lulustream</th>
+                <td><iframe src="https://luluvid.com/e/d08nnlqdmcgq" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></td>
+                <td><iframe src="https://luluvid.com/e/6msdce2ttz0f" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></td>
+                <td><iframe src="https://luluvid.com/e/1v2whx6vknbo" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></td>
+                <td><iframe src="https://luluvid.com/e/ntzaprns06p8" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <script src="../universal darkmode.js"></script>
+</body>
+</html>
