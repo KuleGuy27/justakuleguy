@@ -87,14 +87,10 @@ iframe {
 
 /* Phone query */
 @media (max-width: 768px) {
-body {max-width: 100%;}
+body {max-width: 98%;}
 iframe {
     width: 98%;
     aspect-ratio: 16 / 9;
-}
-body {
-    border-left: 0px;
-    border-right: 0px;
 }
 .video-switcher {
     gap: 2px;
