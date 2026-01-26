@@ -11,19 +11,29 @@ button {
 
 /* Offset anchor scroll for sticky jump menu */
 h1, h2 { scroll-margin-top: 60px;} /* adjust if needed */
-h1, h3 {
+h1 {font-size: 35px;}
+h3 {
     font-family: "Roboto"; 
     font-size: 23px;
+    color: #303030;
 }
 
 article {
-    max-width: 60%;
+    max-width: 1050px;
     margin: 0px auto;
     padding: 30px;
     background: rgba(255, 255, 255, 0.700);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     color: black;
 }
+
+iframe {
+    width: 70%;
+    aspect-ratio: 16 / 9;
+}
+
+.mySlides img {width: 100%;}
+img {width: 49.5%;}
 
 #date {color: blue}
 
@@ -50,8 +60,8 @@ article {
 /* Tablet query */
 @media (max-width: 1024px) {
 article {
-    width: 85%;
-    max-width: 85%;
+    width: 90%;
+    max-width: 90%;
     margin: 20px auto;
 }
 
@@ -63,6 +73,7 @@ img {
 
 iframe {
     width: 80%;
+    aspect-ratio: 16 / 9;
 }
 }
 
@@ -87,5 +98,6 @@ img {
 
 iframe {
     width: 100%;
+    aspect-ratio: 16 / 9;
 }
 }
