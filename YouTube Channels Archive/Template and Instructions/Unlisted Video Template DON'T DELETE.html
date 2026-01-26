@@ -9,19 +9,52 @@
     </head>
     <body>
         <a href="../justakuleguy_unlistedvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/" frameborder="0" scrolling="0" allowfullscreen></iframe>
-        <h1></h1><h4 id="un-vid">Unlisted video</h4>
-        <h3 id="date">1 January 2024</h3>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://STREAMTAPE_EMBED_URL"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
+        <h1></h1>
+        <h3 id="date">1 January 2024</h3> <h4 id="un-vid">Unlisted video</h4>
         <h3 id="desc">
         
         </h3>
-        <div id="horizontal-line"></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3>YouTube: <a href="" target="_blank"></a></h3>
-        <h3>Odysee: <a href="" target="_blank"></a></h3>
-        <h3>Rumble: <a href="" target="_blank"></a></h3>
-        <h3>Internet Archive: <a href="" target="_blank"></a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" width="20px"> YouTube: <a href="" target="_blank"></a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" width="20px"> Odysee: <a href="" target="_blank"></a></h3>
+        <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" width="20px"> Rumble: <a href="" target="_blank"></a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" width="20px"> Internet Archive: <a href="" target="_blank"></a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://STREAMTAPE_EMBED_URL",
+        doodstream: "https://DOODSTREAM_EMBED_URL",
+        abyss: "https://short.icu/J2DRw4AY2d",
+        mixdrop: "https://MIXDROP_EMBED_URL"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>
