@@ -94,7 +94,7 @@
 
         .short img {
             width: 100%;
-            border-radius: 10px;
+            border: 1px solid black;
         }
 
         .short h3 {
@@ -210,33 +210,53 @@
     </div>
 
     <script src="../../../universal darkmode.js"></script>
+    
     <script>
-        // ---- Toggle ordering ---- //
-        let newestFirst = true;
+    const STORAGE_KEY = "shortsSortNewestFirst";
+    let newestFirst = true;
 
-        function toggleOrder() {
-            const container = document.getElementById("shorts-container");
-            const items = Array.from(container.children);
+    function applyOrder(reverse) {
+        const container = document.getElementById("shorts-container");
+        const items = Array.from(container.children);
 
-            // Reverse ordering
+        if (reverse) {
             items.reverse().forEach(item => container.appendChild(item));
+        }
+    }
 
-            newestFirst = !newestFirst;
+    function updateButtonText() {
+        const button = document.querySelector('button[onclick="toggleOrder()"]');
+        button.textContent = newestFirst
+            ? "Sort: Oldest → Newest"
+            : "Sort: Newest → Oldest";
+    }
 
-            // Update button text
-            const button = document.querySelector('button[onclick="toggleOrder()"]');
-            if (newestFirst) {
-                button.textContent = "Sort: Oldest → Newest";
-            } else {
-                button.textContent = "Sort: Newest → Oldest";
-            }
+    function toggleOrder() {
+        applyOrder(true);
+        newestFirst = !newestFirst;
+
+        // Save preference
+        localStorage.setItem(STORAGE_KEY, newestFirst);
+
+        updateButtonText();
+    }
+
+    // Initialize on page load
+    window.addEventListener("DOMContentLoaded", () => {
+        const saved = localStorage.getItem(STORAGE_KEY);
+
+        if (saved !== null) {
+            newestFirst = saved === "true";
         }
 
-        // Initialize button text on page load
-        window.addEventListener('DOMContentLoaded', () => {
-            const button = document.querySelector('button[onclick="toggleOrder()"]');
-            button.textContent = "Sort: Oldest → Newest";
-        });
+        // If user prefers oldest → newest, reverse once
+        if (!newestFirst) {
+            applyOrder(true);
+        }
+
+        updateButtonText();
+    });
     </script>
+
     </body>
 </html>
