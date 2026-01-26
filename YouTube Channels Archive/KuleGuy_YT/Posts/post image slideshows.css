@@ -49,3 +49,15 @@
   .prev:hover, .next:hover {
     background: rgba(0,0,0,0.8);
   }
+
+/* Tablet query */
+@media (max-width: 1024px) {
+img {width: 50%;}
+.slideshow-container {max-width: 50%;}
+}
+
+/* Phone query */
+@media (max-width: 768px) {
+img {width: 100%;}
+.slideshow-container {max-width: 100%;}
+} 
