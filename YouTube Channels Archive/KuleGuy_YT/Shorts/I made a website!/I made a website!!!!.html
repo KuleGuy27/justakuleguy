@@ -9,8 +9,25 @@
     </head>
     <body>
         <a href="../justakuleguy_shorts.html"><button>Back to shorts list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/wZUEKhVaS" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/Jp3PL9OjJLFjkd3"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+        
+        <div id="video-metadata">
         <h1>I made a website! (A few months ago in August)</h1>
         <h3 id="date">17 November 2025</h3>
         <h3 id="desc">
@@ -20,10 +37,26 @@
         <br></br>
         Here is the source code since I host this on Github Pages: <a href="https://github.com/KuleGuy27/justakuleguy" target="_blank">https://github.com/KuleGuy27/justakuleguy</a>
         </h3>
-        <div id="horizontal-line"></div>
+        </div>
+        
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3 id="mirror">YouTube: <a href="https://youtube.com/shorts/Ff4amEfrq28" target="_blank">https://youtube.com/shorts/Ff4amEfrq28</a></h3>
-        <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-shorts-archive/I%20made%20a%20website%20A%20few%20months%20ago%20in%20August%20-%20YouTube.mp4" target="_blank">https://archive.org/download/kuleguy-yt-shorts-archive/I%20made%20a%20website%20A%20few%20months%20ago%20in%20August%20-%20YouTube.mp4</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://youtube.com/shorts/Ff4amEfrq28" target="_blank">https://youtube.com/shorts/Ff4amEfrq28</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-shorts-archive/I%20made%20a%20website%20A%20few%20months%20ago%20in%20August%20-%20YouTube.mp4" target="_blank">https://archive.org/download/kuleguy-yt-shorts-archive/I%20made%20a%20website%20A%20few%20months%20ago%20in%20August%20-%20YouTube.mp4</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/Jp3PL9OjJLFjkd3",
+        doodstream: "https://myvidplay.com/e/ri4a49x0f87p",
+        abyss: "https://short.icu/wZUEKhVaS",
+        mixdrop: "https://mixdrop.top/e/nlxn6q9nb0e7rw"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>
