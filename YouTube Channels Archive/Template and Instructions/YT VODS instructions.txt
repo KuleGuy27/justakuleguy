@@ -8,5 +8,5 @@ Everytime a new YT vod is made:
 
 - in the HTMl videos itself; edit the site title from the folder, video source, h1 (vid title), h3 (date), h3 description, link url with "a href" if possible
 - link to mirrors (YouTube and Internet Archive)
-
+- paste video sources
 
