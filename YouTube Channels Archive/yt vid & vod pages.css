@@ -1,12 +1,8 @@
 body {
     background-color: #ffffff;
     color: #000000;
-    max-width: 60%;
+    max-width: 1100px;
     margin: 15px auto;
-    border-left: 4px solid #000000;
-    border-right: 4px solid #000000;
-    padding-left: 22px;
-    padding-right: 22px;
 }
 
 body > a:first-of-type,
@@ -17,19 +13,60 @@ body, h1, h2, h3, h4, p, a, div {
     overflow-wrap: break-word;
 }
 
+.date-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+h1, h2, h3 {color: #000000;}
+
+#video-metadata, #mirror-border {
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    background-color: #e7e7e7;
+}
+
+.video-container {text-align: center;}
+
+.video-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.video-switcher button {
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
 iframe, h1, h2, h3, h4, div {text-align: left;}
 
 iframe {
-    width: 80%;
-    height: 525px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     display: block;
     margin: 0 auto;
 }
 
-#date {color: rgb(0, 182, 227)}
-#desc {color:rgb(52, 227, 52)}
+#date {
+    color: rgb(0, 182, 227);
+    display: inline-block;
+    margin: 0;
+    margin-right: 20px;
+}
 
-h4 {color: orange}
+#desc {color:rgb(50, 178, 50);}
+
+#un-vid {
+    color: orange;
+    display: inline-block;
+    margin: 0;
+}
 
 #horizontal-line {
     width: 100%;
@@ -37,14 +74,13 @@ h4 {color: orange}
     background-color: black;
     }
 
-#mirror {color: black}
 
 /* Tablet query */
 @media (max-width: 1024px) {
 body {max-width: 85%;}
 iframe {
-    width: 85%;
-    height: 500px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
 }
 }
 
@@ -52,11 +88,19 @@ iframe {
 @media (max-width: 768px) {
 body {max-width: 100%;}
 iframe {
-    width: 100%;
-    height: 300px;
+    width: 98%;
+    aspect-ratio: 16 / 9;
 }
 body {
     border-left: 0px;
     border-right: 0px;
+}
+.video-switcher {
+    gap: 2px;
+}
+.video-switcher button {
+    padding: 6px 14px;
+    font-size: 13px;
+    cursor: pointer;
 }
 }
