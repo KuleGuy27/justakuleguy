@@ -9,18 +9,51 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvods.html"><button>Back to vod list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/ldwF758qc" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+        
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/aglRlJerv6UxRvB"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
         <h1>short lil osu stream</h1>
         <h3 id="date">Streamed Live - 4 June 2024</h3>
         <h3 id="desc">
         playing osu for a little while becuz yes
         </h3>
-        <div id="horizontal-line"></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>VOD Mirrors:</h2>
-        <h3 id="mirror">YouTube: <a href="https://www.youtube.com/live/E-8go870kiA" target="_blank">https://www.youtube.com/live/E-8go870kiA</a></h3>
-        <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/short-lil-osu-stream:8" target="_blank">https://odysee.com/@KuleGuy:8/short-lil-osu-stream:8</a></h3>
-        <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-vods-archive_202508/short%20lil%20osu%20stream_full%20vod.mp4" target="_blank">https://archive.org/download/kuleguy-yt-vods-archive_202508/short%20lil%20osu%20stream_full%20vod.mp4</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://www.youtube.com/live/E-8go870kiA" target="_blank">https://www.youtube.com/live/E-8go870kiA</a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" class="platform-mirrors"> Odysee: <a href="https://odysee.com/@KuleGuy:8/short-lil-osu-stream:8" target="_blank">https://odysee.com/@KuleGuy:8/short-lil-osu-stream:8</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-vods-archive_202508/short%20lil%20osu%20stream_full%20vod.mp4" target="_blank">https://archive.org/download/kuleguy-yt-vods-archive_202508/short%20lil%20osu%20stream_full%20vod.mp4</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/aglRlJerv6UxRvB",
+        doodstream: "https://myvidplay.com/e/mkcgwr64a2jv",
+        abyss: "https://short.icu/ldwF758qc",
+        mixdrop: "https://mixdrop.top/e/vkzqpvqzbv1jqg"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>
