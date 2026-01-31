@@ -1,0 +1,11 @@
+body {
+    background-color: #41434B;
+    color: white;
+}
+
+pre {
+    font-size: larger;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
