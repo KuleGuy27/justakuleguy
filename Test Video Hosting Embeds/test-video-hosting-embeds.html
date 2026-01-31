@@ -14,6 +14,12 @@
     
     h1 {margin-bottom: 15px;}
     img {width: 200px;}
+
+    #subtitles {
+        background-color: #00fb82;
+        width: fit-content;
+        color: black;
+    }
     
     button {
         margin: 5px;
@@ -78,9 +84,16 @@
 
     /* Tablet */
     @media (max-width: 1024px) {
-    table {font-size: 13px;}
+    table {
+        font-size: 13px;
+        width: 100%;
+    }
     th, td {padding: 8px;}
-    tbody td {height: 150px;}
+    td {width: 200px;}
+    tbody td {
+        min-width: 290px;
+        height: 150px;
+    }    
     img {width: 100px;}
     }
 
@@ -94,18 +107,25 @@
         font-size: 12px;
         min-width: 800px;
     }
-    tbody td {height: 110px;}
+    tbody td {
+        min-width: 330px;
+        height: 170px;
+    }
     img {width: 80px;}
     }
-
-    
     
 </style>    
 </head>
 <body>
     <h1>Test Video Hosting/Streaming Embeds</h1>
     <a href="../index.html"><button>Back to home</button></a>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br>
+    <div id="subtitles">
+    <a href="testvideo-forfreevideohosting_engsub.srt" download>First video subtitle file</a> /
+    <a href="preview-srt.html">(Preview)</a> /
+    <a href="https://www.mediafire.com/file/whrgk24qxqkud3j/testvideo-forfreevideohosting_engsub.srt/file" target="_blank">(Mirror)</a>
+    </div>
+
     <table>
         <thead>
             <tr style="font-size: larger;">
