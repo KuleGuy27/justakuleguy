@@ -9,8 +9,25 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/OMJlNfHTp" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/p7VjMxMpwRCrP0e"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
         <h1>My New Linux Desktop Rice! (for now I guess...)</h1>
         <h3 id="date">14 March 2024</h3>
         <h3 id="desc">
@@ -98,12 +115,28 @@
         Better Days by Lakey Inspired - <a href="https://www.youtube.com/watch?v=RXLzvo6kvVQ" target="_blank">https://www.youtube.com/watch?v=RXLzvo6kvVQ</a><br>
         Translucent City Lights by ArthurItis - <a href="https://www.youtube.com/watch?v=SSuxlI9KFHU" target="_blank">https://www.youtube.com/watch?v=SSuxlI9KFHU</a>
         </h3>
-        <div id="horizontal-line"></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3 id="mirror">YouTube: <a href="https://www.youtube.com/watch?v=AA9U8EZz81k" target="_blank">https://www.youtube.com/watch?v=AA9U8EZz81k</a></h3>
-        <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/my-new-linux-desktop-rice!-(for-now-i:e" target="_blank">https://odysee.com/@KuleGuy:8/my-new-linux-desktop-rice!-(for-now-i:e</a></h3>
-        <h3 id="mirror">Rumble: <a href="https://rumble.com/v64gia7-my-new-linux-desktop-rice-for-now-i-guess....html" target="_blank">https://rumble.com/v64gia7-my-new-linux-desktop-rice-for-now-i-guess....html</a></h3>
-        <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/my%20linux%20rices%20for%20now_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/my%20linux%20rices%20for%20now_rendered.mp4</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://www.youtube.com/watch?v=AA9U8EZz81k" target="_blank">https://www.youtube.com/watch?v=AA9U8EZz81k</a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" class="platform-mirrors"> Odysee: <a href="https://odysee.com/@KuleGuy:8/my-new-linux-desktop-rice!-(for-now-i:e" target="_blank">https://odysee.com/@KuleGuy:8/my-new-linux-desktop-rice!-(for-now-i:e</a></h3>
+        <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" class="platform-mirrors"> Rumble: <a href="https://rumble.com/v64gia7-my-new-linux-desktop-rice-for-now-i-guess....html" target="_blank">https://rumble.com/v64gia7-my-new-linux-desktop-rice-for-now-i-guess....html</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/my%20linux%20rices%20for%20now_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/my%20linux%20rices%20for%20now_rendered.mp4</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/p7VjMxMpwRCrP0e",
+        doodstream: "https://myvidplay.com/e/8gd11b7llabs",
+        abyss: "https://short.icu/OMJlNfHTp",
+        mixdrop: "https://mixdrop.top/e/k0me99owaxmzrz"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
 </html>

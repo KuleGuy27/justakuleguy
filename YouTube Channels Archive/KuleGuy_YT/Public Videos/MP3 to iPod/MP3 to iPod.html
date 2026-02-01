@@ -9,8 +9,25 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/uAOyo7f0C" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+        
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/myXZJDWXwBSbZ72"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
         <h1>How to put an MP3 File into your iPod, using Windows and iTunes.</h1>
         <h3 id="date">2 January 2024</h3>
         <h3 id="desc">Filmed on the 1st of November 2023.
@@ -21,12 +38,28 @@
         <br></br>
         iTunes download: <a href="https://support.apple.com/downloads/itunes" target="_blank">https://support.apple.com/downloads/itunes</a>
         </h3>
-        <div id="horizontal-line"></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3 id="mirror">YouTube: <a href="https://www.youtube.com/watch?v=nMjAKAcIJjQ" target="_blank">https://www.youtube.com/watch?v=nMjAKAcIJjQ</a></h3>
-        <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/how-to-put-an-mp3-file-into-your-ipod,:8" target="_blank">https://odysee.com/@KuleGuy:8/how-to-put-an-mp3-file-into-your-ipod,:8</a></h3>
-        <h3 id="mirror">Rumble: <a href="https://rumble.com/v64g7jj-how-to-put-an-mp3-file-into-your-ipod-using-windows-and-itunes..html" target="_blank">https://rumble.com/v64g7jj-how-to-put-an-mp3-file-into-your-ipod-using-windows-and-itunes..html</a></h3>
-        <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/%5B007464%5D%20MP3%20to%20iPod.mov" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/%5B007464%5D%20MP3%20to%20iPod.mov</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://www.youtube.com/watch?v=nMjAKAcIJjQ" target="_blank">https://www.youtube.com/watch?v=nMjAKAcIJjQ</a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" class="platform-mirrors"> Odysee: <a href="https://odysee.com/@KuleGuy:8/how-to-put-an-mp3-file-into-your-ipod,:8" target="_blank">https://odysee.com/@KuleGuy:8/how-to-put-an-mp3-file-into-your-ipod,:8</a></h3>
+        <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" class="platform-mirrors"> Rumble: <a href="https://rumble.com/v64g7jj-how-to-put-an-mp3-file-into-your-ipod-using-windows-and-itunes..html" target="_blank">https://rumble.com/v64g7jj-how-to-put-an-mp3-file-into-your-ipod-using-windows-and-itunes..html</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/%5B007464%5D%20MP3%20to%20iPod.mov" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/%5B007464%5D%20MP3%20to%20iPod.mov</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/myXZJDWXwBSbZ72",
+        doodstream: "https://myvidplay.com/e/k5jck6ai5r1t",
+        abyss: "https://short.icu/uAOyo7f0C",
+        mixdrop: "https://mixdrop.top/e/el0z9nd3iqdkm96"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>
