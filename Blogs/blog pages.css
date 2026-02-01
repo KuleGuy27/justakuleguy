@@ -33,6 +33,7 @@ iframe {
 }
 
 .mySlides img {width: 100%;}
+#main-image {width: 650px;}
 
 #date {color: blue}
 
@@ -64,6 +65,7 @@ article {
     margin: 20px auto;
 }
 
+#main-image {width: 100%;}
 img {
     width: 100%;
     float: none;
@@ -87,7 +89,6 @@ article {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     color: black;
 }
-
 
 img {
     width: 100%;
