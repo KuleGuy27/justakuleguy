@@ -9,8 +9,25 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/YEcUu5eb0" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/8Vzp6VeG3zfopYJ"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
         <div id="vid-metadata"><h1>Perfectly timing MTC to the 2026 Countdown!</h1>
         <h3 id="date">5 January 2026</h3>
         <h3 id="desc">
@@ -19,12 +36,28 @@
         <br></br>
         The song is MTC by S3RL, I played it in OSU once: <a href="https://www.youtube.com/watch?v=bO-NaEj2dQ0" target="_blank">https://www.youtube.com/watch?v=bO-NaEj2dQ0</a>
         </h3></div>
-        <div id="horizontal-line"></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3>YouTube: <a href="https://www.youtube.com/watch?v=ApiSsR8jHAA" target="_blank">https://www.youtube.com/watch?v=ApiSsR8jHAA</a></h3>
-        <h3>Odysee: <a href="https://odysee.com/@KuleGuy:8/new-year-2026-countdown_rendered:3" target="_blank">https://odysee.com/@KuleGuy:8/new-year-2026-countdown_rendered:3</a></h3>
-        <h3>Rumble: <a href="https://rumble.com/v73xcfe-perfectly-timing-mtc-to-the-2026-countdown.html?e9s=src_v1_cbl%2Csrc_v1_upp_v" target="_blank">https://rumble.com/v73xcfe-perfectly-timing-mtc-to-the-2026-countdown.html?e9s=src_v1_cbl%2Csrc_v1_upp_v</a></h3>
-        <h3>Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/new%20year%202026%20countdown_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/new%20year%202026%20countdown_rendered.mp4</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://www.youtube.com/watch?v=ApiSsR8jHAA" target="_blank">https://www.youtube.com/watch?v=ApiSsR8jHAA</a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" class="platform-mirrors"> Odysee: <a href="https://odysee.com/@KuleGuy:8/new-year-2026-countdown_rendered:3" target="_blank">https://odysee.com/@KuleGuy:8/new-year-2026-countdown_rendered:3</a></h3>
+        <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" class="platform-mirrors"> Rumble: <a href="https://rumble.com/v73xcfe-perfectly-timing-mtc-to-the-2026-countdown.html?e9s=src_v1_cbl%2Csrc_v1_upp_v" target="_blank">https://rumble.com/v73xcfe-perfectly-timing-mtc-to-the-2026-countdown.html?e9s=src_v1_cbl%2Csrc_v1_upp_v</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/new%20year%202026%20countdown_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/new%20year%202026%20countdown_rendered.mp4</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/8Vzp6VeG3zfopYJ",
+        doodstream: "https://myvidplay.com/e/d2ti8myruzuh",
+        abyss: "https://short.icu/YEcUu5eb0",
+        mixdrop: "https://mixdrop.top/e/pj96d6k4ipdjgn"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>

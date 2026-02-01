@@ -9,8 +9,25 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/wyPeZtGMq" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/xoWzMQ3adBIkOrZ"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
         <h1>Little Nightmares 3 Full Gameplay - No Commentary Walkthrough</h1>
         <h3 id="date">27 November 2025</h3>
         <h3 id="desc">
@@ -36,12 +53,28 @@
         CPU: Intel(R) Core(TM) Ultra 7 155H<br>
         Ram: 32GB
         </h3>
-        <div id="horizontal-line"></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3 id="mirror">YouTube: <a href="https://www.youtube.com/watch?v=SpdyRtZfGg" target="_blank">https://www.youtube.com/watch?v=SpdyRtZfGg</a></h3>
-        <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/littlenightmares3_no-commentary_rendered:8" target="_blank">https://odysee.com/@KuleGuy:8/littlenightmares3_no-commentary_rendered:8</a></h3>
-        <h3 id="mirror">Rumble: <a href="https://rumble.com/v72926i-little-nightmares-3-full-gameplay-no-commentary-walkthrough.html" target="_blank">https://rumble.com/v72926i-little-nightmares-3-full-gameplay-no-commentary-walkthrough.html</a></h3>
-        <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/littlenightmares3_no%20commentary_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/littlenightmares3_no%20commentary_rendered.mp4</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://www.youtube.com/watch?v=SpdyRtZfGg" target="_blank">https://www.youtube.com/watch?v=SpdyRtZfGg</a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" class="platform-mirrors"> Odysee: <a href="https://odysee.com/@KuleGuy:8/littlenightmares3_no-commentary_rendered:8" target="_blank">https://odysee.com/@KuleGuy:8/littlenightmares3_no-commentary_rendered:8</a></h3>
+        <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" class="platform-mirrors"> Rumble: <a href="https://rumble.com/v72926i-little-nightmares-3-full-gameplay-no-commentary-walkthrough.html" target="_blank">https://rumble.com/v72926i-little-nightmares-3-full-gameplay-no-commentary-walkthrough.html</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/littlenightmares3_no%20commentary_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/littlenightmares3_no%20commentary_rendered.mp4</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/xoWzMQ3adBIkOrZ",
+        doodstream: "https://doodstream.com/e/dmhe29uuhm6n",
+        abyss: "https://short.icu/wyPeZtGMq",
+        mixdrop: "https://mixdrop.top/e/pj967lp7b94gdm"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>

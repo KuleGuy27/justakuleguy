@@ -9,8 +9,25 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/ocLRQ7-GO" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/jAm973ByzvczZQl"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
         <h1>Taiko Web: DJ Yoshitaka - Flower / Normal FULL COMBO</h1>
         <h3 id="date">6 January 2026</h3>
         <h3 id="desc">
@@ -21,12 +38,28 @@
         <br></br>
         This is kind of a mediocre play and not that impressive to pros, but I just wanted to upload this because I got a full combo :)
         </h3>
-        <div id="horizontal-line"></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3>YouTube: <a href="https://www.youtube.com/watch?v=yitgDQkrFtc" target="_blank">https://www.youtube.com/watch?v=yitgDQkrFtc</a></h3>
-        <h3>Odysee: <a href="https://odysee.com/@KuleGuy:8/Taiko-web---Flower-FC_rendered:8" target="_blank">https://odysee.com/@KuleGuy:8/Taiko-web---Flower-FC_rendered:8</a></h3>
-        <h3>Rumble: <a href="https://rumble.com/v73z7o0-taiko-web-dj-yoshitaka-flower-normal-full-combo.html" target="_blank">https://rumble.com/v73z7o0-taiko-web-dj-yoshitaka-flower-normal-full-combo.html</a></h3>
-        <h3>Internet Archive: <a href="https://ia601009.us.archive.org/28/items/kuleguy-yt-videos-archive_202508/Taiko%20web%20-%20Flower%20normal%20FC_rendered.mp4" target="_blank">https://ia601009.us.archive.org/28/items/kuleguy-yt-videos-archive_202508/Taiko%20web%20-%20Flower%20normal%20FC_rendered.mp4</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://www.youtube.com/watch?v=yitgDQkrFtc" target="_blank">https://www.youtube.com/watch?v=yitgDQkrFtc</a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" class="platform-mirrors"> Odysee: <a href="https://odysee.com/@KuleGuy:8/Taiko-web---Flower-FC_rendered:8" target="_blank">https://odysee.com/@KuleGuy:8/Taiko-web---Flower-FC_rendered:8</a></h3>
+        <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" class="platform-mirrors"> Rumble: <a href="https://rumble.com/v73z7o0-taiko-web-dj-yoshitaka-flower-normal-full-combo.html" target="_blank">https://rumble.com/v73z7o0-taiko-web-dj-yoshitaka-flower-normal-full-combo.html</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://ia601009.us.archive.org/28/items/kuleguy-yt-videos-archive_202508/Taiko%20web%20-%20Flower%20normal%20FC_rendered.mp4" target="_blank">https://ia601009.us.archive.org/28/items/kuleguy-yt-videos-archive_202508/Taiko%20web%20-%20Flower%20normal%20FC_rendered.mp4</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/jAm973ByzvczZQl",
+        doodstream: "https://myvidplay.com/e/ymv65o483ewz",
+        abyss: "https://short.icu/ocLRQ7-GO",
+        mixdrop: "https://mixdrop.top/e/dkdrmdn1hkjrp3"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>
