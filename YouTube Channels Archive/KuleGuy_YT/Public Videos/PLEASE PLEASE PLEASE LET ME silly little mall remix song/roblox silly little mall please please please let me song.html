@@ -9,8 +9,25 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/OjB8vFaNA" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/Xjxd4W0V91HDMJd"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
         <h1>Please Please Please Let Me Get What I Want - ROBLOX silly little mall remix</h1>
         <h3 id="date">25 June 2025</h3>
         <h3 id="desc">
@@ -23,12 +40,28 @@
         Here is the playlist: <a href="https://www.youtube.com/playlist?list=PL0mQ3MGS8ydrflGW-it9loS8_01cbWp_7" target="_blank">https://www.youtube.com/playlist?list=PL0mQ3MGS8ydrflGW-it9loS8_01cbWp_7</a><br>
         Here is the link to the remix: <a href="https://www.youtube.com/watch?v=Q5cAVjjwrxg" target="_blank">https://www.youtube.com/watch?v=Q5cAVjjwrxg</a>
         </h3>
-        <div id="horizontal-line"></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3 id="mirror">YouTube: <a href="https://www.youtube.com/watch?v=KCT_EIJ3rEc" target="_blank">https://www.youtube.com/watch?v=KCT_EIJ3rEc</a></h3>
-        <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/rbx-sillylilmall_ppplmgwiw-song_rendered:0" target="_blank">https://odysee.com/@KuleGuy:8/rbx-sillylilmall_ppplmgwiw-song_rendered:0</a></h3>
-        <h3 id="mirror">Rumble: <a href="https://rumble.com/v6vbg49-please-please-please-let-me-get-what-i-want-roblox-silly-little-mall-remix.html" target="_blank">https://rumble.com/v6vbg49-please-please-please-let-me-get-what-i-want-roblox-silly-little-mall-remix.html</a></h3>
-        <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/rbx-sillylilmall_ppplmgwiw%20song_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/rbx-sillylilmall_ppplmgwiw%20song_rendered.mp4</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://www.youtube.com/watch?v=KCT_EIJ3rEc" target="_blank">https://www.youtube.com/watch?v=KCT_EIJ3rEc</a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" class="platform-mirrors"> Odysee: <a href="https://odysee.com/@KuleGuy:8/rbx-sillylilmall_ppplmgwiw-song_rendered:0" target="_blank">https://odysee.com/@KuleGuy:8/rbx-sillylilmall_ppplmgwiw-song_rendered:0</a></h3>
+        <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" class="platform-mirrors"> Rumble: <a href="https://rumble.com/v6vbg49-please-please-please-let-me-get-what-i-want-roblox-silly-little-mall-remix.html" target="_blank">https://rumble.com/v6vbg49-please-please-please-let-me-get-what-i-want-roblox-silly-little-mall-remix.html</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/rbx-sillylilmall_ppplmgwiw%20song_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/rbx-sillylilmall_ppplmgwiw%20song_rendered.mp4</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/Xjxd4W0V91HDMJd",
+        doodstream: "https://myvidplay.com/e/ta9vktifkub1",
+        abyss: "https://short.icu/OjB8vFaNA",
+        mixdrop: "https://mixdrop.top/e/mknz7r73tqx98q"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>

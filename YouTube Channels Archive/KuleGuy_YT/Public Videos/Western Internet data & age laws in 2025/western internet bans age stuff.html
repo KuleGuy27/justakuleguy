@@ -9,8 +9,25 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/d5DfKo0bp" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/Py6rjp1vKru0O07"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
         <h1>What's going on with the Western Internet?</h1>
         <h3 id="date">4 August 2025</h3>
         <h3 id="desc">
@@ -37,12 +54,28 @@
         <a href="https://blog.youtube/news-and-events/extending-our-built-in-protections-to-more-teens-on-youtube/" target="_blank">https://blog.youtube/news-and-events/extending-our-built-in-protections-to-more-teens-on-youtube/</a><br>
         <a href="https://www.firstpost.com/explainers/why-has-australia-added-youtube-to-social-media-ban-for-teens-13915910.html" target="_blank">https://www.firstpost.com/explainers/why-has-australia-added-youtube-to-social-media-ban-for-teens-13915910.html</a>
         </h3>
-        <div id="horizontal-line"></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3 id="mirror">YouTube: <a href="https://www.youtube.com/watch?v=NUDplD5tVs8" target="_blank">https://www.youtube.com/watch?v=NUDplD5tVs8</a></h3>
-        <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/western-internet-data-age---laws-news-in-2025_rendered:d" target="_blank">https://odysee.com/@KuleGuy:8/western-internet-data-age---laws-news-in-2025_rendered:d</a></h3>
-        <h3 id="mirror">Rumble: <a href="https://rumble.com/v6x50wk-whats-going-on-with-the-western-internet.html" target="_blank">https://rumble.com/v6x50wk-whats-going-on-with-the-western-internet.html</a></h3>
-        <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/western%20internet%20data%20age%20%26%20laws%20news%20in%202025_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/western%20internet%20data%20age%20%26%20laws%20news%20in%202025_rendered.mp4</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://www.youtube.com/watch?v=NUDplD5tVs8" target="_blank">https://www.youtube.com/watch?v=NUDplD5tVs8</a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" class="platform-mirrors"> Odysee: <a href="https://odysee.com/@KuleGuy:8/western-internet-data-age---laws-news-in-2025_rendered:d" target="_blank">https://odysee.com/@KuleGuy:8/western-internet-data-age---laws-news-in-2025_rendered:d</a></h3>
+        <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" class="platform-mirrors"> Rumble: <a href="https://rumble.com/v6x50wk-whats-going-on-with-the-western-internet.html" target="_blank">https://rumble.com/v6x50wk-whats-going-on-with-the-western-internet.html</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/western%20internet%20data%20age%20%26%20laws%20news%20in%202025_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/western%20internet%20data%20age%20%26%20laws%20news%20in%202025_rendered.mp4</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/Py6rjp1vKru0O07",
+        doodstream: "https://myvidplay.com/e/6u406ji5w7wd",
+        abyss: "https://short.icu/d5DfKo0bp",
+        mixdrop: "https://mixdrop.top/e/4dm9eex7fqgd47"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>

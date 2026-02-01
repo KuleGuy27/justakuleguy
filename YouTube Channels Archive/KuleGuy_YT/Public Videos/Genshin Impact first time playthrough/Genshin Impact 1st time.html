@@ -9,8 +9,25 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/s-6mBxYJq" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/2KBDv0xzBeFZ0V7"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
         <h1>My first time playing GENSHIN IMPACT!</h1>
         <h3 id="date">30 July 2025</h3>
         <h3 id="desc">
@@ -32,12 +49,28 @@
         Music in the background:<br>
         We Shop Song by Lud and Schlatts Musical Emporium - <a href="https://www.youtube.com/watch?v=Y-6Plfn1yHg" target="_blank">https://www.youtube.com/watch?v=Y-6Plfn1yHg</a>
         </h3>
-        <div id="horizontal-line"></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3 id="mirror">YouTube: <a href="https://www.youtube.com/watch?v=MmCgXB1Bfu8" target="_blank">https://www.youtube.com/watch?v=MmCgXB1Bfu8</a></h3>
-        <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/genshin-impact-firsttime_rendered:0" target="_blank">https://odysee.com/@KuleGuy:8/genshin-impact-firsttime_rendered:0</a></h3>
-        <h3 id="mirror">Rumble: <a href="https://rumble.com/v6ws3je-my-first-time-playing-genshin-impact.html" target="_blank">https://rumble.com/v6ws3je-my-first-time-playing-genshin-impact.html</a></h3>
-        <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/genshin-impact-firsttime_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/genshin-impact-firsttime_rendered.mp4</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://www.youtube.com/watch?v=MmCgXB1Bfu8" target="_blank">https://www.youtube.com/watch?v=MmCgXB1Bfu8</a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" class="platform-mirrors"> Odysee: <a href="https://odysee.com/@KuleGuy:8/genshin-impact-firsttime_rendered:0" target="_blank">https://odysee.com/@KuleGuy:8/genshin-impact-firsttime_rendered:0</a></h3>
+        <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" class="platform-mirrors"> Rumble: <a href="https://rumble.com/v6ws3je-my-first-time-playing-genshin-impact.html" target="_blank">https://rumble.com/v6ws3je-my-first-time-playing-genshin-impact.html</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/genshin-impact-firsttime_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/genshin-impact-firsttime_rendered.mp4</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/2KBDv0xzBeFZ0V7",
+        doodstream: "https://myvidplay.com/e/pux9xhuizxay",
+        abyss: "https://short.icu/s-6mBxYJq",
+        mixdrop: "https://mixdrop.top/e/9wqxez0zhv0n4j"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>

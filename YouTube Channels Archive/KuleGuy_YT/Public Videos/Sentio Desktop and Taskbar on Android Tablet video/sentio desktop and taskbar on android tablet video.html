@@ -9,8 +9,25 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/BTBoyLfv3r" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/wyVZzlayDOSJwBy"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
         <h1>Using my Android Tablet as a computer via Sentio Desktop & Taskbar!</h1>
         <h3 id="date">4 July 2025</h3>
         <h3 id="desc">
@@ -42,15 +59,31 @@
         Spaceship by LuKremBo - <a href="https://www.youtube.com/watch?v=7AiYmoj1eL4" target="_blank">https://www.youtube.com/watch?v=7AiYmoj1eL4</a>
         </h3>
         <div id="horizontal-line"></div>
-        <a href="sentio and taskbar_engsub.srt" download>Download English Subtitles (.srt)</a> <a href="https://www.mediafire.com/file/vsrreyho2mxcrrx/sentio%2526taskbar_engsub.srt/file" target="_blank">(Mirror)</a>
-        <br>
-        <a href="sentio and taskbar_vietsub.srt" download>Download Vietnamese Subtitles (.srt)</a> <a href="https://www.mediafire.com/file/j25c1zh7wutjoyu/sentio%2526taskbar_vietsub.srt/file" target="_blank">(Mirror)</a>
-        <div id="horizontal-line"></div>
+        <div id="subtitles">
+        <a href="sentio and taskbar_engsub.srt" download>Download English Subtitles (.srt)</a> / <a href="preview-subs_engsub.html">(Preview)</a> / <a href="https://www.mediafire.com/file/vsrreyho2mxcrrx/sentio%2526taskbar_engsub.srt/file" target="_blank">(Mirror)</a><br>
+        <a href="sentio and taskbar_vietsub.srt" download>Download Vietnamese Subtitles (.srt)</a> / <a href="preview-subs_vietsub.html">(Preview)</a> / <a href="https://www.mediafire.com/file/j25c1zh7wutjoyu/sentio%2526taskbar_vietsub.srt/file" target="_blank">(Mirror)</a></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3 id="mirror">YouTube: <a href="https://www.youtube.com/watch?v=Kd0aVLHwCKE" target="_blank">https://www.youtube.com/watch?v=Kd0aVLHwCKE</a></h3>
-        <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/sentio-taskbar_andtab_rendered:9" target="_blank">https://odysee.com/@KuleGuy:8/sentio-taskbar_andtab_rendered:9</a></h3>
-        <h3 id="mirror">Rumble: <a href="https://rumble.com/v6vpc8j-using-my-android-tablet-as-a-computer-via-sentio-desktop-and-taskbar.html" target="_blank">https://rumble.com/v6vpc8j-using-my-android-tablet-as-a-computer-via-sentio-desktop-and-taskbar.html</a></h3>
-        <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/sentio%26taskbar_andtab_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/sentio%26taskbar_andtab_rendered.mp4</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://www.youtube.com/watch?v=Kd0aVLHwCKE" target="_blank">https://www.youtube.com/watch?v=Kd0aVLHwCKE</a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" class="platform-mirrors"> Odysee: <a href="https://odysee.com/@KuleGuy:8/sentio-taskbar_andtab_rendered:9" target="_blank">https://odysee.com/@KuleGuy:8/sentio-taskbar_andtab_rendered:9</a></h3>
+        <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" class="platform-mirrors"> Rumble: <a href="https://rumble.com/v6vpc8j-using-my-android-tablet-as-a-computer-via-sentio-desktop-and-taskbar.html" target="_blank">https://rumble.com/v6vpc8j-using-my-android-tablet-as-a-computer-via-sentio-desktop-and-taskbar.html</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/sentio%26taskbar_andtab_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/sentio%26taskbar_andtab_rendered.mp4</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/wyVZzlayDOSJwBy",
+        doodstream: "https://myvidplay.com/e/kqy6be62ancu",
+        abyss: "https://short.icu/BTBoyLfv3r",
+        mixdrop: "https://mixdrop.top/e/jdzk6grwser480"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>
