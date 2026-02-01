@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>kuleguy pfp history</title>
+        <link rel="stylesheet" href="../../../universal darkmode.css">
+    <style>
+        img {height: 200px;}
 
+        .pfp, .banner {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+
+        h2 {float: left; margin-top: 100px;}
+        
+        .num {font-size: clamp(20px, 4vw, 45px);}
+        .date {font-size: clamp(16px, 3vw, 30px);}
+        
+        table {
+          width: 100%;
+          max-width: 100%;
+          border-collapse: collapse;
+        }
+
+        th, td {
+          border: 1px solid #ccc;
+          text-align: center;
+          font-size: clamp(12px, 2.5vw, 16px);
+          padding: clamp(4px, 1vw, 10px);
+          vertical-align: middle; 
+        }
+
+        .pfp {
+          height: 200px;
+          text-align: center;
+        }
+    </style>
+    </head>
+
+    <body>
+    <h1>KuleGuy Profile and Banner History</h1>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <br></br>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Profile Pic</th>
+          <th>Banner</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+
+      <!-- PFP 2 -->
+      <tbody>
+        <tr>
+          <td class="num">#2</td>
+          <td><img src="PFP_2/[007698]1x1.png" class="pfp"></td>
+          <td><img src="PFP_2/[007684]banner.png" class="banner"></td>
+          <td class="date">4 Jan 2024</td>
+        </tr>
+      </tbody>
+
+      <!-- PFP 1 -->
+      <tbody>
+        <tr>
+          <td class="num">#1</td>
+          <td><img src="PFP_1/[007680].png" class="pfp"></td>
+          <td><img src="PFP_1/[007684]banner.png" class="banner"></td>
+          <td class="date">1 Jan 2024</td>
+        </tr>
+      </tbody>
+    </table>
+
+    </body>
+
+    <script src="../../../universal darkmode.js"></script>
+</html>
