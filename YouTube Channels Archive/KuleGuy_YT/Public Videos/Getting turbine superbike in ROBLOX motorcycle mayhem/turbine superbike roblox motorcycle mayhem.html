@@ -9,8 +9,25 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/ChNFi9KTj" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/94RLQDBAB8Sa4RB"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
         <h1>Getting the Turbine Superbike in ROBLOX Motorcycle Mayhem!</h1>
         <h3 id="date">9 October 2024</h3>
         <h3 id="desc">
@@ -27,12 +44,28 @@
         CPU: 11th Gen Intel i7-1165G7<br>
         Ram: 24GB
         </h3>
-        <div id="horizontal-line"></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3 id="mirror">YouTube: <a href="https://www.youtube.com/watch?v=lVLO22PjGEo" target="_blank">https://www.youtube.com/watch?v=lVLO22PjGEo</a></h3>
-        <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/2024-10-09-06-09-34:1" target="_blank">https://odysee.com/@KuleGuy:8/2024-10-09-06-09-34:1</a></h3>
-        <h3 id="mirror">Rumble: <a href="https://rumble.com/v64kwta-getting-the-turbine-superbike-in-roblox-motorcycle-mayhem.html" target="_blank">https://rumble.com/v64kwta-getting-the-turbine-superbike-in-roblox-motorcycle-mayhem.html</a></h3>
-        <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/2024-10-09%2006-09-34%20%28RBX%20motorcycle%20mayhem%20turbine%20superbike%29.mkv" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/2024-10-09%2006-09-34%20%28RBX%20motorcycle%20mayhem%20turbine%20superbike%29.mkv</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://www.youtube.com/watch?v=lVLO22PjGEo" target="_blank">https://www.youtube.com/watch?v=lVLO22PjGEo</a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" class="platform-mirrors"> Odysee: <a href="https://odysee.com/@KuleGuy:8/2024-10-09-06-09-34:1" target="_blank">https://odysee.com/@KuleGuy:8/2024-10-09-06-09-34:1</a></h3>
+        <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" class="platform-mirrors"> Rumble: <a href="https://rumble.com/v64kwta-getting-the-turbine-superbike-in-roblox-motorcycle-mayhem.html" target="_blank">https://rumble.com/v64kwta-getting-the-turbine-superbike-in-roblox-motorcycle-mayhem.html</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/2024-10-09%2006-09-34%20%28RBX%20motorcycle%20mayhem%20turbine%20superbike%29.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/2024-10-09%2006-09-34%20%28RBX%20motorcycle%20mayhem%20turbine%20superbike%29.mp4</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/94RLQDBAB8Sa4RB",
+        doodstream: "https://myvidplay.com/e/qyuvwh855pk8",
+        abyss: "https://short.icu/ChNFi9KTj",
+        mixdrop: "https://mixdrop.top/e/dkdr6xlohzexlj"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>

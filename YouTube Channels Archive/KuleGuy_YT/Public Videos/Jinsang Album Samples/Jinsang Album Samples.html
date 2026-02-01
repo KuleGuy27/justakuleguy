@@ -9,8 +9,25 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/q6_ea2Wmo" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/ZjPQVZx7Xdfq2DR"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
         <h1>Samples to Jinsang's Songs (9 Albums) [Lofi Hip-Hop]</h1>
         <h3 id="date">28 November 2024</h3>
         <h3 id="desc">
@@ -176,12 +193,28 @@
         Jinsang - minnie (MISSING SAMPLE)<br>
         1:05:21 = Jinsang - trust the process // Black Ivory - Daily News<br>
         </h3>
-        <div id="horizontal-line"></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3 id="mirror">YouTube: <a href="https://www.youtube.com/watch?v=_h3pzsQj4wE" target="_blank">https://www.youtube.com/watch?v=_h3pzsQj4wE</a></h3>
-        <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/jinsang_album_samples_full-rendered:7" target="_blank">https://odysee.com/@KuleGuy:8/jinsang_album_samples_full-rendered:7</a></h3>
-        <h3 id="mirror">Rumble: <a href="https://rumble.com/v64ky11-samples-to-jinsangs-songs-9-albums-lofi-hip-hop.html" target="_blank">https://rumble.com/v64ky11-samples-to-jinsangs-songs-9-albums-lofi-hip-hop.html</a></h3>
-        <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/jinsang_album_samples_full-rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/jinsang_album_samples_full-rendered.mp4</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://www.youtube.com/watch?v=_h3pzsQj4wE" target="_blank">https://www.youtube.com/watch?v=_h3pzsQj4wE</a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" class="platform-mirrors"> Odysee: <a href="https://odysee.com/@KuleGuy:8/jinsang_album_samples_full-rendered:7" target="_blank">https://odysee.com/@KuleGuy:8/jinsang_album_samples_full-rendered:7</a></h3>
+        <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" class="platform-mirrors"> Rumble: <a href="https://rumble.com/v64ky11-samples-to-jinsangs-songs-9-albums-lofi-hip-hop.html" target="_blank">https://rumble.com/v64ky11-samples-to-jinsangs-songs-9-albums-lofi-hip-hop.html</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/jinsang_album_samples_full-rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/jinsang_album_samples_full-rendered.mp4</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/ZjPQVZx7Xdfq2DR",
+        doodstream: "https://myvidplay.com/e/cc8kaiakfxao",
+        abyss: "https://short.icu/q6_ea2Wmo",
+        mixdrop: "https://mixdrop.top/e/l7q9187jtnjgkk"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>

@@ -9,8 +9,25 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/IpjXmHhDh" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/akm6R0JkX3ux4rk"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
         <h1>Linux Distros slander</h1>
         <h3 id="date">20 April 2024</h3>
         <h3 id="desc">
@@ -55,12 +72,28 @@
         Music in the background:<br>
         SWALLOW IT! by Gayfold (Instrumental) - <a href="https://www.youtube.com/watch?v=BVrwizbPvZs" target="_blank">https://www.youtube.com/watch?v=BVrwizbPvZs</a>
         </h3>
-        <div id="horizontal-line"></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3 id="mirror">YouTube: <a href="https://www.youtube.com/watch?v=meqt81AdlG8" target="_blank">https://www.youtube.com/watch?v=meqt81AdlG8</a></h3>
-        <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/linux-distros-slander:4" target="_blank">https://odysee.com/@KuleGuy:8/linux-distros-slander:4</a></h3>
-        <h3 id="mirror">Rumble: <a href="https://rumble.com/v64kl9v-linux-distros-slandered.html" target="_blank">https://rumble.com/v64kl9v-linux-distros-slandered.html</a></h3>
-        <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/linux_distro_slander_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/linux_distro_slander_rendered.mp4</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://www.youtube.com/watch?v=meqt81AdlG8" target="_blank">https://www.youtube.com/watch?v=meqt81AdlG8</a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" class="platform-mirrors"> Odysee: <a href="https://odysee.com/@KuleGuy:8/linux-distros-slander:4" target="_blank">https://odysee.com/@KuleGuy:8/linux-distros-slander:4</a></h3>
+        <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" class="platform-mirrors"> Rumble: <a href="https://rumble.com/v64kl9v-linux-distros-slandered.html" target="_blank">https://rumble.com/v64kl9v-linux-distros-slandered.html</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/linux_distro_slander_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/linux_distro_slander_rendered.mp4</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/akm6R0JkX3ux4rk",
+        doodstream: "https://myvidplay.com/e/mox8mkvgydl5",
+        abyss: "https://short.icu/IpjXmHhDh",
+        mixdrop: "https://mixdrop.top/e/nlxnoz4mfekw0z"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>

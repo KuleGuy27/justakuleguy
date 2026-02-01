@@ -9,8 +9,25 @@
     </head>
     <body>
         <a href="../justakuleguy_ytvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br></br><iframe src="https://short.icu/pcJc9tJho" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/Lv1da7epYQcRXGG"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
         <h1>Preserving/Ripping my ENTIRE Physical Media Collection</h1>
         <h3 id="date">30 July 2024</h3>
         <h3 id="desc">
@@ -39,15 +56,31 @@
         The 25th Hour by Schlatt Crossing  - <a href="https://www.youtube.com/watch?v=44MCworZf78" target="_blank">https://www.youtube.com/watch?v=44MCworZf78</a>
         </h3>
         <div id="horizontal-line"></div>
-        <a href="physical-media_rip_engsub.srt" download>Download English Subtitles (.srt)</a> <a href="https://www.mediafire.com/file/fzch7tc2qolvk2t/physical-media_rip_engsub.srt/file" target="_blank">(Mirror)</a>
-        <br>
-        <a href="physical-media_rip_vietsub.srt" download>Download Vietnamese Subtitles (.srt)</a> <a href="https://www.mediafire.com/file/ytuxo04a7mc9kgs/physical-media_rip_vietsub.srt/file" target="_blank">(Mirror)</a>
-        <div id="horizontal-line"></div>
+        <div id="subtitles">
+        <a href="physical-media_rip_engsub.srt" download>Download English Subtitles (.srt)</a> / <a href="preview-subs_engsub.html">(Preview)</a> / <a href="https://www.mediafire.com/file/fzch7tc2qolvk2t/physical-media_rip_engsub.srt/file" target="_blank">(Mirror)</a><br>
+        <a href="physical-media_rip_vietsub.srt" download>Download Vietnamese Subtitles (.srt)</a> / <a href="preview-subs_vietsub.html">(Preview)</a> / <a href="https://www.mediafire.com/file/ytuxo04a7mc9kgs/physical-media_rip_vietsub.srt/file" target="_blank">(Mirror)</a></div>
+        </div>
+
+        <div id="mirror-border">
         <h2>Video Mirrors:</h2>
-        <h3 id="mirror">YouTube: <a href="https://www.youtube.com/watch?v=cmAttaNVxCc" target="_blank">https://www.youtube.com/watch?v=cmAttaNVxCc</a></h3>
-        <h3 id="mirror">Odysee: <a href="https://odysee.com/@KuleGuy:8/physical-media_rip_rendered:9" target="_blank">https://odysee.com/@KuleGuy:8/physical-media_rip_rendered:9</a></h3>
-        <h3 id="mirror">Rumble: <a href="https://rumble.com/v64ktv1-preservingripping-my-entire-physical-media-collection.html" target="_blank">https://rumble.com/v64ktv1-preservingripping-my-entire-physical-media-collection.html</a></h3>
-        <h3 id="mirror">Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/physical-media_rip_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/physical-media_rip_rendered.mp4</a></h3>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://www.youtube.com/watch?v=cmAttaNVxCc" target="_blank">https://www.youtube.com/watch?v=cmAttaNVxCc</a></h3>
+        <h3><img src="../../../1200px-Odysee_Logo.svg-1718738942.png" class="platform-mirrors"> Odysee: <a href="https://odysee.com/@KuleGuy:8/physical-media_rip_rendered:9" target="_blank">https://odysee.com/@KuleGuy:8/physical-media_rip_rendered:9</a></h3>
+        <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" class="platform-mirrors"> Rumble: <a href="https://rumble.com/v64ktv1-preservingripping-my-entire-physical-media-collection.html" target="_blank">https://rumble.com/v64ktv1-preservingripping-my-entire-physical-media-collection.html</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/physical-media_rip_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/physical-media_rip_rendered.mp4</a></h3>
+        </div>
+
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/Lv1da7epYQcRXGG",
+        doodstream: "https://myvidplay.com/e/jod77rs8ta4a",
+        abyss: "https://short.icu/pcJc9tJho",
+        mixdrop: "https://mixdrop.top/e/pj96o19nbnn97j"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     </body>
