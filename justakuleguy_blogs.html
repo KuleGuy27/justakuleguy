@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="../universal darkmode.css">
+  <style>
+  body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  main {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    background: #ffffff;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    width: 70%;
+    max-width: 900px;
+    text-align: center;
+  }
+
+  article h2 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+  }
+
+  img {
+    width: 30%;
+    height: auto;
+    margin: 0.3rem 0 0.6rem 0;
+    border-radius: 3px;
+  }
+
+  h3 {
+    margin: 0.2rem 0;
+    font-size: 1.2rem;
+    color: black;
+  }
+
+  p {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    color: black;
+  }
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    article {
+      width: 85%;
+    }
+    img {
+      width: 60%;
+    }
+  }
+
+  /* Phone */
+  @media (max-width: 768px) {
+    article {
+      width: 95%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+</style>
+
+</head>
+<body>
+  <h1>My Blogs</h1>
+  <a href="../index.html"><button>Back to home</button></a>
+  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <main>
+    <article>
+      <a href="HP-310 touchsmart PC 6TB home-made NAS/hp310 6tb nas update.html">
+        <h2>Update! Using my HP-310 AIO computer as an easy home NAS! [Subject to change]</h2>
+      <img src="HP-310 touchsmart PC 6TB home-made NAS/hp310 nas - main image cover.jpg"></a>
+      <h3>Tags: Technology, Linux, Hardware, Software</h3>
+      <p>Posted on: 29 August 2025</p>
+    </article>
+
+    <article>
+      <a href="QALC - Linux terminal math calculator/qalc linux terminal calculator.html">
+        <h2>Using QALC as my terminal calculator for Linux!</h2>
+      <img src="QALC - Linux terminal math calculator/qalc linux - asmd main pc.png"></a>
+      <h3>Tags: Technology, Linux, Software</h3>
+      <p>Posted on: 25 August 2025</p>
+    </article>
+  </main>
+
+  <script src="../universal darkmode.js"></script>
+</body>
+</html>

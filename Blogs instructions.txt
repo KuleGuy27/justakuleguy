@@ -1,0 +1,14 @@
+Everytime a new YT video is made:
+- Make a folder with the topic of your blog
+- make a folder in Abyss.to and upload your videos there (if necessary)
+- upload to internet archive too
+- copy, create, or download any images and videos you see fit
+- make a blog.html file
+
+ - in the blog list (index), copy and paste the article tag and edit the: link, h2 (make title), image, h3 (edit tags), and p (edit post date).
+
+- in the blog posts itself; edit the site title from the folder, h1 (from h2 index), h3 date, video source, h3 description, link url with "a href" if possible
+- add downloadable links to donwload the .srt subtitles + add a mirror link
+- link to mirrors (YouTube, Odysee, Rumble, Internet Archive)
+
+
