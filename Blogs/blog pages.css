@@ -1,27 +1,37 @@
 body {
     background-color: #ffffff;
     color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
 }
 
-button {
-    display: block;
-    margin-left: auto; 
-    margin-right: auto;
+p {
+    font-size: 18px;
+    color: #000000;
+    font: bold;
 }
 
-/* Offset anchor scroll for sticky jump menu */
-h1, h2 { scroll-margin-top: 60px;} /* adjust if needed */
-h1 {font-size: 35px;}
+#blog-topbuttons {text-align: center;}
+
+h2 {
+    scroll-margin-top: 60px;
+    font-size: 25px;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
 h3 {
+    font-size: 17px;
+    font-weight: 400;
     font-family: "Roboto"; 
-    font-size: 23px;
+    margin-bottom: 1.2rem;
     color: #303030;
 }
 
 article {
-    max-width: 1050px;
+    max-width: 980px;
     margin: 0px auto;
-    padding: 30px;
+    padding: 15px;
     background: rgba(255, 255, 255, 0.700);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     color: black;
@@ -32,8 +42,15 @@ iframe {
     aspect-ratio: 16 / 9;
 }
 
+.img50 {width: 50%;}
+.img60 {width: 60%;}
 .mySlides img {width: 100%;}
-#main-image {width: 650px;}
+
+#main-image {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
 
 #date {color: blue}
 
@@ -46,15 +63,12 @@ iframe {
 #mirror {color: black}
 
 #linux-copy-command {
-  display: block;
-  background-color: black;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 4px;
-  font-family: monospace;
-  overflow-x: auto;   /* allows horizontal scroll if too long */
-  max-width: 100%;    /* prevent overflow */
-  white-space: nowrap; /* keeps commands on one line */
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 15px;
+    margin: 1.5rem 0;
 }
 
 /* Tablet query */
@@ -90,6 +104,7 @@ article {
     color: black;
 }
 
+#main-image {width: 100%;}
 img {
     width: 100%;
     float: none;
