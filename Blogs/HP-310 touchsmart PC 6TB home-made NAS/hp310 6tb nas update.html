@@ -135,21 +135,21 @@
         
         <h2 id="header4">How do you install Ubuntu Server and CasaOS?</h2>
         <h3>For Ubuntu Server, you first go to the website and download the .ISO file.</h3>
-        <img src="hp310 nas - Get Ubuntu Server download page.png" class="img60">
-        <img src="hp310 nas - downloading Ubuntu server.png" class="img60">
+        <img src="hp310 nas - Get Ubuntu Server download page.png" width="60%">
+        <img src="hp310 nas - downloading Ubuntu server.png" width="60%">
         <h3>After that, you burn it to a USB using: Rufus, Balena Etcher, Linux USB Image Writer, and etc...</h3>
-        <img src="hp310 nas - ubuntu server burn to rufus.png" class="img50">
-        <img src="hp310 nas - ubuntu server burn to image writer.png" class="img50">
+        <img src="hp310 nas - ubuntu server burn to rufus.png" width="60%">
+        <img src="hp310 nas - ubuntu server burn to image writer.png" width="60%">
         <h3>The installation of Ubuntu Server is super easy, you press the enter key on your keyboard a lot. You can skip Ubuntu Pro, I don't really have a reason why you need it. Here is the full installation of Ubuntu Server using Virtualbox:</h3>
         <iframe src="https://streamtape.com/e/bzKbgRajJoiPv3B/" allowfullscreen allowtransparency allow="autoplay" scrolling="0" frameborder="0"></iframe>
         <a href="https://archive.org/download/kuleguy-website-blog-videos/HP-310%20touchsmart%20PC%206TB%20home-made%20NAS/vokoscreenNG-2025-08-30_22-01-55_25fps.mp4" target="_blank"><h3 style="color: green;">^ Download this video! ^</h3></a>
         <h3>Oh by the way, make sure to uncheck the <u>LVM group</u> because it splits your drive into multiple parts!</h3>
-        <img src="hp310 nas - uncheck lvm group.png" class="img60">
+        <img src="hp310 nas - uncheck lvm group.png" width="60%">
         <h3>Once the installation is finished, you will find this screen and when you restart, it will give you your ip addresses.</h3>
         <h4 style="color: red;">↓ This is the finished installation in Virtualbox. ↓</h4>
-        <img src="hp310 nas - ubuntu server finish screen.png" class="img60">
+        <img src="hp310 nas - ubuntu server finish screen.png" width="60%">
         <h4 style="color: red;">↓ This is the finished installation currently on my HP 310. ↓</h4>
-        <img src="hp310 nas - ubuntu server finish screen2.jpg" class="img60">
+        <img src="hp310 nas - ubuntu server finish screen2.jpg" width="60%">
         <h3>After Ubuntu server is done installing, I go to my main computer and ssh into it by typing in ssh username@server_ip. This is how you access your NAS server. On Windows if it doesn't work, enable OpenSSH Server in the optional features and that will fix it.</h3>
         <h4 style="color: red;">↓ SSHing into my NAS on both Windows and Linux. ↓</h4>
         <img src="hp310 nas - ssh into nas windows.PNG" width="49.8%">
@@ -160,31 +160,31 @@
         <p id="linux-copy-command">$ curl -fsSL https://get.casaos.io | sudo bash</p>
         <img src="hp310 nas - copy casa os command to ssh.png" width="100%">
         <h3>When you press enter, the Casa OS will begin installing itself and at the bottom, it should give you an ip address that takes you to your browser.</h3>
-        <img src="hp310 nas - open casa os link in the browser.png" class="img60">
+        <img src="hp310 nas - open casa os link in the browser.png" width="60%">
         <h3>It should take you to this screen where you create your account. Please remember, these are separate credentials that are used to access CasaOS, NOT connected to your NAS. Make the username and password the same as your NAS if you have trouble remembering 2 things at once.</h3>
-        <img src="hp310 nas - casa os create your account.png" class="img60">
+        <img src="hp310 nas - casa os create your account.png" width="60%">
         <h3>Here's what the login screen looks like everytime you wanna login.</h3>
-        <img src="hp310 nas - casa os login screen currently.png" class="img60">
+        <img src="hp310 nas - casa os login screen currently.png" width="60%">
         <h3>Anyways, once you login, you are greeted to the sweet interface of Casa OS.</h3>
-        <img src="hp310 nas - casa os interface.png" class="img60">
+        <img src="hp310 nas - casa os interface.png" width="60%">
         <h3>The first thing I did when using Casa OS was I formatted my drives by going to the storage manager and then click on 'format'. I do this so that the NAS and OS can access and read and write to my drives. Remember that formatting drives will delete everything on it, so backup any important data that you deem valuable.</h3>
-        <img src="hp310 nas - storage manager.png" class="img60">
+        <img src="hp310 nas - storage manager.png" width="60%">
         <h3>With that done, I go to: the files app, I click on one of the drives > go back to 'media' > and share the devmon folder. On the screen where it says "folder has been shared", there are copy buttons on the side of the network paths with the top one for Windows and the bottom one for MacOS/Linux.</h3>
-        <img src="hp310 nas - casa os share devmon.gif" class="img60">
+        <img src="hp310 nas - casa os share devmon.gif" width="60%">
         <h3>You can use the network paths as a gateway to access your NAS in your file explorers. On Windows, I use the "network location" feature to access my NAS, however you can map your network drive if you want. Network location and network drive is the same thing, only that network drive gives your NAS a drive letter. On Linux, I use the built in network tools in the file explorer (whatever Linux distro works) and I add the network as a bookmark to access the NAS quickly.</h3>
         <h4 style="color: red;">↓ Accessing the NAS on my Windows and Linux file explorers on my local network. ↓</h4>
         <img src="hp310 nas - network location on windows.png" width="49.9%">
         <img src="hp310 nas - network location on linux.png" width="49.9%" style="float: right;">
         <h4 style="color: red;">↓ Accessing a photo in the NAS on Linux Mint and my Android phone on my local network. ↓</h4>
         <img src="hp310 nas - show nas photo on linux.png" width="72%"><br>
-        <img src="hp310 nas - show nas photo on android.png" width="27%" border="2px">
+        <img src="hp310 nas - show nas photo on android.png" width="30%" border="2px">
         <br></br>
         
         <h2 id="header5">What is the speed of the NAS?</h2>
         <h3>The speed of a NAS depends on the network but also <a href="https://www.backblaze.com/blog/nas-performance-guide-how-to-optimize-your-nas/" target="_blank">the hardware as well</a>. Since I have a computer with a better CPU and RAM, the performance is definitely better than the laptop with speeds at around 40mb/s, although it does fluctuately and results could vary in the future.</h3>
         <h4 style="color: red;">↓ Speed of the NAS when copying an 8GB video file from my destop to a folder on the NAS on Windows and Linux. ↓</h4>
-        <img src="hp310 nas - speed of file on windows.png" class="img50">
-        <img src="hp310 nas - speed of file on linux.png" class="img50">
+        <img src="hp310 nas - speed of file on windows.png" width="60%">
+        <img src="hp310 nas - speed of file on linux.png" width="60%">
         <br></br>
 
         <h2 id="header6">Using Tailscale for remote access.</h2>
@@ -209,8 +209,8 @@
             Fun fact: when I went on vacation with family to California, I had the NAS turned on at home and used Tailscale to remote into the NAS from California all the way to my home in Texas and it was slow but it worked.</h3>
         <img src="hp310 nas - diff ip addr on web browser.png" width="80%">
         <h4 style="color: red;">↓ I got these 2 screenshots from my HP Laptop that I dual-booted with a Windows 10 to 7 mod and Linux Mint XFCE. ↓</h4>
-        <img src="hp310 nas - 6tb remote on windows.PNG" class="img60">
-        <img src="hp310 nas - 6tb remote on linux.png" class="img60">
+        <img src="hp310 nas - 6tb remote on windows.PNG" width="60%">
+        <img src="hp310 nas - 6tb remote on linux.png" width="60%">
         <h4 style="color: red;">↓ To access the remote network on my phone, I had to download the <a href="https://play.google.com/store/apps/details?id=com.tailscale.ipn&hl=en-GB&pli=1" target="_blank"> Tailscale app</a>, and now I can access my NAS on cellular data, and it works from anywhere in the world! ↓</h4>
         <img src="hp310 nas - 6tb remote on android.png" width="30%">
         <br>
