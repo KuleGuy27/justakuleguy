@@ -8,7 +8,7 @@ Everytime a new YT video is made:
  - in the youtube videos list (index), copy the previous block and change the video #, add the a 'a href' link, add the thumbnail source, duration time, change the title and date
 
 - in the HTMl videos itself; edit the site title from the folder, video source, h1 (vid title), h3 date, h3 description, link url with "a href" if possible
-- add downloadable links to donwload the .srt subtitles + add a mirror link (if have)
+- add downloadable links to download the .srt subtitles + add a mirror link (if have)
 - link to mirrors (YouTube, Odysee, Rumble, Internet Archive)
 - paste video sources
 
