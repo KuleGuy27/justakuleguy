@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>W SPEED China meme short</title>
+        <link rel="stylesheet" href="../../../yt vid & vod pages.css">
+        <link rel="stylesheet" href="../../../../universal darkmode.css">
+    </head>
+    <body>
+        <a href="../justakuleguy_shorts.html"><button>Back to shorts list</button></a>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
+        
+        <div class="video-container">
+        <iframe id="videoFrame"
+            src="https://streamtape.com/e/P3rkXG8ow8S0XP6"
+            frameborder="0"
+            scrolling="0"
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-switcher">
+            <button onclick="switchVideo('streamtape')">Streamtape</button>
+            <button onclick="switchVideo('doodstream')">Doodstream</button>
+            <button onclick="switchVideo('abyss')">Abyss</button>
+            <button onclick="switchVideo('mixdrop')">MixDrop</button>
+        </div>
+        </div>
+
+        <div id="video-metadata">
+        <h1>WSPEED in China ❤️‍🩹 #ishowspeed #wspeed #edit #memes</h1>
+        <h3 id="date">14 February 2026</h3>
+        <h3 id="desc">
+        Stupid meme I made for Valentine's Day. Sorry if the edit kinda sucks. I couldn't figure out how to do motion blur in Kdenlive :/
+        <br></br>
+        This was from a stream of when Speed was touring Shanghai China and found Chinese newlyweds together on "The Bund promenade". Was pretty nice of him to take their photo for them! Speed breathes air, W SPEED.
+        <br></br>
+        Here is the stream: <a href="https://www.youtube.com/watch?v=fK85SQzm0Z0?t=12471" target="_blank">https://www.youtube.com/watch?v=fK85SQzm0Z0?t=12471.</a><br>
+        The moment appears at 3:27:51 btw.
+        <br></br>
+        The song name is blue - yung kai (slowed): <a href="https://www.youtube.com/watch?v=jnL6PJM5TNo" target="_blank">https://www.youtube.com/watch?v=jnL6PJM5TNo</a>
+        </h3>
+        </div>
+
+        <div id="mirror-border">
+        <h2>Video Mirrors:</h2>
+        <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="https://youtube.com/shorts/Zkz30o4EfE4" target="_blank">https://youtube.com/shorts/Zkz30o4EfE4</a></h3>
+        <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-shorts-archive/WSPEED-china%28wholesomechungus%29meme_rendered.mp4" target="_blank">https://archive.org/download/kuleguy-yt-shorts-archive/WSPEED-china%28wholesomechungus%29meme_rendered.mp4</a></h3>
+        </div>
+    
+    <script>
+    const videoSources = {
+        streamtape: "https://streamtape.com/e/P3rkXG8ow8S0XP6",
+        doodstream: "https://myvidplay.com/e/npb7h1rrcip7",
+        abyss: "https://short.icu/EjQ_30Xxw",
+        mixdrop: "https://mixdrop.top/e/gjk40kzdtm3r4g"
+    };
+    function switchVideo(service) {
+        const iframe = document.getElementById("videoFrame");
+        iframe.src = videoSources[service];
+    }
+    </script>
+
+    <script src="../../../../universal darkmode.js"></script>
+    </body>
+</html>
