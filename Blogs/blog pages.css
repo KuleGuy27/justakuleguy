@@ -1,32 +1,28 @@
 body {
     background-color: #ffffff;
     color: #000000;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.65;
 }
 
-p {
-    font-size: 18px;
-    color: #000000;
-    font: bold;
+#date {
+    color: blue;
+    font-weight: bold;
 }
 
-#blog-topbuttons {text-align: center;}
+p {
+    font-size: 20px;
+    font-weight: 600;
+}
 
-h2 {
+h1 {
     scroll-margin-top: 60px;
-    font-size: 25px;
+    font-size: 35px;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
 }
 
-h3 {
-    font-size: 17px;
-    font-weight: 400;
-    font-family: "Roboto"; 
-    margin-bottom: 1.2rem;
-    color: #303030;
-}
+#blog-topbuttons {text-align: center;}
 
 article {
     max-width: 980px;
@@ -49,8 +45,6 @@ iframe {
     display: block;
     margin: auto;
 }
-
-#date {color: blue}
 
 #horizontal-line{
     width: 100%;
