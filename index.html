@@ -4,28 +4,94 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>justakuleguy</title>
-        <link rel="stylesheet" href="universal darkmode.css">      
+        <link rel="stylesheet" href="universal darkmode.css">     
+        <link rel="stylesheet" href="universal navbar.css">   
     </head>
     <style>
+    img.myface {
+        width: 40%;
+        float: left;
+        margin-right: 15px;
+    }
+
+    article {
+        border: 2px solid black;
+        padding: 20px;
+        width: 80%;
+        max-width: 800px;
+        margin: 40px auto;
+        position: relative;
+        z-index: 10;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    article {
+        background-color: white;
+        color: black;
+    }
+
+    .dark-mode article {
+        background-color: #7a7a7a;
+        color: white;
+    }
+
+    article a {color: black}
+    .dark-mode article a {color: white}
+
+    #background {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    #horizontal-line {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+    }
+
     /* Phone query */
     @media (max-width: 768px) {
-    img {
+    img.myface {
         width: 100%;
     }
     }
     </style>
     <body>
-        <h1 style="font-size: 70px; text-align: center; background-color: aqua;">Just A KuleGuy</h1>
-        <img src="2025-08-02-201336 (cropped).jpg" width="40%" style="float: left; margin-right: 15px;">
-        <div float="right">
-        <h3>Hello! My name is Luke! I love technology, computers, gaming, somewhat traveling, and I want to use this website as an opportunity to document my life's work and experiences. I have a basic knowledge of HTML and I'm just sticking to what I know best. For now, this site is simple and basic, but I am considering using AI and LLMs to assist with my code because AI is better than me. Anyways, I hope you enjoy my website!</h3>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <nav class="navbar">
+    <div class="logo"><a href="index.html">JustAKuleGuy</a></div>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="Blogs/justakuleguy_blogs.html">Blogs</a>
+        <a href="YouTube Channels Archive/youtube channels archive.html">YouTubes</a>
+        <a href="Test Video Hosting Embeds/test-video-hosting-embeds.html">Video Tests</a>
+        <a href="website info.html">Website Info</a>
+
+        <button onclick="toggleDarkMode()" class="darkmode-btn">Dark Mode</button>
+    </div>
+    </nav><div style="margin-bottom: 200px;"></div>
+
+    <img src="IMG_0876.JPG" id="background" width="100%">
+
+    <article>
+        <img src="2025-08-02-201336 (cropped).jpg" class="myface">
+        <h3>Hello! My name is Luke! I love technology, computers, gaming, somewhat traveling, and I want to use this website as an opportunity to document my life's work and experiences. I have a basic knowledge of HTML and I'm just sticking to what I know best. I'm not using Wix, Squarespace, Wordpress, or any other website builder because they don't have the features I want. I am considering using AI and LLMs to assist with my code because AI is better than me and I have little coding knowledge. Made using HTML, CSS, and JS all coded inside VS Code and hosted onto Github Pages! Anyways, I hope you enjoy my website!</h3>
+        <div id="horizontal-line"></div>
         <a href="Blogs/justakuleguy_blogs.html"><h3>📝 Blogs</h3></a>
         <a href="YouTube Channels Archive/youtube channels archive.html"><h3><img src="YouTube Channels Archive/youtube-logo-hd-8-1348870541.png" width="20px"> YouTube Channels Archive</h3></a>
         <a href="Test Video Hosting Embeds/test-video-hosting-embeds.html"><h3>📼 Test Video Hosting/Streaming Embeds</h3></a>
         <a href="website info.html"><h3>📓 Website Info</h3></a>
         </div>
+        
+    </article>    
 
-    <script src="universal darkmode.js"></script>   
+    <script src="universal darkmode.js"></script>
+    <script src="universal navbar.js"></script>      
     </body>
 </html>
