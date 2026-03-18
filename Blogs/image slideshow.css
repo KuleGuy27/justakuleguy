@@ -65,11 +65,11 @@
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #aaaaaa;
   border-radius: 50%;
   display: inline-block;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #000000;
 }

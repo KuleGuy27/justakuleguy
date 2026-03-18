@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Blog</title>
   <link rel="stylesheet" href="../universal darkmode.css">
+  <link rel="stylesheet" href="../universal navbar.css">  
   <style>
   body {
     background-color: #ffffff;
@@ -55,51 +56,95 @@
     color: black;
   }
 
+  select {
+    margin: 10px;
+    padding: 6px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+
   /* Tablet */
   @media (max-width: 1024px) {
-    article {
-      width: 85%;
-    }
-    img {
-      width: 60%;
-    }
+    article {width: 85%;}
+    img {width: 60%;}
   }
 
   /* Phone */
   @media (max-width: 768px) {
-    article {
-      width: 95%;
-    }
-    img {
-      width: 100%;
-    }
+    article { width: 95%;}
+    img {width: 100%;}
   }
 </style>
 
 </head>
 <body>
-  <h1>My Blogs</h1>
-  <a href="../index.html"><button>Back to home</button></a>
-  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <nav class="navbar">
+    <div class="logo"><a href="../index.html">JustAKuleGuy</a></div>
 
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="justakuleguy_blogs.html">Blogs</a>
+        <a href="../YouTube Channels Archive/youtube channels archive.html">YouTubes</a>
+        <a href="../Test Video Hosting Embeds/test-video-hosting-embeds.html">Video Tests</a>
+        <a href="../website info.html">Website Info</a>
+
+        <button onclick="toggleDarkMode()" class="darkmode-btn">Dark Mode</button>
+    </div>
+    </nav><br></br>
+
+  <!--Tags: Technology, Linux, Windows, Travel, Family, Gaming-->
+  <h1>My Blogs</h1>
+  
+  <label for="tagFilter"><strong>Filter by tag:</strong></label>
+  <select id="tagFilter" onchange="filterPosts()">
+    <option value="all">All</option>
+    <option value="Technology">Technology</option>
+    <option value="Linux">Linux</option>
+    <option value="Hardware">Hardware</option>
+    <option value="Software">Software</option>
+  </select>
+  
   <main>
-    <article>
+    <article data-tags="Technology Linux Hardware Software">
       <a href="HP-310 touchsmart PC 6TB home-made NAS/hp310 6tb nas update.html">
         <h2>Update! Using my HP-310 AIO computer as an easy home NAS! [Subject to change]</h2>
       <img src="HP-310 touchsmart PC 6TB home-made NAS/hp310 nas - main image cover.jpg"></a>
-      <h3>Tags: Technology, Linux, Hardware, Software</h3>
-      <p>Posted on: 29 August 2025</p>
+      <h3>Posted on: 29 August 2025</h3>
+      <p>Tags: Technology, Linux, Hardware, Software</p>
     </article>
 
-    <article>
+    <article data-tags="Technology Linux Software">
       <a href="QALC - Linux terminal math calculator/qalc linux terminal calculator.html">
         <h2>Using QALC as my terminal calculator for Linux!</h2>
       <img src="QALC - Linux terminal math calculator/qalc linux - asmd main pc.png"></a>
-      <h3>Tags: Technology, Linux, Software</h3>
-      <p>Posted on: 25 August 2025</p>
+      <h3>Posted on: 25 August 2025</h3>
+      <p>Tags: Technology, Linux, Software</p>
     </article>
   </main>
 
+  <script>
+  function filterPosts() {
+    const desktop = document.getElementById("tagFilter");
+    const mobile = document.getElementById("tagFilterMobile");
+
+    const selectedTag = desktop?.value || mobile?.value || "all";
+
+    const articles = document.querySelectorAll("main article");
+
+    articles.forEach(article => {
+      const tags = article.getAttribute("data-tags");
+
+      if (selectedTag === "all" || tags.includes(selectedTag)) {
+        article.style.display = "block";
+      } else {
+        article.style.display = "none";
+      }
+    });
+  }
+  </script>
+  </script>
   <script src="../universal darkmode.js"></script>
+  <script src="../universal navbar.js"></script>
 </body>
 </html>

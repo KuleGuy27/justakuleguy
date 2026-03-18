@@ -1,8 +1,9 @@
-body {
-    background-color: #ffffff;
-    color: #000000;
+article {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.65;
+    max-width: 840px;
+    margin: 0px auto;
+    padding: 15px;
 }
 
 #date {
@@ -15,6 +16,19 @@ p {
     font-weight: 500;
 }
 
+.downloadthisvid {
+    display: inline-block;
+    background-color: rgb(89, 255, 0);
+    color: black;
+    text-decoration: underline;
+}
+
+.photo-explanation {
+    display: inline-block;
+    background-color: rgb(255, 71, 57);
+    color: white;
+}
+
 h1 {
     scroll-margin-top: 60px;
     font-size: 35px;
@@ -22,21 +36,26 @@ h1 {
     margin-bottom: 1rem;
 }
 
+#table-of-contents {
+    display: block;
+    width: fit-content;
+    margin: 15px auto;
+    border: 4px dashed black;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+#table-of-contents b {font-size: 1.4em;}
+#table-of-contents ul {font-size: 1.15em;}
+
 #blog-topbuttons {text-align: center;}
 
-article {
-    max-width: 980px;
-    margin: 0px auto;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.700);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    color: black;
-}
-
 iframe {
-    width: 70%;
-    aspect-ratio: 16 / 9;
-}
+    display: flex;
+  justify-content: center;
+   align-items: center;
+    aspect-ratio: 16 / 9;}
 
 .mySlides img {width: 100%;}
 
@@ -91,9 +110,6 @@ article {
     max-width: 100%;
     margin: 20px auto;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.700);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    color: black;
 }
 
 #main-image {width: 100%;}
