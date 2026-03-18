@@ -6,34 +6,47 @@
         <title>HP-310 touchsmart PC 6TB home-made NAS</title>
         <link rel="stylesheet" href="../blog pages.css">
         <link rel="stylesheet" href="../../universal darkmode.css">
+        <link rel="stylesheet" href="../../universal navbar.css">
         <link rel="stylesheet" href="../image slideshow.css">
         <link rel="stylesheet" href="../dropdown menu.css">       
     </head>
     <body>
-        <article>
-        <div id="blog-topbuttons">
-        <a href="../justakuleguy_blogs.html"><button>Back to blog list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button></div>
-        
+    <nav class="navbar">
+    <div class="logo"><a href="../../index.html">JustAKuleGuy</a></div>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="../justakuleguy_blogs.html">Blogs</a>
+        <a href="../../YouTube Channels Archive/youtube channels archive.html">YouTubes</a>
+        <a href="../../Test Video Hosting Embeds/test-video-hosting-embeds.html">Video Tests</a>
+        <a href="../../website info.html">Website Info</a>
+
+        <button onclick="toggleDarkMode()" class="darkmode-btn">Dark Mode</button>
+    </div>
+    </nav>
+
+    <article>        
         <h1>Update! Using my HP-310 AIO computer as an easy home NAS! [Subject to change]</h1>
         <p id="date" style="align-items: center;">
             Posted on: 29 August 2025</p>
         <div id="horizontal-line"></div>
-        
-        <div id="jump-menu-container">
-        <select id="jumpMenu" onchange="jumpToSection(this.value)">
-            <option value="#header1">What is a NAS?</option>
-            <option value="#header2">What did I change this time?</option>
-            <option value="#header3">What OS do I use for the NAS?</option>
-            <option value="#header4">How do you install Ubuntu Server and CasaOS?</option>
-            <option value="#header5">What is the speed of the NAS?</option>
-            <option value="#header6">Using Tailscale for remote access.</option>
-        </select>
+        <img src="hp310 nas - main image cover.jpg" id="main-image">
+
+        <div id="table-of-contents">
+            <p><b>Table of Contents</b></p>
+            <ul>
+                <li><a href="#header1">What is a NAS?</a></li>
+                <li><a href="#header2">What did I change this time?</a></li>
+                <li><a href="#header3">What OS do I use for the NAS?</a></li>
+                <li><a href="#header4">How do you install Ubuntu Server and CasaOS?</a></li>
+                <li><a href="#header5">What is the speed of the NAS?</a></li>
+                <li><a href="#header6">Using Tailscale for remote access.</a></li>
+            </ul>
         </div>
 
-        <img src="hp310 nas - main image cover.jpg" id="main-image">
         <p>In May 2024, I made a YouTube video about me using my old Toshiba Satellite laptop as a home-made NAS and some things has changed since. So in this blog, I decided to make an update.</p>
-        <iframe src="https://www.youtube.com/embed/rAc3kWZ_td0" title="Turning my 2009 Laptop into an easy home NAS! (Ubuntu Server + CasaOS)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/rAc3kWZ_td0" title="Turning my 2009 Laptop into an easy home NAS! (Ubuntu Server + CasaOS)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" width="70%" allowfullscreen></iframe>
         <p>In that video, I discussed:<br>
         - What a NAS is<br>
         - What computer and hard drives I will be using<br>
@@ -135,56 +148,57 @@
         
         <h1 id="header4">How do you install Ubuntu Server and CasaOS?</h1>
         <p>For Ubuntu Server, you first go to the website and download the .ISO file.</p>
-        <img src="hp310 nas - Get Ubuntu Server download page.png" width="60%">
-        <img src="hp310 nas - downloading Ubuntu server.png" width="60%">
+        <img src="hp310 nas - Get Ubuntu Server download page.png" width="100%">
+        <img src="hp310 nas - downloading Ubuntu server.png" width="100%">
         <p>After that, you burn it to a USB using: Rufus, Balena Etcher, Linux USB Image Writer, and etc...</p>
         <img src="hp310 nas - ubuntu server burn to rufus.png" width="60%">
         <img src="hp310 nas - ubuntu server burn to image writer.png" width="60%">
         <p>The installation of Ubuntu Server is super easy, you press the enter key on your keyboard a lot. You can skip Ubuntu Pro, I don't really have a reason why you need it. Here is the full installation of Ubuntu Server using Virtualbox:</p>
-        <iframe src="https://streamtape.com/e/bzKbgRajJoiPv3B/" allowfullscreen allowtransparency allow="autoplay" scrolling="0" frameborder="0"></iframe>
-        <a href="https://archive.org/download/kuleguy-website-blog-videos/HP-310%20touchsmart%20PC%206TB%20home-made%20NAS/vokoscreenNG-2025-08-30_22-01-55_25fps.mp4" target="_blank"><p style="color: green;">^ Download this video! ^</p></a>
+        <iframe src="https://streamtape.com/e/bzKbgRajJoiPv3B/" allowfullscreen allowtransparency allow="autoplay" scrolling="0" frameborder="0" width="70%"></iframe>
+        <a href="https://archive.org/download/kuleguy-website-blog-videos/HP-310%20touchsmart%20PC%206TB%20home-made%20NAS/vokoscreenNG-2025-08-30_22-01-55_25fps.mp4" target="_blank">
+            <br><p class="downloadthisvid">^ Download this video! ^</p></a>
         <p>Oh by the way, make sure to uncheck the <u>LVM group</u> because it splits your drive into multiple parts!</p>
-        <img src="hp310 nas - uncheck lvm group.png" width="60%">
+        <img src="hp310 nas - uncheck lvm group.png" width="90%">
         <p>Once the installation is finished, you will find this screen and when you restart, it will give you your ip addresses.</p>
-        <h4 style="color: red;">↓ This is the finished installation in Virtualbox. ↓</h4>
-        <img src="hp310 nas - ubuntu server finish screen.png" width="60%">
-        <h4 style="color: red;">↓ This is the finished installation currently on my HP 310. ↓</h4>
-        <img src="hp310 nas - ubuntu server finish screen2.jpg" width="60%">
+        <h4 class="photo-explanation">↓ This is the finished installation in Virtualbox. ↓</h4>
+        <img src="hp310 nas - ubuntu server finish screen.png" width="80%">
+        <h4 class="photo-explanation">↓ This is the finished installation currently on my HP 310. ↓</h4>
+        <img src="hp310 nas - ubuntu server finish screen2.jpg" width="70%">
         <p>After Ubuntu server is done installing, I go to my main computer and ssh into it by typing in ssh username@server_ip. This is how you access your NAS server. On Windows if it doesn't work, enable OpenSSH Server in the optional features and that will fix it.</p>
-        <h4 style="color: red;">↓ SSHing into my NAS on both Windows and Linux. ↓</h4>
-        <img src="hp310 nas - ssh into nas windows.PNG" width="49.8%">
-        <img src="hp310 nas - ssh into nas linux.png" width="49.8%">
+        <h4 class="photo-explanation">↓ SSHing into my NAS on both Windows and Linux. ↓</h4>
+        <img src="hp310 nas - ssh into nas windows.PNG" width="49%">
+        <img src="hp310 nas - ssh into nas linux.png" width="49%">
         <p>After that, do a quick 'sudo apt update' to keep things up to date.</p>
-        <img src="hp310 nas - sudo apt update in ssh.png" width="70%">
+        <img src="hp310 nas - sudo apt update in ssh.png" width="80%">
         <p>And now here's where you install CasaOS. Go to their <a href="https://casaos.zimaspace.com/" target="_blank">website</a> and copy the command they give you on the front page and paste it into your terminal.</p>
         <p id="linux-copy-command">$ curl -fsSL https://get.casaos.io | sudo bash</p>
         <img src="hp310 nas - copy casa os command to ssh.png" width="100%">
         <p>When you press enter, the Casa OS will begin installing itself and at the bottom, it should give you an ip address that takes you to your browser.</p>
-        <img src="hp310 nas - open casa os link in the browser.png" width="60%">
+        <img src="hp310 nas - open casa os link in the browser.png" width="80%">
         <p>It should take you to this screen where you create your account. Please remember, these are separate credentials that are used to access CasaOS, NOT connected to your NAS. Make the username and password the same as your NAS if you have trouble remembering 2 things at once.</p>
-        <img src="hp310 nas - casa os create your account.png" width="60%">
+        <img src="hp310 nas - casa os create your account.png" width="80%">
         <p>Here's what the login screen looks like everytime you wanna login.</p>
-        <img src="hp310 nas - casa os login screen currently.png" width="60%">
+        <img src="hp310 nas - casa os login screen currently.png" width="80%">
         <p>Anyways, once you login, you are greeted to the sweet interface of Casa OS.</p>
-        <img src="hp310 nas - casa os interface.png" width="60%">
+        <img src="hp310 nas - casa os interface.png" width="80%">
         <p>The first thing I did when using Casa OS was I formatted my drives by going to the storage manager and then click on 'format'. I do this so that the NAS and OS can access and read and write to my drives. Remember that formatting drives will delete everything on it, so backup any important data that you deem valuable.</p>
-        <img src="hp310 nas - storage manager.png" width="60%">
+        <img src="hp310 nas - storage manager.png" width="80%">
         <p>With that done, I go to: the files app, I click on one of the drives > go back to 'media' > and share the devmon folder. On the screen where it says "folder has been shared", there are copy buttons on the side of the network paths with the top one for Windows and the bottom one for MacOS/Linux.</p>
-        <img src="hp310 nas - casa os share devmon.gif" width="60%">
+        <img src="hp310 nas - casa os share devmon.gif" width="80%">
         <p>You can use the network paths as a gateway to access your NAS in your file explorers. On Windows, I use the "network location" feature to access my NAS, however you can map your network drive if you want. Network location and network drive is the same thing, only that network drive gives your NAS a drive letter. On Linux, I use the built in network tools in the file explorer (whatever Linux distro works) and I add the network as a bookmark to access the NAS quickly.</p>
-        <h4 style="color: red;">↓ Accessing the NAS on my Windows and Linux file explorers on my local network. ↓</h4>
+        <h4 class="photo-explanation">↓ Accessing the NAS on my Windows and Linux file explorers on my local network. ↓</h4>
         <img src="hp310 nas - network location on windows.png" width="49.9%">
         <img src="hp310 nas - network location on linux.png" width="49.9%" style="float: right;">
-        <h4 style="color: red;">↓ Accessing a photo in the NAS on Linux Mint and my Android phone on my local network. ↓</h4>
-        <img src="hp310 nas - show nas photo on linux.png" width="72%"><br>
-        <img src="hp310 nas - show nas photo on android.png" width="30%" border="2px">
+        <h4 class="photo-explanation">↓ Accessing a photo in the NAS on Linux Mint and my Android phone on my local network. ↓</h4>
+        <img src="hp310 nas - show nas photo on linux.png" width="80%"><br>
+        <img src="hp310 nas - show nas photo on android.png" width="40%" border="2px">
         <br></br>
         
         <h1 id="header5">What is the speed of the NAS?</h1>
         <p>The speed of a NAS depends on the network but also <a href="https://www.backblaze.com/blog/nas-performance-guide-how-to-optimize-your-nas/" target="_blank">the hardware as well</a>. Since I have a computer with a better CPU and RAM, the performance is definitely better than the laptop with speeds at around 40mb/s, although it does fluctuately and results could vary in the future.</p>
-        <h4 style="color: red;">↓ Speed of the NAS when copying an 8GB video file from my destop to a folder on the NAS on Windows and Linux. ↓</h4>
-        <img src="hp310 nas - speed of file on windows.png" width="60%">
-        <img src="hp310 nas - speed of file on linux.png" width="60%">
+        <h4 class="photo-explanation">↓ Speed of the NAS when copying an 8GB video file from my destop to a folder on the NAS on Windows and Linux. ↓</h4>
+        <img src="hp310 nas - speed of file on windows.png" width="70%">
+        <img src="hp310 nas - speed of file on linux.png" width="70%">
         <br></br>
 
         <h1 id="header6">Using Tailscale for remote access.</h1>
@@ -193,26 +207,26 @@
             <a href="https://tailscale.com/kb/1151/what-is-tailscale" target="_blank">As the company calls it</a>, Tailscale is a mesh VPN that enables encrypted point-to-point connections using the open source WireGuard protocol. The connection is streamlined and it's very easy to setup, hence why I am using it for my NAS.
         </p>
         <p>For starters, go to <a href="https://tailscale.com/" target="_blank">Tailscale.com</a> and create an account or login to an existing one. As for <a href="https://tailscale.com/pricing?plan=personal" target="_blank">pricing</a>, you can use Tailscale for free but it only limits you to 3 users, which is fine by me.</p>
-        <img src="hp310 nas - tailscale login screen.png" width="80%">
+        <img src="hp310 nas - tailscale login screen.png" width="80%" border="2px">
         <p>To add a device onto Tailscale, you go to the <a href="https://tailscale.com/download" target="_blank">download</a> section of the website and download Tailscale on whatever device that you have. For the purpose of this blog, I will choose <u>Linux</u> (since we're using Ubuntu Server) to show you how to download Tailscale on the NAS.</p>
-        <img src="hp310 nas - tailscale download screen linux.png" width="80%">
+        <img src="hp310 nas - tailscale download screen linux.png" width="100%">
         <p>You simply SSH into your NAS from your main computer, and paste in the Linux command, and hit enter.</p>
         <p id="linux-copy-command">$ curl -fsSL https://tailscale.com/install.sh | sh</p>
-        <img src="hp310 nas - tailscale command in ssh.png" width="80%">
+        <img src="hp310 nas - tailscale command in ssh.png" width="100%">
         <p>Tailscale will then install itself onto your NAS and after it's done installing, it will tell you to start the service by typing "sudo tailscale up" and it will give you a link that takes you your browser, with text saying "login successful" and that your device is added to the Tailscale console..</p>
         <p id="linux-copy-command">$ sudo tailscale up</p>
-        <img src="hp310 nas - sudo tailscale up command with the link.png" width="70%">
-        <img src="hp310 nas - tailscale login successful screen.png" width="70%">
+        <img src="hp310 nas - sudo tailscale up command with the link.png" width="80%">
+        <img src="hp310 nas - tailscale login successful screen.png" width="80%">
         <p>Tailscale gives you a different ip address for your NAS and you can use that ip address to access your NAS everywhere you go, with an internet connection or a signal.</p>
         <img src="hp310 nas - tailscale machines screen.png" width="70%">
         <p>Of course, you can enter that ip adress into your web browser and you can access the network on Windows, Linux, and your phone.<br>
             Fun fact: when I went on vacation with family to California, I had the NAS turned on at home and used Tailscale to remote into the NAS from California all the way to my home in Texas and it was slow but it worked.</p>
         <img src="hp310 nas - diff ip addr on web browser.png" width="80%">
-        <h4 style="color: red;">↓ I got these 2 screenshots from my HP Laptop that I dual-booted with a Windows 10 to 7 mod and Linux Mint XFCE. ↓</h4>
-        <img src="hp310 nas - 6tb remote on windows.PNG" width="60%">
-        <img src="hp310 nas - 6tb remote on linux.png" width="60%">
-        <h4 style="color: red;">↓ To access the remote network on my phone, I had to download the <a href="https://play.google.com/store/apps/details?id=com.tailscale.ipn&hl=en-GB&pli=1" target="_blank"> Tailscale app</a>, and now I can access my NAS on cellular data, and it works from anywhere in the world! ↓</h4>
-        <img src="hp310 nas - 6tb remote on android.png" width="30%">
+        <h4 class="photo-explanation">↓ I got these 2 screenshots from my HP Laptop that I dual-booted with a Windows 10 to 7 mod and Linux Mint XFCE. ↓</h4>
+        <img src="hp310 nas - 6tb remote on windows.PNG" width="80%">
+        <img src="hp310 nas - 6tb remote on linux.png" width="80%">
+        <h4 class="photo-explanation">↓ To access the remote network on my phone, I had to download the <a href="https://play.google.com/store/apps/details?id=com.tailscale.ipn&hl=en-GB&pli=1" target="_blank"> Tailscale app</a>, and now I can access my NAS on cellular data, and it works from anywhere in the world! ↓</h4>
+        <img src="hp310 nas - 6tb remote on android.png" width="35%">
         <br>
 
         <p>But yeah, that's it! To summarize this blog post, a NAS (Network Attach Storage) is a computer with hard drives that you can connect to the internet to access anywhere in the world. It's essentially like Google Drive or Dropbox but YOU get to own and control them. Cloud storage is convenient, but in an age where a subscription costs an arm and a leg, having your own home server at that you can access anywhere and is cheaper in the long run might just be a smarter option.<br>
@@ -224,10 +238,11 @@
         </p>
         <p>Right now, my NAS is basic. In the future, I hope to create a NAS using a Raspberry Pi with a lot of storage and invest in better backup using the <a href="https://www.youtube.com/watch?v=rFO6NyLIP7M" target="_blank">3-2-1 backup strategy</a>. For now, this is what have and I am happy with it!<br>
         This blog is stored on my NAS and I thank you for reading it!</p>
-        </article>
+    </article>
     
     <script src="../dropdown menu.js"></script>
     <script src="../image slideshow.js"></script>
     <script src="../../universal darkmode.js"></script>
+    <script src="../../universal navbar.js"></script>
     </body>
 </html>
