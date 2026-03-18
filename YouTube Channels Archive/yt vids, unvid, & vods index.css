@@ -43,10 +43,10 @@ img {margin-right: 10px;}
 .video h3 {margin: 0;}
 
 #pfp {
-width: 150px;
-float: left;
-margin-right: 20px;
-cursor: pointer;
+    width: 150px;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 /* ===== ICON (GRID) VIEW ===== */
