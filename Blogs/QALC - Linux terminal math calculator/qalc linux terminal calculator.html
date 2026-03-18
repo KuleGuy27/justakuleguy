@@ -6,30 +6,43 @@
         <title>QALC - Linux terminal math calculator</title>
         <link rel="stylesheet" href="../blog pages.css">     
         <link rel="stylesheet" href="../../universal darkmode.css">
+        <link rel="stylesheet" href="../../universal navbar.css">
         <link rel="stylesheet" href="../image slideshow.css">
         <link rel="stylesheet" href="../dropdown menu.css">
     </head>
     <body>
-        <article>
-        <div id="blog-topbuttons">
-        <a href="../justakuleguy_blogs.html"><button>Back to blog list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button></div>
+    <nav class="navbar">
+    <div class="logo"><a href="../../index.html">JustAKuleGuy</a></div>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="../justakuleguy_blogs.html">Blogs</a>
+        <a href="../../YouTube Channels Archive/youtube channels archive.html">YouTubes</a>
+        <a href="../../Test Video Hosting Embeds/test-video-hosting-embeds.html">Video Tests</a>
+        <a href="../../website info.html">Website Info</a>
+
+        <button onclick="toggleDarkMode()" class="darkmode-btn">Dark Mode</button>
+    </div>
+    </nav>
         
+    <article>
         <h1>Using QALC as my terminal calculator for Linux!</h1>
         <h3 id="date" style="align-items: center;">
             Posted on: 25 August 2025</h3>
         <div id="horizontal-line"></div>
-
-        <div id="jump-menu-container">
-        <select id="jumpMenu" onchange="jumpToSection(this.value)">
-            <option value="#intro">My first blog! Hello!</option>
-            <option value="#exrates">qalc -e OR qalc -exrates</option>
-            <option value="#terse">qalc -t OR qalc -terse</option>
-            <option value="#version">qalc -v OR qalc -version</option>
-        </select>
-        </div>
-
         <img src="qalc linux - asmd main pc.png" id="main-image">
+
+        <div id="table-of-contents">
+            <p><b>Table of Contents</b></p>
+            <ul>
+                <li><a href="#intro">My first blog! Hello!</a></li>
+                <li><a href="#exrates">qalc -e OR qalc -exrates</a></li>
+                <li><a href="#terse">qalc -t OR qalc -terse</a></li>
+                <li><a href="#version">qalc -v OR qalc -version</a></li>
+            </ul>
+        </div>
+        
         <h1 id="intro">My first blog! Hello!</h1>
         <p>Anyways, a lot of times on my computer, whether it's on Windows or Linux, I would use a calculator.</p>
         <p>On Windows I would use the built-in calculator app because it's what I'm used to, but on Linux I would use the terminal.</p>
@@ -122,10 +135,11 @@
         <img src="qalc linux - version command.png" width="60%">  
         
         <p>Qalc is a versatile cli for the Linux terminal. Although it's not as easy to use and fleshed out as the built-in GUI interfaces, it's still a worthy tool to use and a simplistic way to do calculations.</p>
-        </article>
-    
+    </article>
+  
     <script src="../dropdown menu.js"></script>
     <script src="../image slideshow.js"></script>
     <script src="../../universal darkmode.js"></script>
+    <script src="../../universal navbar.js"></script>
     </body>
 </html>
