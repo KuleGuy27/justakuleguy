@@ -5,10 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>YouTube Channels Archive</title>
         <link rel="stylesheet" href="../universal darkmode.css">
+        <link rel="stylesheet" href="../universal navbar.css">
 
-        <style>
-    body {
-        font-family: Arial, sans-serif;
+    <style>
+    body {font-family: Arial, sans-serif;}
+
+    #header img {
+        width: 50px;
+        margin-left: 25px;
+        margin-right: 10px;
     }
 
     /* Container that holds all cards */
@@ -56,20 +61,50 @@
 
     /* 📱 Mobile Layout */
     @media (max-width: 768px) {
-        .channel-card {
-            width: 100%;
-        }
+    .channel-card {
+        width: 85%;
+        padding: 10px;
     }
-</style>
+
+    .channel-card img {
+        width: 70px;
+        height: 70px;
+    }
+
+    h1 {font-size: 22px;}
+    #header h1 {white-space: nowrap;}
+    #header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    #header img {
+        width: 40px;
+    }
+    }
+    </style>
     </head>
 
     <body>
-        <img src="youtube-logo-hd-8-1348870541.png" width="50px">
-        <h1>Select a YouTube Channel</h1>
+    <nav class="navbar">
+    <div class="logo"><a href="index.html">JustAKuleGuy</a></div>
 
-        <a href="../index.html"><button>Back to home</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br><br>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="../Blogs/justakuleguy_blogs.html">Blogs</a>
+        <a href="youtube channels archive.html">YouTubes</a>
+        <a href="../Test Video Hosting Embeds/test-video-hosting-embeds.html">Video Tests</a>
+        <a href="../website info.html">Website Info</a>
+
+        <button onclick="toggleDarkMode()" class="darkmode-btn">Dark Mode</button>
+    </div>
+    </nav><br></br>
+
+    <div id="header" style="display: flex; align-items: center;">
+        <img src="youtube-logo-hd-8-1348870541.png">
+        <h1>Select a YouTube Channel</h1>
+    </div>
 
         <div class="channel-container">
         <!-- LukePlayz2415 -->
@@ -104,5 +139,6 @@
         </div>
 
         <script src="../universal darkmode.js"></script>
+        <script src="../universal navbar.js"></script>
     </body>
 </html>

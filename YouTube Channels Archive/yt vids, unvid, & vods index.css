@@ -75,15 +75,15 @@ cursor: pointer;
 .tab-bar {
     display: flex;
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0;
     position: sticky;
-    top: 0;
+    top: 54px;
     z-index: 1000;
 }
 .tab-bar a {
     flex: 1;
     text-align: center;
-    padding: 14px 0;
+    padding: 10px 0;
     text-decoration: none;
     background: #d40000;   /* Red background */
     color: white;          /* White text */
