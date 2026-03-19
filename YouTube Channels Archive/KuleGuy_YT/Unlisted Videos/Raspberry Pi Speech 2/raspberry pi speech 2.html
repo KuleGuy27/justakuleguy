@@ -6,11 +6,25 @@
         <title>Raspberry Pi Speech 2</title>
         <link rel="stylesheet" href="../../../yt vid & vod pages.css">
         <link rel="stylesheet" href="../../../../universal darkmode.css">
+        <link rel="stylesheet" href="../../../../universal navbar.css">
     </head>
     <body>
-        <a href="../justakuleguy_unlistedvids.html"><button>Back to video list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
-        
+    <nav class="navbar">
+    <div class="logo"><a href="index.html">JustAKuleGuy</a></div>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="../../../../Blogs/justakuleguy_blogs.html">Blogs</a>
+        <a href="../../../../YouTube Channels Archive/youtube channels archive.html">YouTubes</a>
+        <a href="../../../../Test Video Hosting Embeds/test-video-hosting-embeds.html">Video Tests</a>
+        <a href="../../../../website info.html">Website Info</a>
+
+        <button onclick="toggleDarkMode()" class="darkmode-btn">Dark Mode</button>
+    </div>
+    </nav>
+
+    <article>
         <div class="video-container">
         <iframe id="videoFrame"
             src="https://streamtape.com/e/Jb6kPw1PJAhVWl"
@@ -45,6 +59,7 @@
         <h3><img src="../../../rumble-logo-freelogovectors.net_-710308179.png" width="20px"> Rumble: <a href="https://rumble.com/v713igy-raspberry-pi-speech-2.html" target="_blank">https://rumble.com/v713igy-raspberry-pi-speech-2.html</a></h3>
         <h3><img src="../../../Internet_Archive_logo-171227854.png" width="20px"> Internet Archive: <a href="https://archive.org/download/kuleguy-unlisted-yt-videos/20251022_090546.mp4" target="_blank">https://archive.org/download/kuleguy-unlisted-yt-videos/20251022_090546.mp4</a></h3>
         </div>
+    </article>
     
     <script>
     const videoSources = {
@@ -60,5 +75,6 @@
     </script>
 
     <script src="../../../../universal darkmode.js"></script>
+    <script src="../../../../universal navbar.js"></script>
     </body>
 </html>
