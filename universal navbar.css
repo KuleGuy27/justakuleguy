@@ -9,7 +9,7 @@ body {margin: 0;}
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 3000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -27,9 +27,7 @@ body {margin: 0;}
 }
 
 /* Dark mode button */
-.darkmode-btn {
-    font-size: 15px;
-}
+.darkmode-btn {font-size: 15px;}
 
 /* Hamburger button */
 .hamburger {
@@ -56,19 +54,77 @@ body {margin: 0;}
     font-size: 18px;
 }
 
-.nav-links a:hover {
-    text-decoration: underline;
-}
+.nav-links a:hover {text-decoration: underline;}
 
 /* Button section */
 .nav-actions button {
-    padding: 5px 10px;
-    font-size: 14px;
-    margin-right: 10px;
+    padding: 1px 4px;
+    font-size: 15px;
+    margin-right: 20px;
     cursor: pointer;
 }
 
+/* Dropdown (PC only) */
+.dropdown {position: relative;}
+
+.dropdown-btn {
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+.dropdown-btn:hover {text-decoration: underline;}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 6px;
+    min-width: 240px;
+    z-index: 4000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 16px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid black;
+}
+
+.dropdown-menu a:last-child {border-bottom: none;}
+.dropdown-menu a:hover {background-color: rgba(0,0,0,0.1);}
+.dropdown-menu.show {display: block;}
+
 @media (max-width: 768px) {
+.pc-only {display: block;}
+.pc-only .dropdown-btn {display: none;}
+.pc-only .dropdown-menu {
+    display: block;
+    position: static;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    min-width: unset;
+    width: 100%;
+    background: none;
+}
+
+.pc-only .dropdown-menu a {
+    font-size: 18px;
+    border-bottom: 1px solid black;
+}
+
 .nav-links {
     display: none;
     flex-direction: column;
@@ -102,9 +158,9 @@ body {margin: 0;}
 /* Dark mode button */
 .darkmode-btn {
     width: 90%;
-    padding: 12px 16px;
+    padding: 6px 10px;
     margin: 10px auto;
-    font-size: 18px;
+    font-size: 14px;
     background-color: grey;
     color: white;
     border: 2px solid black;
