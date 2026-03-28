@@ -64,14 +64,19 @@
     <body>
     <nav class="navbar">
     <div class="logo"><a href="index.html">JustAKuleGuy</a></div>
-
     <button class="hamburger" onclick="toggleMenu()">☰</button>
 
     <div class="nav-links" id="navLinks">
         <a href="Blogs/justakuleguy_blogs.html">Blogs</a>
         <a href="YouTube Channels Archive/youtube channels archive.html">YouTubes</a>
-        <a href="Test Video Hosting Embeds/test-video-hosting-embeds.html">Video Tests</a>
         <a href="website info.html">Website Info</a>
+
+        <div class="dropdown pc-only">
+            <button class="dropdown-btn" onclick="toggleDropdown()">Other ↓</button>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="Test Video Hosting Embeds/test-video-hosting-embeds.html">📼 Test Video Hosting/Streaming Embeds</a>
+            </div>
+        </div>
 
         <button onclick="toggleDarkMode()" class="darkmode-btn">Dark Mode</button>
     </div>
@@ -81,12 +86,17 @@
 
     <article>
         <img src="2025-08-02-201336 (cropped).jpg" class="myface">
-        <h3>Hello! My name is Luke! I love technology, computers, gaming, somewhat traveling, and I want to use this website as an opportunity to document my life's work and experiences. I have a basic knowledge of HTML and I'm just sticking to what I know best. I'm not using Wix, Squarespace, Wordpress, or any other website builder because they don't have the features I want. I am considering using AI and LLMs to assist with my code because AI is better than me and I have little coding knowledge. Made using HTML, CSS, and JS all coded inside VS Code and hosted onto Github Pages! Anyways, I hope you enjoy my website!</h3>
+        <h3>Hello! My name is Luke! I love technology, computers, gaming, somewhat traveling, and I want to use this website as an opportunity to document my life's work and experiences. I have a basic knowledge of HTML and I'm just sticking to what I know best. I'm not using Wix, Squarespace, Wordpress, or any other website builder because they don't have the features I want. I am considering using AI and LLMs to assist with my code because AI is better than me and I have little coding knowledge. Made using HTML, CSS, and JS all vibe-coded inside VS Code and hosted onto Github Pages! Anyways, I hope you enjoy my website!</h3>
         <div id="horizontal-line"></div>
         <a href="Blogs/justakuleguy_blogs.html"><h3>📝 Blogs</h3></a>
         <a href="YouTube Channels Archive/youtube channels archive.html"><h3><img src="YouTube Channels Archive/youtube-logo-hd-8-1348870541.png" width="20px"> YouTube Channels Archive</h3></a>
-        <a href="Test Video Hosting Embeds/test-video-hosting-embeds.html"><h3>📼 Test Video Hosting/Streaming Embeds</h3></a>
         <a href="website info.html"><h3>📓 Website Info</h3></a>
+        
+        <div id="horizontal-line"></div>
+        <div style="margin-bottom: 10px;"></div>
+
+        <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Other:</h3>
+        <a href="Test Video Hosting Embeds/test-video-hosting-embeds.html"><h3>📼 Test Video Hosting/Streaming Embeds</h3></a>
         </div>
         
     </article>    
