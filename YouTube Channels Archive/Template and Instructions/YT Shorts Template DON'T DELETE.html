@@ -6,11 +6,25 @@
         <title></title>
         <link rel="stylesheet" href="../../../yt vid & vod pages.css">
         <link rel="stylesheet" href="../../../../universal darkmode.css">
+        <link rel="stylesheet" href="../../../../universal navbar.css">
     </head>
     <body>
-        <a href="../justakuleguy_shorts.html"><button>Back to shorts list</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button><br></br>
-        
+    <nav class="navbar">
+    <div class="logo"><a href="../../../../index.html">JustAKuleGuy</a></div>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="../../../../Blogs/justakuleguy_blogs.html">Blogs</a>
+        <a href="../../../../YouTube Channels Archive/youtube channels archive.html">YouTubes</a>
+        <a href="../../../../Test Video Hosting Embeds/test-video-hosting-embeds.html">Video Tests</a>
+        <a href="../../../../website info.html">Website Info</a>
+
+        <button onclick="toggleDarkMode()" class="darkmode-btn">Dark Mode</button>
+    </div>
+    </nav>
+
+    <article>        
         <div class="video-container">
         <iframe id="videoFrame"
             src="https://STREAMTAPE_EMBED_URL"
@@ -40,6 +54,7 @@
         <h3><img src="../../../youtube-logo-hd-8-1348870541.png" class="platform-mirrors"> YouTube: <a href="" target="_blank"></a></h3>
         <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="" target="_blank"></a></h3>
         </div>
+    </article>
     
     <script>
     const videoSources = {
@@ -55,5 +70,6 @@
     </script>
 
     <script src="../../../../universal darkmode.js"></script>
+    <script src="../../../navbar - video pages.js"></script>
     </body>
 </html>
