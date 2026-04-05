@@ -5,14 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Livestream VODS - KuleGuy</title>
         <link rel="stylesheet" href="../../../universal darkmode.css">
+        <link rel="stylesheet" href="../../../universal navbar.css">
         <link rel="stylesheet" href="../../yt vids, unvid, & vods index.css">
     </head>
     <body>
         <img id="pfp" src="../KuleGuy Profiles/PFP_2/[007698]1x1.png" onclick="openPopup()"></button>
         <a href="https://www.youtube.com/channel/UC3g9X3jCfa4QoghkCkJ0Ekg" target="_blank"><h1>KuleGuy</h1></a>
         <h3>Created: 1 January 2024<br>Hey, I'm Luke! I post whatever I want and find interesting. I don't have an upload schedule. Live Laugh Luke.</h3>
-        <a href="../../youtube channels archive.html"><button>Back to channels</button></a>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
         <div class="tab-bar">
         <a href="../Public Videos/justakuleguy_ytvids.html">Public Videos</a>
@@ -22,8 +21,8 @@
         <a href="../Posts/justakuleguy_posts.html">Posts</a>
         </div>
         
-        <button id="sortToggle" style="margin: 10px 0; padding: 5px; font-weight: 600;">Sort: Oldest → Newest</button>
-        <button id="viewToggle" style="margin: 10px 5px; padding: 5px; font-weight: 600;">List View</button>
+        <button id="sortToggle" class="videoToggles">Sort: Oldest → Newest</button>
+        <button id="viewToggle" class="videoToggles">List View</button>
 
         <!-- Video container -->
         <div id="videos-container" class="videos-row icon-view">
@@ -185,5 +184,6 @@
     <script src="../../iconview-listview-toggle.js"></script>
     <script src="../../newest-oldest-video-toggle.js"></script>
     <script src="../../../universal darkmode.js"></script>
+    <script src="../../navbar - channel index pages.js"></script>
     </body>
 </html>
