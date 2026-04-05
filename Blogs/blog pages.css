@@ -1,9 +1,12 @@
 article {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.65;
-    max-width: 840px;
+    max-width: 860px;
     margin: 0px auto;
     padding: 15px;
+    background: rgba(255, 255, 255, 0.700);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: black;
 }
 
 #date {
