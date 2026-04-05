@@ -1,0 +1,11 @@
+Link the nav links to the correct page. The more you go deeper into the page, the more you have to add ../ to make the navlinks work. The solution is to copy and paste the navbar to every index page manually and make another .js file with HTML injection SPECIFICALLY for the blog pages and video because they lead to the same paths. Copy and paste the specific .js to every blog page and video and when you update that js file, it updates every page.
+
+IF UPDATING NAVBAR LINKS, CHANGE:
+index.html
+website info.html
+test-video-hosting-embeds.html (Test Video Hosting Embeds)
+justakuleguy_blogs.html (Blogs)
+navbar - blog pages.js (Blogs) <- this changes EVERY blog pages navbar without manually editing every single page using HTML injection
+youtube channels archive.html (YouTube Channels Archive)
+navbar - channel index pages.js (YouTube Channels Archive)
+navbar - video pages.js (YouTube Channels Archive) <- same thing, uses HTML injection in the js

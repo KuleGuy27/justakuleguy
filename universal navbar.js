@@ -3,6 +3,19 @@ function toggleMenu() {
     menu.classList.toggle("show");
 }
 
+function toggleDropdown() {
+    var dropdown = document.getElementById("dropdownMenu");
+    dropdown.classList.toggle("show");
+}
+
+// Close dropdown when clicking outside
+document.addEventListener("click", function(e) {
+    var dropdown = document.getElementById("dropdownMenu");
+    if (dropdown && !e.target.closest(".dropdown")) {
+        dropdown.classList.remove("show");
+    }
+});
+
 const navLinks = document.querySelectorAll("#navLinks a");
 
 navLinks.forEach(link => {
