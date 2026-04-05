@@ -88,14 +88,19 @@
     <body>
     <nav class="navbar">
     <div class="logo"><a href="../index.html">JustAKuleGuy</a></div>
-
     <button class="hamburger" onclick="toggleMenu()">☰</button>
 
     <div class="nav-links" id="navLinks">
         <a href="../Blogs/justakuleguy_blogs.html">Blogs</a>
-        <a href="youtube channels archive.html">YouTubes</a>
-        <a href="../Test Video Hosting Embeds/test-video-hosting-embeds.html">Video Tests</a>
+        <a href="../YouTube Channels Archive/youtube channels archive.html">YouTubes</a>
         <a href="../website info.html">Website Info</a>
+
+        <div class="dropdown pc-only">
+            <button class="dropdown-btn" onclick="toggleDropdown()">Other ↓</button>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="../Test Video Hosting Embeds/test-video-hosting-embeds.html">📼 Test Video Hosting/Streaming Embeds</a>
+            </div>
+        </div>
 
         <button onclick="toggleDarkMode()" class="darkmode-btn">Dark Mode</button>
     </div>
