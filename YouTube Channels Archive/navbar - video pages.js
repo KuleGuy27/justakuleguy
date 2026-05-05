@@ -17,7 +17,7 @@ document.body.insertAdjacentHTML("afterbegin", `
 
             <button onclick="toggleDarkMode()" class="darkmode-btn">Dark Mode</button>
         </div>
-    </nav><br></br>
+    </nav><br><br><br>
 `);
 
 function toggleMenu() {
