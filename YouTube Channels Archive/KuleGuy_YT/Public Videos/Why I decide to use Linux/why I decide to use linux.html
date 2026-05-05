@@ -11,21 +11,7 @@
     <body>
     
     <article>
-        <div class="video-container">
-        <iframe id="videoFrame"
-            src="https://streamtape.com/e/W1AxDKrwrGHbObd"
-            frameborder="0"
-            scrolling="0"
-            allowfullscreen>
-        </iframe>
-
-        <div class="video-switcher">
-            <button onclick="switchVideo('streamtape')">Streamtape</button>
-            <button onclick="switchVideo('doodstream')">Doodstream</button>
-            <button onclick="switchVideo('abyss')">Abyss</button>
-            <button onclick="switchVideo('mixdrop')">MixDrop</button>
-        </div>
-        </div>
+        <iframe src="https://short.icu/pR4CeydGX" frameborder="0" scrolling="0" allowfullscreen></iframe>
 
         <div id="video-metadata">
         <h1>Why I decide to use Linux</h1>
@@ -56,19 +42,6 @@
         <h3><img src="../../../Internet_Archive_logo-171227854.png" class="platform-mirrors"> Internet Archive: <a href="https://archive.org/download/kuleguy-yt-videos-archive_202508/Why%20I%20decide%20to%20use%20Linux.mp4" target="_blank">https://archive.org/download/kuleguy-yt-videos-archive_202508/Why%20I%20decide%20to%20use%20Linux.mp4</a></h3>
         </div>
     </article>
-
-    <script>
-    const videoSources = {
-        streamtape: "https://streamtape.com/e/W1AxDKrwrGHbObd",
-        doodstream: "https://myvidplay.com/e/sa4io0v6abc3",
-        abyss: "https://short.icu/pR4CeydGX",
-        mixdrop: "https://mixdrop.top/e/4dm911qksg444j"
-    };
-    function switchVideo(service) {
-        const iframe = document.getElementById("videoFrame");
-        iframe.src = videoSources[service];
-    }
-    </script>
     
     <script src="../../../../universal darkmode.js"></script>
     <script src="../../../navbar - video pages.js"></script>
