@@ -55,12 +55,10 @@ h1 {
 #blog-topbuttons {text-align: center;}
 
 iframe {
-    width: 70%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 16 / 9;
-}
+  justify-content: center;
+   align-items: center;
+    aspect-ratio: 16 / 9;}
 
 .mySlides img {width: 100%;}
 
@@ -85,6 +83,11 @@ iframe {
     border-radius: 6px;
     font-size: 15px;
     margin: 1.5rem 0;
+}
+
+#giscus-comments {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Tablet query */
