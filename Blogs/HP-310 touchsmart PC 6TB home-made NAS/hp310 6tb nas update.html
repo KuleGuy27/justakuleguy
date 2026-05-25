@@ -11,6 +11,20 @@
         <link rel="stylesheet" href="../dropdown menu.css">       
     </head>
     <body>
+    <nav class="navbar">
+    <div class="logo"><a href="../../index.html">JustAKuleGuy</a></div>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="../justakuleguy_blogs.html">Blogs</a>
+        <a href="../../YouTube Channels Archive/youtube channels archive.html">YouTubes</a>
+        <a href="../../Test Video Hosting Embeds/test-video-hosting-embeds.html">Video Tests</a>
+        <a href="../../website info.html">Website Info</a>
+
+        <button onclick="toggleDarkMode()" class="darkmode-btn">Dark Mode</button>
+    </div>
+    </nav>
 
     <article>        
         <h1>Update! Using my HP-310 AIO computer as an easy home NAS! [Subject to change]</h1>
@@ -140,7 +154,7 @@
         <img src="hp310 nas - ubuntu server burn to rufus.png" width="60%">
         <img src="hp310 nas - ubuntu server burn to image writer.png" width="60%">
         <p>The installation of Ubuntu Server is super easy, you press the enter key on your keyboard a lot. You can skip Ubuntu Pro, I don't really have a reason why you need it. Here is the full installation of Ubuntu Server using Virtualbox:</p>
-        <iframe width="600px" src="https://short.icu/Brp5Rs5LD" frameborder="0" scrolling="0" allowfullscreen></iframe>
+        <iframe src="https://streamtape.com/e/bzKbgRajJoiPv3B/" allowfullscreen allowtransparency allow="autoplay" scrolling="0" frameborder="0" width="70%"></iframe>
         <a href="https://archive.org/download/kuleguy-website-blog-videos/HP-310%20touchsmart%20PC%206TB%20home-made%20NAS/vokoscreenNG-2025-08-30_22-01-55_25fps.mp4" target="_blank">
             <br><p class="downloadthisvid">^ Download this video! ^</p></a>
         <p>Oh by the way, make sure to uncheck the <u>LVM group</u> because it splits your drive into multiple parts!</p>
@@ -225,10 +239,28 @@
         <p>Right now, my NAS is basic. In the future, I hope to create a NAS using a Raspberry Pi with a lot of storage and invest in better backup using the <a href="https://www.youtube.com/watch?v=rFO6NyLIP7M" target="_blank">3-2-1 backup strategy</a>. For now, this is what have and I am happy with it!<br>
         This blog is stored on my NAS and I thank you for reading it!</p>
     </article>
+
+    <section id="giscus-comments">
+        <script src="https://giscus.app/client.js"
+            data-repo="KuleGuy27/justakuleguy"
+            data-repo-id="R_kgDOPdDlww"
+            data-category="General"
+            data-category-id="DIC_kwDOPdDlw84C8bJF"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </section>
     
     <script src="../dropdown menu.js"></script>
     <script src="../image slideshow.js"></script>
     <script src="../../universal darkmode.js"></script>
-    <script src="../navbar - blog pages.js"></script>
+    <script src="../../universal navbar.js"></script>
     </body>
 </html>
