@@ -86,7 +86,7 @@ iframe {
 }
 
 /*Blog Comments */
-#disqus_thread {
+#giscus-comments {
     max-width: 800px;
     margin: 0 auto;
 }
