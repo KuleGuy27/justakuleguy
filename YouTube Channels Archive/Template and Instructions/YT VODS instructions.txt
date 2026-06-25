@@ -7,4 +7,5 @@ Everytime a new YT vod is made:
  - in the youtube vods list (index), copy the previous block and change the vod #, add the a 'a href' link, add the thumbnail source, duration time, change the title and date
 
 - in the HTMl videos itself; edit the site title from the folder, video source, h1 (vid title), h3 (date), h3 description, link url with "a href" if possible
+- change the yt links in desc to links on site if have
 - link to mirrors (YouTube and Internet Archive)
