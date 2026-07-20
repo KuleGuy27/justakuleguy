@@ -1,0 +1,13 @@
+/ 17 Mar 2026
+
+* How I identify songs in background of videos
+
+# Sometimes when watching content on the internet, I hear a song that I like and pull up Shazam or any song identifier, but it doesn't work because the YouTuber (or whoever) is talking while the background music is playing. Because of that, I have found a way to find a background music even when someone is talking. Mind you, this isn't foolproof, but it works.
+
+Steps:
+- Record or download video
+- Convert video to mp3 (mp4/mkv/any video → mp3) using https://cloudconvert.com/
+- Isolate music from vocals using https://vocalremover.org/
+- Identify song using https://songfinder.gg/
+
+@ https://youtube.com/shorts/mjyJlEEA_Oc
