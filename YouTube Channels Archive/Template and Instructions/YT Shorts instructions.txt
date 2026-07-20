@@ -10,4 +10,4 @@ Everytime a new YT short is made:
 - in the HTMl short videos itself; edit the site title from the folder, video source, h1 (vid title), h3 date, h3 description, link url with "a href" if possible
 - change the yt links in desc to links on site if have
 - add downloadable links to download the .srt subtitles + add a mirror link (if have)
-- link to mirrors (YouTube, Internet Archive)
+- link to mirrors (YouTube, Odysee, Rumble, Internet Archive)
