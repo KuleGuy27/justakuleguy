@@ -37,6 +37,38 @@
     margin: 0.5rem 0;
   }
 
+  .article-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .article-content img {
+      width: 250px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 3px;
+      flex-shrink: 0;
+  }
+
+  .article-text {
+      flex: 1;
+      text-align: left;
+  }
+
+  .article-text h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+  }
+
+  .article-text p {
+      margin: 0;
+      line-height: 1.5;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+  }
+
   img {
     width: 30%;
     height: auto;
@@ -140,20 +172,32 @@
   </div>
   
   <main>
-    <article data-tags="Technology Linux Hardware Software">
+    <article> <!-- #2 -->
       <a href="HP-310 touchsmart PC 6TB home-made NAS/hp310 6tb nas update.html">
         <h2>Update! Using my HP-310 AIO computer as an easy home NAS! [Subject to change]</h2>
-      <img src="HP-310 touchsmart PC 6TB home-made NAS/hp310 nas - main image cover.jpg"></a>
-      <h3>Posted on: 29 August 2025</h3>
-      <p>Tags: Technology, Linux, Hardware, Software</p>
+          
+      <div class="article-content">
+          <img src="HP-310 touchsmart PC 6TB home-made NAS/hp310 nas - main image cover.jpg"></a>
+    
+      <div class="article-text">
+          <h3>Posted on: 29 August 2025</h3>
+          <p>In May 2024, I made a YouTube video about me using my old Toshiba Satellite laptop as a home-made NAS...</p>
+        </div>
+      </div>
     </article>
 
-    <article data-tags="Technology Linux Software">
+    <article> <!-- #1 -->
       <a href="QALC - Linux terminal math calculator/qalc linux terminal calculator.html">
         <h2>Using QALC as my terminal calculator for Linux!</h2>
-      <img src="QALC - Linux terminal math calculator/qalc linux - asmd main pc.png"></a>
-      <h3>Posted on: 25 August 2025</h3>
-      <p>Tags: Technology, Linux, Software</p>
+       
+      <div class="article-content">
+          <img src="QALC - Linux terminal math calculator/qalc linux - asmd main pc.png"></a>
+
+      <div class="article-text">
+          <h3>Posted on: 25 August 2025</h3>
+          <p>A lot of times on my computer, whether it's on Windows or Linux, I would use a calculator...</p>
+        </div>
+      </div>
     </article>
   </main>
 
@@ -164,15 +208,20 @@
 
     articles.forEach(article => {
         const title = article.querySelector("h2").textContent.toLowerCase();
+        const description = article.querySelector("p").textContent.toLowerCase();
         const tags = article.getAttribute("data-tags").toLowerCase();
 
-        if (title.includes(search) || tags.includes(search)) {
+        if (
+            title.includes(search) ||
+            description.includes(search) ||
+            tags.includes(search)
+        ) {
             article.style.display = "block";
         } else {
             article.style.display = "none";
         }
     });
-}
+  }
   </script>
   </script>
   <script src="../universal darkmode.js"></script>
