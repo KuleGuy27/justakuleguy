@@ -63,6 +63,28 @@
     border-radius: 5px;
   }
 
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0 20px;
+  }
+
+  .search-container label {
+      white-space: nowrap;
+      font-size: 1rem;
+  }
+
+  #searchBlogs {
+      width: 60%;
+      max-width: 200px;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #aaa;
+      border-radius: 6px;
+  }
+
   /* Tablet */
   @media (max-width: 1024px) {
     article {width: 85%;}
@@ -73,6 +95,11 @@
   @media (max-width: 768px) {
     article { width: 95%;}
     img {width: 100%;}
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #searchBlogs {width: 90%;}
   }
 </style>
 
@@ -101,14 +128,16 @@
   <!--Tags: Technology, Linux, Windows, Travel, Family, Gaming-->
   <h1>My Blogs</h1>
   
-  <label for="tagFilter"><strong>Filter by tag:</strong></label>
-  <select id="tagFilter" onchange="filterPosts()">
-    <option value="all">All</option>
-    <option value="Technology">Technology</option>
-    <option value="Linux">Linux</option>
-    <option value="Hardware">Hardware</option>
-    <option value="Software">Software</option>
-  </select>
+  <div class="search-container">
+    <label for="searchBlogs"><strong>Search blogs:</strong></label>
+
+    <input
+        type="text"
+        id="searchBlogs"
+        placeholder="Search title or tags..."
+        onkeyup="searchBlogs()"
+    >
+  </div>
   
   <main>
     <article data-tags="Technology Linux Hardware Software">
@@ -129,24 +158,21 @@
   </main>
 
   <script>
-  function filterPosts() {
-    const desktop = document.getElementById("tagFilter");
-    const mobile = document.getElementById("tagFilterMobile");
-
-    const selectedTag = desktop?.value || mobile?.value || "all";
-
+  function searchBlogs() {
+    const search = document.getElementById("searchBlogs").value.toLowerCase();
     const articles = document.querySelectorAll("main article");
 
     articles.forEach(article => {
-      const tags = article.getAttribute("data-tags");
+        const title = article.querySelector("h2").textContent.toLowerCase();
+        const tags = article.getAttribute("data-tags").toLowerCase();
 
-      if (selectedTag === "all" || tags.includes(selectedTag)) {
-        article.style.display = "block";
-      } else {
-        article.style.display = "none";
-      }
+        if (title.includes(search) || tags.includes(search)) {
+            article.style.display = "block";
+        } else {
+            article.style.display = "none";
+        }
     });
-  }
+}
   </script>
   </script>
   <script src="../universal darkmode.js"></script>
