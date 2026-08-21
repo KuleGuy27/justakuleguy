@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kule Video Games</title>
+  <link rel="stylesheet" href="../universal darkmode.css">
+  <link rel="stylesheet" href="../universal navbar.css">
+  <style>
+    /* GENERAL PAGE */
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, p {
+      text-align: center;
+      margin: 30px 15px;
+    }
+
+    /* CONTROLS */
+    .game-controls {
+      width: 70%;
+      max-width: 900px;
+      margin: 0 auto 25px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .game-controls label {font-weight: bold;}
+    .game-controls select,
+    .game-controls button {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      padding: 9px 12px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      background-color: #ffffff;
+      color: #000000;
+      cursor: pointer;
+    }
+
+    .game-controls button:hover,
+    .game-controls select:hover {
+      background-color: #eeeeee;
+    }
+
+    /* GAME LIST */
+    #gameList {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* GAME ARTICLE */
+    article {
+        width: 70%;
+        max-width: 900px;
+        margin-bottom: 20px;
+        background-color: #eeeeee;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+        text-align: left;
+        color: #000000;
+    }
+
+    /* Keep everything inside the game article black,
+    even when Dark Mode is enabled */
+    article,
+    article summary,
+    article .game-content,
+    article .game-details,
+    article .game-details strong,
+    article h3,
+    article p {
+    color: #000000;
+    }
+
+    /* GAME DROPDOWN HEADER */
+    details {width: 100%;}
+
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #f5f5f5;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+
+    /* Hide browser's default arrow */
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    /* Custom arrow */
+    summary::after {
+      content: "▼";
+      font-size: 18px;
+      transition: transform 0.3s ease;
+    }
+
+    /* Rotate arrow when opened */
+    details[open] summary::after {transform: rotate(180deg);}
+    summary:hover {background-color: #d8d8d8;}
+
+    /* GAME CONTENT */
+    .game-content {padding: 20px;}
+    .game-info {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .game-cover {
+      width: 140px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .game-details {
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .game-details strong {font-weight: bold;}
+    a {color: inherit;}
+
+    /* VIDEOS */
+    .videos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .video {width: 100%;}
+    .video h3 {margin: 0 0 10px 0;}
+
+    iframe {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+    }
+
+    /* TABLET */
+    @media (max-width: 1024px) {
+      article,
+      .game-controls {
+        width: 85%;
+      }
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      article,
+      .game-controls {width: 92%;}
+      summary {
+        padding: 16px;
+        font-size: 20px;
+      }
+
+      .game-content {padding: 15px;}
+      .game-info {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .game-cover {width: 140px;}
+      .game-details {width: 100%;}
+
+      /* Stack videos vertically */
+      .videos {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .game-controls {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .game-controls select,
+      .game-controls button {width: 100%;}
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="../index.html">JustAKuleGuy</a></div>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="../Blogs/justakuleguy_blogs.html">Blogs</a>
+        <a href="../YouTube Channels Archive/youtube channels archive.html">YouTubes</a>
+        <a href="../website info.html">Website Info</a>
+
+        <div class="dropdown pc-only">
+            <button class="dropdown-btn" onclick="toggleDropdown()">Other ↓</button>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="">🎮 Video Games I'm Interested In</a>
+                <a href="../My Favorite ROBLOX Games/favorite-roblox-games.html"><img src="Roblox_Corporation_2025_logo.svg.webp" width="20px"> My Favorite ROBLOX Games</a>
+            </div>
+        </div>
+
+        <button onclick="toggleDarkMode()" class="darkmode-btn">Dark Mode</button>
+    </div>
+    </nav>
+  <br></br>
+
+  <h1>Video Games I'm Interested In</h1>
+
+  <p>These are all the games I found on the internet that I think are cool.<br>
+    There are some games I've played and some I haven't.<br>
+    I got the info from various game databases and websites like:<br>
+    MobyGames: <a href="https://www.mobygames.com/">https://www.mobygames.com/</a><br>
+    IGDB: <a href="https://www.igdb.com/">https://www.igdb.com/</a><br>
+    RAWG: <a href="https://rawg.io/">https://rawg.io/</a><br>
+    TheGamesDB: <a href="https://thegamesdb.net/">https://thegamesdb.net/</a><br>
+    Wikipedia: <a href="https://www.wikipedia.org/">https://www.wikipedia.org/</a><br>
+    Treating this page kinda like a game diary, enjoy my list!
+  </p>
+
+  <!-- SORT / EXPAND CONTROLS -->
+  <div class="game-controls">
+    <label for="sortGames">Sort by:</label>
+    <select id="sortGames">
+      <option value="alphabetical">Alphabetical</option>
+      <option value="release">Release Date</option>
+      <option value="developer">Developer</option>
+      <option value="length">Game Length</option>
+    </select>
+
+    <button id="toggleAll">Expand All</button>
+    <button onclick="window.open('https://docs.google.com/spreadsheets/d/1cPvYdhBEZS71J1giEYZ3BJ92IcTNfpPTBqJ0elcxHI8/edit?usp=sharing', '_blank')">Google Sheets</button>
+  </div>
+
+  <main id="gameList">
+
+    <article
+      data-game-id="140"
+      data-title="140"
+      data-release="2013-10-16"
+      data-developer="Carlsen Games"
+      data-length="1.5">
+
+      <details>
+        <summary>140</summary>
+        <div class="game-content">
+          <div class="game-info">
+            <img
+              src="1135739-140-xbox-one-front-cover.png"
+              class="game-cover"
+              alt="140 game cover">
+            <div class="game-details">
+              <strong>Release Date:</strong> 16 October 2013<br>
+              <strong>Developer(s):</strong> Carlsen Games<br>
+              <strong>Publisher(s):</strong> Carlsen Games, Double Fine Productions<br>
+              <strong>Website:</strong> <a href="https://www.carlsengames.com/games/140/">https://www.carlsengames.com/games/140/</a><br>
+              <strong>Devices:</strong> Windows, Mac, Linux, PS4, Xbox One, Wii U, Nintendo Switch<br>
+              <strong>Store Links:</strong>
+              Steam,
+              GOG,
+              Itch.io,
+              Humble Bundle
+              <br>
+              <strong>HowLongToBeat:</strong><a href="https://howlongtobeat.com/game/14421" target="_blank"> 1½ Hours</a><br>
+              <strong>Linux ProtonDB:</strong><a href="https://www.protondb.com/app/242820" target="_blank"> Native</a><br>
+              <strong>Personal Notes:</strong>
+            </div>
+          </div>
+
+
+          <!-- VIDEOS -->
+          <div class="videos">
+            <!-- Trailer -->
+            <div class="video">
+              <h3>GAME TRAILER</h3>
+              
+              <iframe
+                src="https://www.youtube.com/embed/cLtikiPt2QI"
+                title="140 - Trailer"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <!-- Gameplay -->
+            <div class="video">
+              <h3>MY GAMEPLAY (<a href="../YouTube Channels Archive/KuleGuy_YT/Public Videos/140_gaming video nc/140_gaming video nc.html" target="_blank">View on this site</a>)</h3>
+              <iframe
+                src="https://www.youtube.com/embed/WUxW5gXrNSc"
+                title="140 - No Commentary Gameplay Walkthrough [Linux Gaming]"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+        <!-- Game Databases Info -->
+         <p>View on:
+            <a href="https://www.mobygames.com/game/66660/140/">Moby Games,</a>
+            <a href="https://www.igdb.com/games/140">IGDB,</a>
+            <a href="https://rawg.io/games/140-itch">RAWG,</a>
+            <a href="https://thegamesdb.net/game.php?id=21542">TheGamesDB,</a>
+            <a href="https://en.wikipedia.org/wiki/140_(video_game)">Wikipedia</a>
+         </p>
+        </div>
+      </details>
+    </article>
+
+    <!-- ADD MORE GAMES HERE -->
+  </main>
+
+  <script>
+    /* VARIABLES */
+    const gameList = document.getElementById("gameList");
+    const sortGames = document.getElementById("sortGames");
+    const toggleAllButton = document.getElementById("toggleAll");
+
+    /* LOCAL STORAGE KEYS */
+    const OPEN_GAMES_KEY = "kuleGameOpenStates";
+    const SORT_KEY = "kuleGameSort";
+
+    /* SAVE WHICH GAMES ARE OPEN */
+    function saveOpenStates() {
+      const openGames = {};
+      const games = gameList.querySelectorAll("article");
+      games.forEach(function(game) {
+        const gameId = game.dataset.gameId;
+        const details = game.querySelector("details");
+        openGames[gameId] = details.open;
+      });
+      localStorage.setItem(
+        OPEN_GAMES_KEY,
+        JSON.stringify(openGames)
+      );
+    }
+
+    /* LOAD WHICH GAMES WERE OPEN */
+    function loadOpenStates() {
+      const savedStates =
+        localStorage.getItem(OPEN_GAMES_KEY);
+      if (!savedStates) {
+        return;
+      }
+      const openGames =
+        JSON.parse(savedStates);
+      const games =
+        gameList.querySelectorAll("article");
+      games.forEach(function(game) {
+        const gameId =
+          game.dataset.gameId;
+        const details =
+          game.querySelector("details");
+        if (openGames[gameId] === true) {
+          details.open = true;
+        }
+      });
+    }
+
+    /* UPDATE EXPAND / COLLAPSE BUTTON TEXT */
+    function updateToggleButton() {
+      const games =
+        gameList.querySelectorAll("article");
+      if (games.length === 0) {
+        return;
+      }
+      let allOpen = true;
+      games.forEach(function(game) {
+        const details =
+          game.querySelector("details");
+        if (!details.open) {
+          allOpen = false;
+        }
+      });
+
+      if (allOpen) {
+        toggleAllButton.textContent =
+          "Collapse All";
+      } else {
+        toggleAllButton.textContent =
+          "Expand All";
+      }
+    }
+
+    /* EXPAND / COLLAPSE ALL */
+    toggleAllButton.addEventListener(
+      "click",
+      function() {
+        const games =
+          gameList.querySelectorAll("article");
+        let allOpen = true;
+        games.forEach(function(game) {
+          const details =
+            game.querySelector("details");
+          if (!details.open) {
+            allOpen = false;
+          }
+        });
+
+        games.forEach(function(game) {
+          const details =
+            game.querySelector("details");
+          details.open = !allOpen;
+        });
+        saveOpenStates();
+        updateToggleButton();
+      }
+    );
+
+
+    /* SAVE STATE WHEN A GAME IS OPENED/CLOSED */
+    gameList.addEventListener(
+      "toggle",
+      function(event) {
+        if (
+          event.target.tagName.toLowerCase() === "details"
+        ) {
+          saveOpenStates();
+          updateToggleButton();
+        }
+      },
+      true
+    );
+
+    /* SORT GAMES */
+    function sortGamesList() {
+      const games =
+        Array.from(
+          gameList.querySelectorAll("article")
+        );
+      const sortType =
+        sortGames.value;
+      games.sort(function(a, b) {
+
+        /* Alphabetical */
+        if (sortType === "alphabetical") {
+          return a.dataset.title.localeCompare(
+            b.dataset.title,
+            undefined,
+            {
+              numeric: true,
+              sensitivity: "base"
+            }
+          );
+        }
+
+        /* Release Date */
+        if (sortType === "release") {
+          return a.dataset.release.localeCompare(
+            b.dataset.release
+          );
+        }
+
+        /* Developer */
+        if (sortType === "developer") {
+          return a.dataset.developer.localeCompare(
+            b.dataset.developer,
+            undefined,
+            {
+              sensitivity: "base"
+            }
+          );
+        }
+
+        /* Game Length */
+        if (sortType === "length") {
+          return (
+            parseFloat(a.dataset.length) -
+            parseFloat(b.dataset.length)
+          );
+        }
+      });
+
+      /* Put games back into the page */
+      games.forEach(function(game) {
+        gameList.appendChild(game);
+      });
+
+      /* Remember selected sorting */
+      localStorage.setItem(
+        SORT_KEY,
+        sortType
+      );
+    }
+
+
+    /* SORT WHEN DROPDOWN CHANGES */
+    sortGames.addEventListener(
+      "change",
+      function() {
+        sortGamesList();
+      }
+    );
+
+    /* LOAD SAVED SORT */
+    function loadSavedSort() {
+      const savedSort =
+        localStorage.getItem(SORT_KEY);
+      if (savedSort) {
+        sortGames.value =
+          savedSort;
+      }
+    }
+
+    /* INITIALIZE PAGE */
+    loadSavedSort();
+    sortGamesList();
+    loadOpenStates();
+    updateToggleButton();
+  </script>
+  <script src="../universal darkmode.js"></script>
+  <script src="../universal navbar.js"></script>
+</body>
+</html>
