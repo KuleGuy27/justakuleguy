@@ -21,6 +21,13 @@
       margin: 30px 15px;
     }
 
+    /* Text colors */
+    .Playstation {color: #0070D1}
+    .XBOX {color: #0C7A1F}
+    .Nintendo {color: #E70009}
+
+
+
     /* CONTROLS */
     .game-controls {
       width: 70%;
@@ -125,7 +132,7 @@
     }
 
     .game-cover {
-      width: 140px;
+      width: 150px;
       height: auto;
       flex-shrink: 0;
     }
@@ -238,16 +245,26 @@
 
   <!-- SORT / EXPAND CONTROLS -->
   <div class="game-controls">
-    <label for="sortGames">Sort by:</label>
-    <select id="sortGames">
-      <option value="alphabetical">Alphabetical</option>
-      <option value="release">Release Date</option>
-      <option value="developer">Developer</option>
-      <option value="length">Game Length</option>
-    </select>
 
-    <button id="toggleAll">Expand All</button>
-    <button onclick="window.open('https://docs.google.com/spreadsheets/d/1cPvYdhBEZS71J1giEYZ3BJ92IcTNfpPTBqJ0elcxHI8/edit?usp=sharing', '_blank')">Google Sheets</button>
+  <label for="sortGames">Sort by:</label>
+
+  <select id="sortGames">
+    <option value="alphabetical">Alphabetical</option>
+    <option value="release">Release Date</option>
+    <option value="developer">Developer</option>
+    <option value="length">Game Length</option>
+  </select>
+
+  <label for="sortOrder">Order:</label>
+
+  <select id="sortOrder">
+    <option value="ascending">Ascending</option>
+    <option value="descending">Descending</option>
+  </select>
+
+  <button id="toggleAll">Expand All</button>
+  <button onclick="window.open('https://docs.google.com/spreadsheets/d/1cPvYdhBEZS71J1giEYZ3BJ92IcTNfpPTBqJ0elcxHI8/edit?usp=sharing', '_blank')">Google Sheets</button>
+
   </div>
 
   <main id="gameList">
@@ -265,22 +282,117 @@
           <div class="game-info">
             <img
               src="1135739-140-xbox-one-front-cover.png"
-              class="game-cover"
-              alt="140 game cover">
+              class="game-cover">
             <div class="game-details">
               <strong>Release Date:</strong> 16 October 2013<br>
               <strong>Developer(s):</strong> Carlsen Games<br>
               <strong>Publisher(s):</strong> Carlsen Games, Double Fine Productions<br>
               <strong>Website:</strong> <a href="https://www.carlsengames.com/games/140/">https://www.carlsengames.com/games/140/</a><br>
-              <strong>Devices:</strong> Windows, Mac, Linux, PS4, Xbox One, Wii U, Nintendo Switch<br>
-              <strong>Store Links:</strong>
-              Steam,
-              GOG,
-              Itch.io,
-              Humble Bundle
+              <strong>Devices:</strong> 
+              Windows, 
+              Mac, 
+              Linux, 
+              <a class="Playstation">PS4,</a> 
+              <a class="XBOX">Xbox One,</a> 
+              Wii U, 
+              <a class="Nintendo">Nintendo Switch</a>
+              <br>
+              <strong>Store Platforms:</strong>
+              <a href="https://store.steampowered.com/app/242820/140/" target="_blank">Steam</a>,
+              <a href="https://www.gog.com/en/game/140_game" target="_blank">GOG</a>,
+              <a href="https://carlsenjeppe.itch.io/140" target="_blank">Itch.io</a>,
+              <a href="https://www.humblebundle.com/store/140" target="_blank">Humble Bundle</a>,
+              <a href="https://store.playstation.com/en-us/concept/221658" target="_blank" class="Playstation">Playstation Store</a>,
+              <a href="https://www.xbox.com/en-US/games/store/140/bzln1w2ml7mg" target="_blank" class="XBOX">XBOX Store</a>,
+              <a href="https://www.nintendo.com/us/store/products/140-switch/" target="_blank" class="Nintendo">Nintendo eShop</a>
               <br>
               <strong>HowLongToBeat:</strong><a href="https://howlongtobeat.com/game/14421" target="_blank"> 1½ Hours</a><br>
               <strong>Linux ProtonDB:</strong><a href="https://www.protondb.com/app/242820" target="_blank"> Native</a><br>
+              <strong>Status:</strong> Completed<br> <!-- Haven't played, playing, completed -->
+            </div>
+          </div>
+
+
+          <!-- VIDEOS -->
+          <div class="videos">
+            <!-- Trailer -->
+            <div class="video">
+              <h3>GAME TRAILER</h3>
+              
+              <iframe
+                src="https://www.youtube.com/embed/cLtikiPt2QI"
+                title="140 - Trailer"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <!-- Gameplay -->
+            <div class="video">
+              <h3>MY GAMEPLAY (<a href="../YouTube Channels Archive/KuleGuy_YT/Public Videos/140_gaming video nc/140_gaming video nc.html" target="_blank">View on this site</a>)</h3>
+              <iframe
+                src="https://www.youtube.com/embed/WUxW5gXrNSc"
+                title="140 - No Commentary Gameplay Walkthrough [Linux Gaming]"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+        <!-- Game Databases Info -->
+         <p>View on:
+            <a href="https://www.mobygames.com/game/66660/140/">Moby Games,</a>
+            <a href="https://www.igdb.com/games/140">IGDB,</a>
+            <a href="https://rawg.io/games/140-itch">RAWG,</a>
+            <a href="https://thegamesdb.net/game.php?id=21542">TheGamesDB,</a>
+            <a href="https://en.wikipedia.org/wiki/140_(video_game)">Wikipedia</a>
+         </p>
+        </div>
+      </details>
+    </article>
+
+    <article
+      data-game-id="A Short Hike"
+      data-title="A Short Hike"
+      data-release="2019-07-30"
+      data-developer="adamgryu"
+      data-length="2.5">
+
+      <details>
+        <summary>A Short Hike</summary>
+        <div class="game-content">
+          <div class="game-info">
+            <img
+              src=""
+              class="game-cover">
+            <div class="game-details">
+              <strong>Release Date:</strong> 30 July 2019<br>
+              <strong>Developer(s):</strong> adamgryu<br>
+              <strong>Publisher(s):</strong> adamgryu<br>
+              <strong>Website:</strong> <a href=""></a><br>
+              <strong>Devices:</strong> 
+              Windows, 
+              Mac, 
+              Linux, 
+              <a class="Playstation">PS4,</a> 
+              <a class="XBOX">Xbox One,</a> 
+              Wii U, 
+              <a class="Nintendo">Nintendo Switch</a>
+              <br>
+              <strong>Store Platforms:</strong>
+              <a href="" target="_blank">Steam</a>,
+              <a href="" target="_blank">GOG</a>,
+              <a href="" target="_blank">Itch.io</a>,
+              <a href="" target="_blank">Humble Bundle</a>,
+              <a href="" target="_blank" class="Playstation">Playstation Store</a>,
+              <a href="" target="_blank" class="XBOX">XBOX Store</a>,
+              <a href="" target="_blank" class="Nintendo">Nintendo eShop</a>
+              <br>
+              <strong>HowLongToBeat:</strong><a href="" target="_blank"> 2½ Hours</a><br>
+              <strong>Linux ProtonDB:</strong><a href="" target="_blank"> Native</a><br>
+              <strong>Status:</strong> Completed<br> <!-- Haven't played, playing, completed -->
               <strong>Personal Notes:</strong>
             </div>
           </div>
@@ -330,130 +442,29 @@
   </main>
 
   <script>
-    /* VARIABLES */
-    const gameList = document.getElementById("gameList");
-    const sortGames = document.getElementById("sortGames");
-    const toggleAllButton = document.getElementById("toggleAll");
+    /* SORTING VARIABLES */
+    const sortOrder = document.getElementById("sortOrder");
 
     /* LOCAL STORAGE KEYS */
     const OPEN_GAMES_KEY = "kuleGameOpenStates";
     const SORT_KEY = "kuleGameSort";
+    const SORT_ORDER_KEY = "kuleGameSortOrder";
 
-    /* SAVE WHICH GAMES ARE OPEN */
-    function saveOpenStates() {
-      const openGames = {};
-      const games = gameList.querySelectorAll("article");
-      games.forEach(function(game) {
-        const gameId = game.dataset.gameId;
-        const details = game.querySelector("details");
-        openGames[gameId] = details.open;
-      });
-      localStorage.setItem(
-        OPEN_GAMES_KEY,
-        JSON.stringify(openGames)
-      );
-    }
-
-    /* LOAD WHICH GAMES WERE OPEN */
-    function loadOpenStates() {
-      const savedStates =
-        localStorage.getItem(OPEN_GAMES_KEY);
-      if (!savedStates) {
-        return;
-      }
-      const openGames =
-        JSON.parse(savedStates);
-      const games =
-        gameList.querySelectorAll("article");
-      games.forEach(function(game) {
-        const gameId =
-          game.dataset.gameId;
-        const details =
-          game.querySelector("details");
-        if (openGames[gameId] === true) {
-          details.open = true;
-        }
-      });
-    }
-
-    /* UPDATE EXPAND / COLLAPSE BUTTON TEXT */
-    function updateToggleButton() {
-      const games =
-        gameList.querySelectorAll("article");
-      if (games.length === 0) {
-        return;
-      }
-      let allOpen = true;
-      games.forEach(function(game) {
-        const details =
-          game.querySelector("details");
-        if (!details.open) {
-          allOpen = false;
-        }
-      });
-
-      if (allOpen) {
-        toggleAllButton.textContent =
-          "Collapse All";
-      } else {
-        toggleAllButton.textContent =
-          "Expand All";
-      }
-    }
-
-    /* EXPAND / COLLAPSE ALL */
-    toggleAllButton.addEventListener(
-      "click",
-      function() {
-        const games =
-          gameList.querySelectorAll("article");
-        let allOpen = true;
-        games.forEach(function(game) {
-          const details =
-            game.querySelector("details");
-          if (!details.open) {
-            allOpen = false;
-          }
-        });
-
-        games.forEach(function(game) {
-          const details =
-            game.querySelector("details");
-          details.open = !allOpen;
-        });
-        saveOpenStates();
-        updateToggleButton();
-      }
-    );
-
-
-    /* SAVE STATE WHEN A GAME IS OPENED/CLOSED */
-    gameList.addEventListener(
-      "toggle",
-      function(event) {
-        if (
-          event.target.tagName.toLowerCase() === "details"
-        ) {
-          saveOpenStates();
-          updateToggleButton();
-        }
-      },
-      true
-    );
 
     /* SORT GAMES */
     function sortGamesList() {
-      const games =
-        Array.from(
-          gameList.querySelectorAll("article")
-        );
-      const sortType =
-        sortGames.value;
+      const games = Array.from(
+        gameList.querySelectorAll("article")
+      );
+      const sortType = sortGames.value;
+      const order = sortOrder.value;
       games.sort(function(a, b) {
+        let comparison = 0;
+
 
         /* Alphabetical */
         if (sortType === "alphabetical") {
-          return a.dataset.title.localeCompare(
+          comparison = a.dataset.title.localeCompare(
             b.dataset.title,
             undefined,
             {
@@ -463,47 +474,62 @@
           );
         }
 
-        /* Release Date */
-        if (sortType === "release") {
-          return a.dataset.release.localeCompare(
-            b.dataset.release
-          );
-        }
 
-        /* Developer */
-        if (sortType === "developer") {
-          return a.dataset.developer.localeCompare(
-            b.dataset.developer,
-            undefined,
-            {
-              sensitivity: "base"
-            }
-          );
-        }
-
-        /* Game Length */
-        if (sortType === "length") {
-          return (
-            parseFloat(a.dataset.length) -
-            parseFloat(b.dataset.length)
-          );
-        }
-      });
-
-      /* Put games back into the page */
-      games.forEach(function(game) {
-        gameList.appendChild(game);
-      });
-
-      /* Remember selected sorting */
-      localStorage.setItem(
-        SORT_KEY,
-        sortType
+    /* Release Date */
+    else if (sortType === "release") {
+      comparison = a.dataset.release.localeCompare(
+        b.dataset.release
       );
     }
 
 
-    /* SORT WHEN DROPDOWN CHANGES */
+    /* Developer */
+    else if (sortType === "developer") {
+      comparison = a.dataset.developer.localeCompare(
+        b.dataset.developer,
+        undefined,
+        {
+          sensitivity: "base"
+        }
+      );
+    }
+
+
+    /* Game Length */
+    else if (sortType === "length") {
+      comparison =
+        parseFloat(a.dataset.length) -
+        parseFloat(b.dataset.length);
+    }
+
+
+    /* Reverse for descending */
+    if (order === "descending") {
+      comparison *= -1;
+    }
+    return comparison;
+    });
+
+
+    /* Put games back into the page */
+    games.forEach(function(game) {
+      gameList.appendChild(game);
+    });
+
+
+    /* Remember selected sorting */
+    localStorage.setItem(
+      SORT_KEY,
+      sortType
+    );
+    localStorage.setItem(
+      SORT_ORDER_KEY,
+      order
+    );
+    }
+
+
+    /* SORT WHEN SORT TYPE CHANGES */
     sortGames.addEventListener(
       "change",
       function() {
@@ -511,13 +537,27 @@
       }
     );
 
+
+    /* SORT WHEN ASCENDING / DESCENDING CHANGES */
+    sortOrder.addEventListener(
+      "change",
+      function() {
+        sortGamesList();
+      }
+    );
+
+
     /* LOAD SAVED SORT */
     function loadSavedSort() {
       const savedSort =
         localStorage.getItem(SORT_KEY);
+      const savedOrder =
+        localStorage.getItem(SORT_ORDER_KEY);
       if (savedSort) {
-        sortGames.value =
-          savedSort;
+        sortGames.value = savedSort;
+      }
+      if (savedOrder) {
+        sortOrder.value = savedOrder;
       }
     }
 

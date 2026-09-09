@@ -127,6 +127,27 @@
   @media (max-width: 768px) {
     article { width: 95%;}
     img {width: 100%;}
+    .article-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .article-content img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .article-text {
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
     .search-container {
         flex-direction: column;
         align-items: center;
@@ -157,7 +178,6 @@
     </div>
     </nav><br></br>
 
-  <!--Tags: Technology, Linux, Windows, Travel, Family, Gaming-->
   <h1>My Blogs</h1>
   
   <div class="search-container">
@@ -166,7 +186,7 @@
     <input
         type="text"
         id="searchBlogs"
-        placeholder="Search title or tags..."
+        placeholder="Search Blogs..."
         onkeyup="searchBlogs()"
     >
   </div>
@@ -209,12 +229,10 @@
     articles.forEach(article => {
         const title = article.querySelector("h2").textContent.toLowerCase();
         const description = article.querySelector("p").textContent.toLowerCase();
-        const tags = article.getAttribute("data-tags").toLowerCase();
 
         if (
             title.includes(search) ||
-            description.includes(search) ||
-            tags.includes(search)
+            description.includes(search)
         ) {
             article.style.display = "block";
         } else {
@@ -222,7 +240,6 @@
         }
     });
   }
-  </script>
   </script>
   <script src="../universal darkmode.js"></script>
   <script src="../universal navbar.js"></script>
