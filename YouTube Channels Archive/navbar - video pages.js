@@ -11,7 +11,8 @@ document.body.insertAdjacentHTML("afterbegin", `
             <div class="dropdown pc-only">
                 <button class="dropdown-btn" onclick="toggleDropdown()">Other ↓</button>
                 <div class="dropdown-menu" id="dropdownMenu">
-                    <a href="../../../../Test Video Hosting Embeds/test-video-hosting-embeds.html">📼 Test Video Hosting/Streaming Embeds</a>
+                    <a href="../../../../Video Games I'm Interested In/interestingvideogames.html">🎮 Video Games I'm Interested In</a>
+                    <a href="../../../../My Favorite ROBLOX Games/favorite-roblox-games.html"><img src="../../../../IMAGES - Social Media Logos/Roblox_Corporation_2025_logo.svg.webp"> My Favorite ROBLOX Games</a>
                 </div>
             </div>
 

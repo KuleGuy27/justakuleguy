@@ -102,6 +102,14 @@ body {margin: 0;}
     border-bottom: 1px solid black;
 }
 
+.dropdown-menu a img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 4px;
+    border-radius: 0;
+}
+
 .dropdown-menu a:last-child {border-bottom: none;}
 .dropdown-menu a:hover {background-color: rgba(0,0,0,0.1);}
 .dropdown-menu.show {display: block;}
