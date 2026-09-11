@@ -1,6 +1,6 @@
 Everytime a new YT video is made:
 - Make a folder with the same name as the video project files
-- convert the thumbnail.jpg (or png) to webp and put in folder
+- copy the thumbnail.jpg (or png)
 - copy the .srt subtitle files (if have)
 - make a video.html file
 
