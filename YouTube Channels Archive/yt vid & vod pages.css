@@ -3,6 +3,15 @@ body {
     color: #000000;
 }
 
+.dark-mode #video-metadata,
+.dark-mode #mirror-border {
+    background-color: #242424;
+    border-color: #ffffff;
+}
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {color: #ffffff;}
+
 body > a:first-of-type,
 body > button:first-of-type {display: inline-block;}
 body {text-align: center;}
