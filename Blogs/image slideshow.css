@@ -58,18 +58,3 @@
   position: absolute;
   top: 0;
 }
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #aaaaaa;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.active, .dot:hover {
-  background-color: #000000;
-}
