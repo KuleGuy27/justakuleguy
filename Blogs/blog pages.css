@@ -9,6 +9,13 @@ article {
     color: black;
 }
 
+.dark-mode article {
+    background: #333333;
+    color: white;
+}
+.dark-mode h1 {color: white;}
+.dark-mode p {color: white;}
+
 #date {
     color: blue;
     font-weight: bold;
