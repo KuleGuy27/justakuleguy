@@ -18,25 +18,28 @@
         <h1>Update! Using my HP-310 AIO computer as an easy home NAS! [Subject to change]</h1>
         <h3 id="date" style="align-items: center;">
             Posted on: 29 August 2025<br>
-            Updated: 17 March 2026
+            Updated: 16 September 2026
         </h3>
         <div id="horizontal-line"></div>
         <img src="hp310 nas - main image cover.jpg" id="main-image">
+        <div style="height: 10px"></div>
+        <iframe width="80%" src="https://www.youtube.com/embed/rAc3kWZ_td0" title="Turning my 2009 Laptop into an easy home NAS! (Ubuntu Server + CasaOS)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         <div id="table-of-contents">
             <p><b>Table of Contents</b></p>
             <ul>
-                <li><a href="#header1">What is a NAS?</a></li>
-                <li><a href="#header2">What did I change this time?</a></li>
-                <li><a href="#header3">What OS do I use for the NAS?</a></li>
-                <li><a href="#header4">How do you install Ubuntu Server and CasaOS?</a></li>
-                <li><a href="#header5">What is the speed of the NAS?</a></li>
-                <li><a href="#header6">Using Tailscale for remote access.</a></li>
+                <li><a href="#header1">What I did in my YT video.</a></li>
+                <li><a href="#header2">What is a NAS?</a></li>
+                <li><a href="#header3">What did I change this time?</a></li>
+                <li><a href="#header4">What OS do I use for the NAS?</a></li>
+                <li><a href="#header5">How do you install Ubuntu Server and CasaOS?</a></li>
+                <li><a href="#header6">What is the speed of the NAS?</a></li>
+                <li><a href="#header7">Using Tailscale for remote access.</a></li>
             </ul>
         </div>
 
+        <h1 id="header1">What I did in my YT video.</h1>
         <p>In May 2024, I made a YouTube video about me using my old Toshiba Satellite laptop as a home-made NAS and some things has changed since. So in this blog, I decided to make an update.</p>
-        <iframe src="https://www.youtube.com/embed/rAc3kWZ_td0" title="Turning my 2009 Laptop into an easy home NAS! (Ubuntu Server + CasaOS)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" width="70%" allowfullscreen></iframe>
         <p>In that video, I discussed:<br>
         - What a NAS is<br>
         - What computer and hard drives I will be using<br>
@@ -48,13 +51,13 @@
         <p>I will be regurgitating the info here for the purpose of putting it in blog form and to educate the people who have not watched my video some necessary information for my NAS update. So without furthur ado...</p>
         <br>
         
-        <h1 id="header1">What is a NAS?</h1>
+        <h1 id="header2">What is a NAS?</h1>
         <p>A NAS stands for: <a href="https://en.wikipedia.org/wiki/Network-attached_storage" target="_blank">Network Attached Storage</a>, and it's basically a smarter external hard drive or a server like Google Drive, Dropbox, or MEGA.<br>
             As I stated in my video, a NAS is essentially a computer that has a CPU, RAM, a motherboard, a host drive, and external hard drives that you attach to it. Many consumer NAS units (Synology, QNAP, Asustor, etc...) come with 2, 4, or 6 hard drive bays, allowing you to add multiple hard drives for more storage or redundancy. You can connect multiple devices like: your phone, tablet, and computer to it from your local network or anywhere in the world if you set up <a href="https://www.whatismyip.com/port-forwarding/" target="_blank">port forwarding</a> or a <a href="https://www.howtogeek.com/133680/htg-explains-what-is-a-vpn/" target="_blank">VPN</a>, but be safe and do it securely.
         </p>
         <br>
         
-        <h1 id="header2">What did I change this time?</h1>
+        <h1 id="header3">What did I change this time?</h1>
         <p>To be honest, not much really. I just changed the computer from my Toshiba Satellite L455-S5980 to my HP Touchsmart 310-1155f AIO PC and moved the hard drives around for a backup. The NAS is now 6TB instead of 12TB. I use the 2.5 external 2TB and a 4TB drives for the NAS and I use the 6TB Expansion drive as the backup. I even have a UPS as a power backup in case if the power goes out.</p>
         
         <!-- Slideshow container -->
@@ -116,7 +119,7 @@
         <p>But yeah, I just changed my computer and that's about it. However, the computer uses a 256GB HARD DRIVE, which is slower and dies sooner. In the future, I hope to get myself a 128GB SSD for the speed and lifespan. 128GB SSDs are pretty cheap, costing about $20 on Amazon, hence why I decided to add "subject to change" in the title of this blog.</p>
         <br>
         
-        <h1 id="header3">What OS do I use for the NAS?</h1>
+        <h1 id="header4">What OS do I use for the NAS?</h1>
         <p>Same as the one in the video, I will be using <u>Ubuntu Server</u> and <u>CasaOS</u>.</p>
         <p>
             Ubuntu Server - <a href="https://ubuntu.com/download/server" target="_blank">https://ubuntu.com/download/server</a>
@@ -126,7 +129,7 @@
         <p>There are tons of NAS OSes out there, like: TrueNAS Core/Scale, OpenMediaVault, Proxmox, Unraid, and etc... Those are really good operating systems and I have dabbled with them in the past, but I will using Ubuntu Server and CasaOS because of familiarity and ease of use. I have been on these 2 OSes for more than 1 year and I'm pretty familiar with it. CasaOS makes it easy to use by having a GUI interface and so far, I love it!</p>
         <br>
         
-        <h1 id="header4">How do you install Ubuntu Server and CasaOS?</h1>
+        <h1 id="header5">How do you install Ubuntu Server and CasaOS?</h1>
         <p>For Ubuntu Server, you first go to the website and download the .ISO file.</p>
         <img src="hp310 nas - Get Ubuntu Server download page.png" width="100%">
         <img src="hp310 nas - downloading Ubuntu server.png" width="100%">
@@ -174,14 +177,14 @@
         <img src="hp310 nas - show nas photo on android.png" width="40%" border="2px">
         <br></br>
         
-        <h1 id="header5">What is the speed of the NAS?</h1>
+        <h1 id="header6">What is the speed of the NAS?</h1>
         <p>The speed of a NAS depends on the network but also <a href="https://www.backblaze.com/blog/nas-performance-guide-how-to-optimize-your-nas/" target="_blank">the hardware as well</a>. Since I have a computer with a better CPU and RAM, the performance is definitely better than the laptop with speeds at around 40mb/s, although it does fluctuately and results could vary in the future.</p>
         <h4 class="photo-explanation">↓ Speed of the NAS when copying an 8GB video file from my destop to a folder on the NAS on Windows and Linux. ↓</h4>
         <img src="hp310 nas - speed of file on windows.png" width="70%">
         <img src="hp310 nas - speed of file on linux.png" width="70%">
         <br></br>
 
-        <h1 id="header6">Using Tailscale for remote access.</h1>
+        <h1 id="header7">Using Tailscale for remote access.</h1>
         <p>I can access my NAS from all my devices on my local network which is great! But there are times when I want to access some files on my NAS from school, anywhere in my city or maybe anywhere the world. But have no fear, Tailscale is here and it can help me with what I need!</p>
         <p>But first, what is Tailscale?<br>
             <a href="https://tailscale.com/kb/1151/what-is-tailscale" target="_blank">As the company calls it</a>, Tailscale is a mesh VPN that enables encrypted point-to-point connections using the open source WireGuard protocol. The connection is streamlined and it's very easy to setup, hence why I am using it for my NAS.
