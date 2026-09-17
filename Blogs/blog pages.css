@@ -26,6 +26,14 @@ p {
     font-weight: 500;
 }
 
+.viewonsite {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
 .downloadthisvid {
     display: inline-block;
     background-color: rgb(89, 255, 0);
@@ -109,6 +117,7 @@ article {
     margin: 20px auto;
 }
 
+.viewonsite {width: 100%;}
 #main-image {width: 100%;}
 img {
     width: 100%;
@@ -131,6 +140,7 @@ article {
     padding: 10px;
 }
 
+.viewonsite {width: 100%;}
 #main-image {width: 100%;}
 img {
     width: 100%;
