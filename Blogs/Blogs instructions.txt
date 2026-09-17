@@ -1,9 +1,9 @@
-Everytime a new YT video is made:
-- Make a folder with the topic of your blog
-- make a folder in Abyss.to and upload your videos there (if necessary)
-- upload to internet archive too
-- copy, create, or download any images and videos you see fit
+Everytime you wanna make a new blog:
+- Make a new folder with the ISO 8601 date + topic of your blog
 - make a blog.html file
+- make a folder in Abyss.to and upload your videos there (if necessary)
+- upload to internet archive too (if necessary)
+- copy or create any images into the blog folder as you see fit
 
  - in the blog list (index), copy and paste the article tag and edit the: tags, link, h2 (make title), image, h3 (edit post date), and p (edit tags).
 
