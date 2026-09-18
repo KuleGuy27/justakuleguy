@@ -1,8 +1,7 @@
 Everytime you wanna make a new blog:
 - Make a new folder with the ISO 8601 date + topic of your blog
 - make a blog.html file
-- make a folder in Abyss.to and upload your videos there (if necessary)
-- upload to internet archive too (if necessary)
+- make a folder in Abyss.to and Internet Archive and upload your videos there (if necessary)
 - copy or create any images into the blog folder as you see fit
 
  - in the blog list (index), copy and paste the article tag and edit the: hrefs, h2 (title), image, date, description, tags, and blogger link
