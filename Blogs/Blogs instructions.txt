@@ -5,10 +5,9 @@ Everytime you wanna make a new blog:
 - upload to internet archive too (if necessary)
 - copy or create any images into the blog folder as you see fit
 
- - in the blog list (index), copy and paste the article tag and edit the: tags, link, h2 (make title), image, h3 (edit post date), and p (edit tags).
+ - in the blog list (index), copy and paste the article tag and edit the: hrefs, h2 (title), image, date, description, tags, and blogger link
 
-- in the blog posts itself; edit the site title from the folder, h1 (from h2 index), h3 date, video source, h3 description, link url with "a href" if possible
-- add downloadable links to donwload the .srt subtitles + add a mirror link
-- link to mirrors (YouTube, Odysee, Rumble, Internet Archive)
+- in the blog posts itself; make the site title to "[title] | kuleguy", add h1 title, add dates, main image thumbnail, yt vid index (if have), change table of contents, add headings and text
 
-
+<div class="downloadthisvid">^ Download this video! ^</div>
+<h4 class="photo-explanation">↓ Text ↓</h4>
