@@ -4,7 +4,7 @@ body {
 }
 
 .dark-mode #video-metadata,
-.dark-mode #mirror-border {
+.dark-mode #video-mirrors {
     background-color: #242424;
     border-color: #ffffff;
 }
@@ -32,16 +32,17 @@ article {
 }
 
 h1, h2, h3 {color: #000000;}
-.platform-mirrors {width: 20px;}
 #subtitles {font-size: 18px; color: black;}
 
-#video-metadata, #mirror-border {
+#video-metadata, #video-mirrors {
     border: 3px solid black;
     border-radius: 15px;
     padding: 5px 15px;
     margin-top: 10px;
     background-color: #e7e7e7;
 }
+
+#video-mirrors img {width: 20px;}
 
 .video-container {text-align: center;}
 
