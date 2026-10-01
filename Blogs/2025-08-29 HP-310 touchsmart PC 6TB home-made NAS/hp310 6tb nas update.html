@@ -159,7 +159,7 @@
         <p>After that, do a quick 'sudo apt update' to keep things up to date.</p>
         <img src="hp310 nas - sudo apt update in ssh.png" width="80%">
         <p>And now here's where you install CasaOS. Go to their <a href="https://casaos.zimaspace.com/" target="_blank">website</a> and copy the command they give you on the front page and paste it into your terminal.</p>
-        <p id="linux-copy-command">$ curl -fsSL https://get.casaos.io | sudo bash</p>
+        <p class="linux-copy-command">$ curl -fsSL https://get.casaos.io | sudo bash</p>
         <img src="hp310 nas - copy casa os command to ssh.png" width="100%">
         <p>When you press enter, the Casa OS will begin installing itself and at the bottom, it should give you an ip address that takes you to your browser.</p>
         <img src="hp310 nas - open casa os link in the browser.png" width="80%">
@@ -199,10 +199,10 @@
         <p>To add a device onto Tailscale, you go to the <a href="https://tailscale.com/download" target="_blank">download</a> section of the website and download Tailscale on whatever device that you have. For the purpose of this blog, I will choose <u>Linux</u> (since we're using Ubuntu Server) to show you how to download Tailscale on the NAS.</p>
         <img src="hp310 nas - tailscale download screen linux.png" width="100%">
         <p>You simply SSH into your NAS from your main computer, and paste in the Linux command, and hit enter.</p>
-        <p id="linux-copy-command">$ curl -fsSL https://tailscale.com/install.sh | sh</p>
+        <p class="linux-copy-command">$ curl -fsSL https://tailscale.com/install.sh | sh</p>
         <img src="hp310 nas - tailscale command in ssh.png" width="100%">
         <p>Tailscale will then install itself onto your NAS and after it's done installing, it will tell you to start the service by typing "sudo tailscale up" and it will give you a link that takes you your browser, with text saying "login successful" and that your device is added to the Tailscale console..</p>
-        <p id="linux-copy-command">$ sudo tailscale up</p>
+        <p class="linux-copy-command">$ sudo tailscale up</p>
         <img src="hp310 nas - sudo tailscale up command with the link.png" width="80%">
         <img src="hp310 nas - tailscale login successful screen.png" width="80%">
         <p>Tailscale gives you a different ip address for your NAS and you can use that ip address to access your NAS everywhere you go, with an internet connection or a signal.</p>
@@ -250,6 +250,7 @@
     <script src="../image slideshow.js"></script>
     <script src="../../universal darkmode.js"></script>
     <script src="../navbar - blog pages.js"></script>
+    <script src="../copy text button.js"></script>
     <script src="../lightbox.js"></script>
     </body>
 </html>
