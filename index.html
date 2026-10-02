@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="universal navbar.css">   
     </head>
     <style>
+    .page-section-heading {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: green;}
+    
     img.myface {
         width: 40%;
         float: left;
@@ -58,11 +60,45 @@
     .social-medias img {width: 50px; margin-right: 15px;}
     .other-links img {width: 37px; margin-right: 10px;}
 
-    /* Phone query */
-    @media (max-width: 768px) {
-    img.myface {
-        width: 100%;
+    .sections-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 30px;
     }
+
+    .sections-grid .section {
+        min-width: 0;
+    }
+
+    /* Divider line between the two columns (left column only) */
+    .sections-grid .section:nth-child(odd) {
+        border-right: 2px solid black;
+        padding-right: 15px;
+    }
+
+    /* Phone and tablet query */
+    @media (max-width: 768px) {
+        img.myface {
+            width: 100%;
+        }
+
+        .sections-grid {
+            grid-template-columns: 1fr;
+        }
+
+        /* Remove the vertical divider when stacked */
+        .sections-grid .section:nth-child(odd) {
+            border-right: none;
+            padding-right: 0;
+        }
+
+        /* Horizontal line between stacked sections */
+        .sections-grid .section:not(:first-child) {
+            border-top: 3px solid black;
+        }
+        .dark-mode .sections-grid .section:not(:first-child) {
+            border-top-color: black;
+        }
     }
     </style>
     <body>
@@ -71,9 +107,14 @@
     <button class="hamburger" onclick="toggleMenu()">☰</button>
 
     <div class="nav-links" id="navLinks">
-        <a href="Blogs/justakuleguy_blogs.html">Blogs</a>
-        <a href="YouTube Channels Archive/youtube channels archive.html">YouTubes</a>
-        <a href="website info.html">Website Info</a>
+
+        <div class="dropdown pc-only">
+            <button class="dropdown-btn" onclick="toggleDropdown()">Main ↓</button>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="Main Content/Blogs/justakuleguy_blogs.html">📝 Blogs</a>
+                <a href="Main Content/website info.html">📓 Website Info</a>
+            </div>
+        </div>
 
         <div class="dropdown pc-only">
             <button class="dropdown-btn" onclick="toggleDropdown()">Other ↓</button>
@@ -111,22 +152,28 @@
         <a href="https://www.blogger.com/profile/12101797806756329702" target="_blank" title="Blogger"><img src="IMAGES - Other Links/blogger-logo-1-2050047795.png"></a>
         <a href="https://archive.org/details/@kuleguy" target="_blank" title="Internet Archive"><img src="IMAGES - Other Links/Internet_Archive_logo-171227854.png"></a>
         <a href="https://www.roblox.com/users/555036909/profile" target="_blank" title="ROBLOX"><img src="IMAGES - Other Links/Roblox_Corporation_2025_logo.svg.webp"></a>
-        
         </div>
         
         <div id="horizontal-line"></div>
-        <a href="Blogs/justakuleguy_blogs.html"><h3>📝 Blogs</h3></a>
-        <a href="YouTube Channels Archive/youtube channels archive.html"><h3><img src="IMAGES - Social Media Logos/youtube-logo-hd-8-1348870541.png" width="20px"> YouTube Channels Archive</h3></a>
-        <a href="website info.html"><h3>📓 Website Info</h3></a>
-        
-        <div id="horizontal-line"></div>
-        <div style="margin-bottom: 10px;"></div>
 
-        <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Other:</h3>
-        <a href="Video Games I'm Interested In/interestingvideogames.html"><h3>🎮 Video Games I'm Interested In</h3></a>
-        <a href="My Favorite ROBLOX Games/favorite-roblox-games.html"><h3><img src="IMAGES - Social Media Logos/Roblox_Corporation_2025_logo.svg.webp" width="20px" margin=" 0 200px"> My Favorite ROBLOX Games</h3></a>
+        <div class="sections-grid">
+            <div class="section">
+                <h3 class="page-section-heading">Main Content:</h3>
+                <a href="Main Content/Blogs/justakuleguy_blogs.html"><h3>📝 Blogs</h3></a>
+                <a href="Main Content/website info.html"><h3>📓 Website Info</h3></a>
+            </div>
+
+            <div class="section">
+                <h3 class="page-section-heading">Archives:</h3>
+                <a href="Archives/YouTube Channels Archive/youtube channels archive.html"><h3><img src="IMAGES - Social Media Logos/youtube-logo-hd-8-1348870541.png" width="20px"> YouTube Channels Archive</h3></a>
+            </div>
+
+            <div class="section">
+                <h3 class="page-section-heading">Interests:</h3>
+                <a href="Interests/Video Games I'm Interested In/interestingvideogames.html"><h3>🎮 Video Games I'm Interested In</h3></a>
+                <a href="Interests/My Favorite ROBLOX Games/favorite-roblox-games.html"><h3><img src="IMAGES - Social Media Logos/Roblox_Corporation_2025_logo.svg.webp" width="20px"> My Favorite ROBLOX Games</h3></a>
+            </div>
         </div>
-        
     </article>    
 
     <script src="universal darkmode.js"></script>
