@@ -1,18 +1,30 @@
 document.body.insertAdjacentHTML("afterbegin", `
     <nav class="navbar">
-        <div class="logo"><a href="../../index.html">JustAKuleGuy</a></div>
+        <div class="logo"><a href="../../../index.html">JustAKuleGuy</a></div>
         <button class="hamburger" onclick="toggleMenu()">☰</button>
 
         <div class="nav-links" id="navLinks">
-            <a href="../../Blogs/justakuleguy_blogs.html">Blogs</a>
-            <a href="../../YouTube Channels Archive/youtube channels archive.html">YouTubes</a>
-            <a href="../../website info.html">Website Info</a>
 
             <div class="dropdown pc-only">
-                <button class="dropdown-btn" onclick="toggleDropdown()">Other ↓</button>
-                <div class="dropdown-menu" id="dropdownMenu">
-                    <a href="../../Video Games I'm Interested In/interestingvideogames.html">🎮 Video Games I'm Interested In</a>
-                    <a href="../../My Favorite ROBLOX Games/favorite-roblox-games.html"><img src="../../IMAGES - Social Media Logos/Roblox_Corporation_2025_logo.svg.webp"> My Favorite ROBLOX Games</a>
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">Main ↓</button>
+                <div class="dropdown-menu">
+                    <a href="../../../Main Content/Blogs/justakuleguy_blogs.html">📝 Blogs</a>
+                    <a href="../../../Main Content/website info.html">📓 Website Info</a>
+                </div>
+            </div>
+
+            <div class="dropdown pc-only">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">Archives ↓</button>
+                <div class="dropdown-menu">
+                    <a href="../../../Archives/YouTube Channels Archive/youtube channels archive.html"><img src="../../../IMAGES - Social Media Logos/youtube-logo-hd-8-1348870541.png" width="20px"> YouTube Channels Archive</a>
+                </div>
+            </div>
+
+            <div class="dropdown pc-only">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">Interests ↓</button>
+                <div class="dropdown-menu">
+                    <a href="../../../Interests/Video Games I'm Interested In/interestingvideogames.html">🎮 Video Games I'm Interested In</a>
+                    <a href="../../../Interests/My Favorite ROBLOX Games/favorite-roblox-games.html"><img src="../../../IMAGES - Other Links/Roblox_Corporation_2025_logo.svg.webp"> My Favorite ROBLOX Games</a>
                 </div>
             </div>
 
@@ -26,16 +38,21 @@ function toggleMenu() {
     menu.classList.toggle("show");
 }
 
-function toggleDropdown() {
-    var dropdown = document.getElementById("dropdownMenu");
-    dropdown.classList.toggle("show");
+function toggleDropdown(btn) {
+    const menu = btn.nextElementSibling;   // the .dropdown-menu right after the button
+
+    // close any other open dropdowns
+    document.querySelectorAll(".dropdown-menu.show").forEach(m => {
+        if (m !== menu) m.classList.remove("show");
+    });
+
+    menu.classList.toggle("show");
 }
 
-// Close dropdown when clicking outside
+// Close dropdowns when clicking outside
 document.addEventListener("click", function(e) {
-    var dropdown = document.getElementById("dropdownMenu");
-    if (dropdown && !e.target.closest(".dropdown")) {
-        dropdown.classList.remove("show");
+    if (!e.target.closest(".dropdown")) {
+        document.querySelectorAll(".dropdown-menu.show").forEach(m => m.classList.remove("show"));
     }
 });
 
