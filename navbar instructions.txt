@@ -2,11 +2,11 @@ Link the nav links to the correct page. The more you go deeper into the page, th
 
 IF UPDATING NAVBAR LINKS, CHANGE:
 - index.html
-- website info.html
-- (Blogs) justakuleguy_blogs.html
-- (Blogs) navbar - blog pages.js
-- (YouTube Channels Archive) youtube channels archive.html
-- (YouTube Channels Archive) navbar - channel index pages.js
-- (YouTube Channels Archive) navbar - video pages.js
-- (Video Games I'm Interested In) interestingvideogames.html
-- (My Favorite ROBLOX Games) favorite-roblox-games.html
+- (Main Content) website info.html
+- (Main Content -> Blogs) justakuleguy_blogs.html
+- (Main Content -> Blogs) navbar - blog pages.js
+- (Archives -> YouTube Channels Archive) youtube channels archive.html
+- (Archives -> YouTube Channels Archive) navbar - channel index pages.js
+- (Archives -> YouTube Channels Archive) navbar - video pages.js
+- (Interests -> Video Games I'm Interested In) interestingvideogames.html
+- (Interests -> My Favorite ROBLOX Games) favorite-roblox-games.html
