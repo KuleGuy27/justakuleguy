@@ -6,7 +6,7 @@ Everytime you wanna make a new blog:
 
  - in the blog list (index), copy and paste the article tag and edit the: #, hrefs, h2 (title), image, date, description, tags, and blog mirrors
 
-- in the blog posts itself; make the site title to "[title] | kuleguy", add h1 title, add dates, main image thumbnail, yt vid index (if have), change table of contents, add headings and text
+- in the blog posts itself; make the site title to "[title] | kuleguy", add h1 title, add dates, blog mirrors, main image thumbnail, yt vid index (if have), change table of contents, add headings and text
 
 <div class="downloadthisvid">^ Download this video! ^</div>
 <h4 class="photo-explanation">↓ Text ↓</h4>
