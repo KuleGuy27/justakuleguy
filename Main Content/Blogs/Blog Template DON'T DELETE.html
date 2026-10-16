@@ -31,12 +31,19 @@
         <iframe width="80%"></iframe>
 
         <div id="table-of-contents">
-            <p><b>Table of Contents</b></p>
-            <ul>
+            <button id="toc-toggle" type="button" aria-expanded="false" aria-controls="toc-list">
+                <span class="toc-label">📑 Contents</span>
+                <span id="toc-current"></span>
+                <span class="toc-arrow">▾</span>
+            </button>
+            <ul id="toc-list">
                 <li><a href="#header1">Test 1</a></li>
                 <li><a href="#header2">Test 2</a></li>
                 <li><a href="#header3">Test 3</a></li>
                 <li><a href="#header4">Test 4</a></li>
+                <li><a href="#header5">Test 5</a></li>
+                <li><a href="#header6">Test 6</a></li>
+                <li><a href="#header7">Test 7</a></li>
             </ul>
         </div>
 
@@ -66,6 +73,7 @@
     <script src="../image slideshow.js"></script>
     <script src="../../../universal darkmode.js"></script>
     <script src="../navbar - blog pages.js"></script>
+    <script src="../tableofcontents.js"></script>
     <script src="../copy text button.js"></script>
     <script src="../lightbox.js"></script>
     </body>

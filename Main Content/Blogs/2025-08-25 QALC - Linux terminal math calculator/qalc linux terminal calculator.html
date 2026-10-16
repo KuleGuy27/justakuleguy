@@ -31,8 +31,12 @@
         <iframe width="80%" src="https://www.youtube.com/embed/K8S7xDyjnDA" title="How I do math on Linux" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         <div id="table-of-contents">
-            <p><b>Table of Contents</b></p>
-            <ul>
+            <button id="toc-toggle" type="button" aria-expanded="false" aria-controls="toc-list">
+                <span class="toc-label">📑 Contents</span>
+                <span id="toc-current"></span>
+                <span class="toc-arrow">▾</span>
+            </button>
+            <ul id="toc-list">
                 <li><a href="#intro">My first blog! Hello!</a></li>
                 <li><a href="#exrates">qalc -e OR qalc -exrates</a></li>
                 <li><a href="#terse">qalc -t OR qalc -terse</a></li>
@@ -146,6 +150,7 @@
     <script src="../image slideshow.js"></script>
     <script src="../../../universal darkmode.js"></script>
     <script src="../navbar - blog pages.js"></script>
+    <script src="../tableofcontents.js"></script>
     <script src="../copy text button.js"></script>
     <script src="../lightbox.js"></script>
     </body>
