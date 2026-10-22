@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuleGuy's Links</title>
+    <link rel="icon" type="image/x-icon" href="../website favicon/justakuleguy_website favicon(128px).ico">
+    <link rel="stylesheet" href="../universal darkmode.css">
+    <link rel="stylesheet" href="../universal navbar.css">  
+    <style>
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 24px 16px;
+        }
+
+        /* Centers the whole section and puts the two columns side by side */
+        #aboutme {
+            display: flex;
+            flex-wrap: wrap;            /* stacks them on narrow screens */
+            justify-content: center;
+            align-items: flex-start;
+            gap: 24px;
+            width: fit-content;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        #imgtroduction {
+            width: 400px;
+            max-width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: #cfe6ff;   /* light blue (light mode) */
+            border-radius: 20px;
+        }
+
+        /* Dark mode */
+        [data-theme="dark"] #imgtroduction {
+            background-color: #1c3a63;   /* dark blue (dark mode) */
+        }
+
+        #imgtroduction img {
+            border-radius: 14px;
+        }
+
+        /* Right-hand column holds Social Medias and Other Links */
+        #right-column {
+            width: 500px;
+            max-width: 100%;
+        }
+
+        #social-medias,
+        #other-links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 2px solid var(--text);
+            margin: 24px 0;
+        }
+
+        /* The box itself: just color and shape */
+        #social-medias > article,
+        #other-links > article {
+            border-radius: 20px;
+            color: #fff;
+        }
+
+        /* The link is the flex container, so image and text sit side by side.
+        Padding lives here so the whole box is clickable. */
+        #social-medias a,
+        #other-links a {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 14px 20px;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        #social-medias img,
+        #other-links img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+
+        #social-medias h3,
+        #other-links h3 {
+            margin: 0;
+        }
+
+        #social-medias h1,
+        #other-links h1 {
+            margin: 0;
+        }
+
+        /* Brand-colored backgrounds (by ID, so the h1 doesn't throw off the count) */
+        #YouTube { background-color: #e02b20; }
+        #Reddit  { background-color: #d74009; }
+        #Twitch  { background-color: #6514de; }
+        #Twitter { background-color: #336da8; }
+        #Blogger { background-color: #cd7210; }
+        #Roblox  { background-color: #244eaf; }
+    </style>
+    </head>
+    <body>
+    <nav class="navbar">
+    <div class="logo"><a href="../index.html">JustAKuleGuy</a></div>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    
+    <div class="nav-links" id="navLinks">
+
+        <div class="dropdown pc-only">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">Main ↓</button>
+            <div class="dropdown-menu">
+                <a href="../Main Content/Blogs/justakuleguy_blogs.html">📝 Blogs</a>
+                <a href="">📓 Website Info</a>
+            </div>
+        </div>
+
+        <div class="dropdown pc-only">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">Archives ↓</button>
+            <div class="dropdown-menu">
+                <a href="../Archives/YouTube Channels Archive/youtube channels archive.html"><img src="../IMAGES - Social Media Logos/youtube-logo-hd-8-1348870541.png" width="20px"> YouTube Channels Archive</a>
+            </div>
+        </div>
+
+        <div class="dropdown pc-only">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">Interests ↓</button>
+            <div class="dropdown-menu">
+                <a href="../Interests/Video Games I'm Interested In/interestingvideogames.html">🎮 Video Games I'm Interested In</a>
+                <a href="../Interests/My Favorite ROBLOX Games/favorite-roblox-games.html"><img src="../IMAGES - Other Links/Roblox_Corporation_2025_logo.svg.webp"> My Favorite ROBLOX Games</a>
+            </div>
+        </div>
+
+        <button onclick="toggleDarkMode()" class="darkmode-btn">Dark Mode</button>
+    </div>
+    </nav><br></br>
+
+        <article id="aboutme">
+            <article id="imgtroduction">
+            <img src="../2025-08-02-201336 (cropped).jpg" width="100%">
+            <h1>Hello! My name is Luke!</h1>
+            <p>I am a 19 year old who loves: technology, computers, gaming, bicycling, and somewhat traveling. I want to use this website as an opportunity to document my life's work and experiences. I have a basic knowledge of HTML and I'm just sticking to what I know best. I'm not using Wix, Squarespace, Wordpress, or any other website builder because they don't have the features I want. I am considering using AI and LLMs to assist with my code because AI is better than me and I have little coding knowledge. Made using HTML, CSS, and JS all vibe-coded inside VS Code and hosted onto Netlify! Anyways, I hope you enjoy my website!</p>
+            </article>
+
+            <div id="right-column">
+                <article id="social-medias">
+                    <h1>My Social Medias:</h1>
+                    <article id="YouTube">
+                        <a href="https://www.youtube.com/@KuleGuy27" target="_blank">
+                        <img src="../IMAGES - Social Media Logos/youtube-logo-hd-8-1348870541.png">
+                        <h3>YouTube</h3></a>
+                    </article>
+                    <article id="Reddit">
+                        <a href="https://www.reddit.com/user/boredomguy27/" target="_blank">
+                        <img src="../IMAGES - Social Media Logos/0-7757_reddit-logo-reddit-icon-png-1725032260.png">
+                        <h3>Reddit</h3></a>
+                    </article>
+                    <article id="Twitch">
+                        <a href="https://www.twitch.tv/kuleguy_27" target="_blank">
+                        <img src="../IMAGES - Social Media Logos/twitch-vector-logo-twitch-vector-icon-logotype-social-media_901408-474-2466693468.png">
+                        <h3>Twitch</h3></a>
+                    </article>
+                    <article id="Twitter">
+                        <a href="https://x.com/kuleguy27" target="_blank">
+                        <img src="../IMAGES - Social Media Logos/2-27646_twitter-logo-png-transparent-background-logo-twitter-png-659677630.png">
+                        <h3>Twitter (X)</h3></a>
+                    </article>
+                </article>
+
+                <hr>
+
+                <article id="other-links">
+                    <h1>Other Links:</h1>
+                    <article id="Blogger">
+                        <a href="https://www.blogger.com/profile/12101797806756329702" target="_blank">
+                        <img src="../IMAGES - Other Links/blogger-logo-1-2050047795.png">
+                        <h3>Blogger (Blogspot)</h3></a>
+                    </article>
+                    <article id="Roblox">
+                        <a href="https://www.roblox.com/users/555036909/profile" target="_blank">
+                        <img src="../IMAGES - Other Links/Roblox_Corporation_2025_logo.svg.webp">
+                        <h3>ROBLOX</h3></a>
+                    </article>
+                </article>
+            </div>
+        </article>
+
+    <script src="../universal darkmode.js"></script>
+    <script src="../universal navbar.js"></script>
+    </body>
+</html>
