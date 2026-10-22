@@ -12,7 +12,6 @@
             background-color: var(--bg);
             color: var(--text);
             margin: 0;
-            padding: 24px 16px;
         }
 
         /* Centers the whole section and puts the two columns side by side */
@@ -32,13 +31,14 @@
             max-width: 100%;
             box-sizing: border-box;
             padding: 20px;
-            background-color: #cfe6ff;   /* light blue (light mode) */
+            background-color: rgb(24, 79, 189);   /* light blue (light mode) */
             border-radius: 20px;
         }
 
-        /* Dark mode */
-        [data-theme="dark"] #imgtroduction {
-            background-color: #1c3a63;   /* dark blue (dark mode) */
+        /* Keep the intro text black in both light and dark mode */
+        #imgtroduction h1,
+        #imgtroduction p {
+            color: #000;
         }
 
         #imgtroduction img {
@@ -141,13 +141,13 @@
 
         <button onclick="toggleDarkMode()" class="darkmode-btn">Dark Mode</button>
     </div>
-    </nav><br></br>
+    </nav><div style="height: 60px;"></div>
 
         <article id="aboutme">
             <article id="imgtroduction">
             <img src="../2025-08-02-201336 (cropped).jpg" width="100%">
             <h1>Hello! My name is Luke!</h1>
-            <p>I am a 19 year old who loves: technology, computers, gaming, bicycling, and somewhat traveling. I want to use this website as an opportunity to document my life's work and experiences. I have a basic knowledge of HTML and I'm just sticking to what I know best. I'm not using Wix, Squarespace, Wordpress, or any other website builder because they don't have the features I want. I am considering using AI and LLMs to assist with my code because AI is better than me and I have little coding knowledge. Made using HTML, CSS, and JS all vibe-coded inside VS Code and hosted onto Netlify! Anyways, I hope you enjoy my website!</p>
+            <p>I am a 19 year old who loves: technology, computers, gaming, bicycling, and somewhat traveling. I want to use this website as an opportunity to document my life's work and experiences. I have a basic knowledge of HTML and I'm just sticking to what I know best. I'm not using Wix, Squarespace, Wordpress, or any other website builder because they don't have the features I want. I am considering using AI and LLMs to assist with my code because AI is better than me and I have little coding knowledge. Made using HTML, CSS, and JS all vibe-coded inside VS Code and hosted onto GitHub Pages! Anyways, I hope you enjoy my website!</p>
             </article>
 
             <div id="right-column">
@@ -173,9 +173,8 @@
                         <img src="../IMAGES - Social Media Logos/2-27646_twitter-logo-png-transparent-background-logo-twitter-png-659677630.png">
                         <h3>Twitter (X)</h3></a>
                     </article>
+                    <div style="border-top: 2px solid #333;"></div>
                 </article>
-
-                <hr>
 
                 <article id="other-links">
                     <h1>Other Links:</h1>
