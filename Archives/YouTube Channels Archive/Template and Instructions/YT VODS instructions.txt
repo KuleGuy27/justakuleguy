@@ -1,5 +1,5 @@
 Everytime a new YT vod is made:
-- Make a folder with the same name as the video project files
+- Make a folder with ISO 8601 + the same name as the video project files
 - copy the thumbnail.jpg (or png)
 - make a video.html file
 
