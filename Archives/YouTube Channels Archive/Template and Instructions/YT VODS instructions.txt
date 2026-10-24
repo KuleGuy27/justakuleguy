@@ -7,4 +7,4 @@ Everytime a new YT vod is made:
 
 - in the HTMl videos itself; put the "[video title] | KuleGuy" as the site title, video source, h1 (vid title), h3 (date), h3 description, link urls with "a href" if possible
 - change the yt links in desc to links on site if have
-- link to mirrors (YouTube and Internet Archive)
+- link to mirrors (YouTube, Odysee, and Internet Archive)
