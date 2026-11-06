@@ -9,6 +9,7 @@ document.body.insertAdjacentHTML("afterbegin", `
                 <button class="dropdown-btn" onclick="toggleDropdown(this)">Main ↓</button>
                 <div class="dropdown-menu">
                     <a href="../../../../../Main Content/Blogs/justakuleguy_blogs.html">📝 Blogs</a>
+                    <a href="https://justakuleguyv2.netlify.app/">About Me (V2)</a>
                     <a href="../../../../../Main Content/website info.html">📓 Website Info</a>
                 </div>
             </div>
